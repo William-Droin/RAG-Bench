@@ -1,0 +1,34 @@
+Question,Ideal Response,LLM Answer,Judge Grade,Judge Notes
+What are the three primary colors in additive color mixing?,"Red, green, and blue are the three additive primary colors used for light.","The three primary colors in additive color mixing are **red, green, and blue**.",100.00,"The candidate answer exactly matches the ideal answer, providing the three additive primary colors with no errors or contradictions. | Key points present: red; green; blue"
+What is the purpose of retrieval in a RAG system?,Retrieval finds relevant external context so the model can ground answers in factual source information.,"In a Retrieval‑Augmented Generation (RAG) system, **retrieval** serves as the first step that pulls in external, relevant information to feed the language model before it generates a response. Its main purposes are:
+
+1. **Supply up‑to‑date or domain‑specific knowledge** that the base model may not have seen during pre‑training.  
+2. **Ground the generated text in factual evidence**, reducing hallucinations and improving accuracy.  
+3. **Provide context that narrows the model’s focus**, allowing it to produce more concise and relevant answers.  
+4. **Enable scalability**: instead of retraining a huge model for every new piece of data, you simply add the data to the retrieval index.
+
+Thus, retrieval enriches the generation step with concrete, relevant documents, leading to more reliable and informed outputs.",95.00,"The candidate answer fully captures the core purpose of retrieval—finding relevant external context to ground the model's answers in factual information—and adds accurate, non‑contradictory elaborations. | Key points present: Retrieval finds relevant external context; Grounds answers in factual source information"
+Why is deterministic grading important in benchmark evaluation?,Deterministic grading reduces run-to-run variance and makes score comparisons more reliable over time.,"Deterministic grading—producing the same evaluation result every time a benchmark is run on the same model and data—is important for several reasons:
+
+1. **Reproducibility**  
+   - Researchers and practitioners must be able to repeat experiments and obtain identical scores. This builds confidence that reported numbers reflect the model’s true performance rather than random variation.
+
+2. **Fair Comparison**  
+   - Benchmarks are used to rank different models or system configurations. If the grading process is nondeterministic, scores could fluctuate, making it unclear whether a higher score is due to a better model or just random chance.
+
+3. **Debugging & Development**  
+   - Deterministic outcomes let developers isolate the effect of code changes, hyper‑parameter tweaks, or data preprocessing steps. When results change unexpectedly, the cause can be traced to the modification rather than to stochastic grading.
+
+4. **Statistical Validity**  
+   - Many analyses (e.g., significance testing, confidence intervals) assume that each measurement is an unbiased estimate of a fixed quantity. Nondeterministic grading adds extra variance, inflating error bars and potentially leading to incorrect conclusions.
+
+5. **Transparency & Trust**  
+   - Stakeholders (academics, industry, regulators) are more likely to trust a benchmark whose scoring pipeline is fully deterministic and auditable. It reduces suspicion that hidden randomness is being exploited to “game” the leaderboard.
+
+6. **Resource Efficiency**  
+   - When grading is deterministic, a single run suffices to obtain the final score. Nondeterministic pipelines often require multiple runs and averaging, consuming extra compute and time.
+
+7. **Standardization Across Platforms**  
+   - Benchmarks are frequently run on different hardware, software stacks, or in distributed settings. Deterministic grading ensures that these environmental differences do not affect the final metric, provided the model’s inference is also deterministic.
+
+In summary, deterministic grading guarantees that benchmark scores are reliable, comparable, and interpretable, which is essential for scientific progress and for making informed decisions about model quality.",95.00,"The candidate answer fully captures the core idea that deterministic grading reduces run-to-run variance and improves reliability of score comparisons, and expands with relevant supporting reasons. No contradictions are present. | Key points present: Deterministic grading reduces run-to-run variance; Makes benchmark score comparisons more reliable over time; Ensures reproducibility; Enables fair comparison of models; Facilitates debugging and development"

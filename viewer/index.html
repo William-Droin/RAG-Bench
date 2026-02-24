@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LLM Benchmark Viewer</title>
+    <style>
+      :root {
+        --bg: #f5f2eb;
+        --card: #fffaf1;
+        --ink: #1e1f24;
+        --accent: #1f7a8c;
+        --border: #d9d4ca;
+        --good: #2f9e44;
+        --warn: #f08c00;
+        --bad: #c92a2a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top right, #d0e6ea 0%, transparent 42%),
+          radial-gradient(circle at bottom left, #ffe8cc 0%, transparent 35%),
+          var(--bg);
+      }
+
+      .container {
+        width: min(1200px, 94vw);
+        margin: 24px auto 40px;
+      }
+
+      .hero {
+        padding: 22px;
+        background: linear-gradient(135deg, #fefefe, #f8f3e8);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 1.5rem;
+      }
+
+      .controls,
+      .summary,
+      .results {
+        margin-top: 16px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 14px;
+      }
+
+      .controls-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
+
+      input,
+      button,
+      select {
+        font: inherit;
+      }
+
+      input[type="number"],
+      select {
+        padding: 8px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: white;
+      }
+
+      button {
+        background: var(--accent);
+        color: white;
+        border: 0;
+        border-radius: 8px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      th,
+      td {
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+        padding: 10px 8px;
+        vertical-align: top;
+      }
+
+      th {
+        background: #f8f9fa;
+        position: sticky;
+        top: 0;
+      }
+
+      .badge {
+        display: inline-block;
+        border-radius: 999px;
+        font-size: 0.8rem;
+        padding: 2px 8px;
+        color: white;
+      }
+
+      .grade-good {
+        background: var(--good);
+      }
+
+      .grade-warn {
+        background: var(--warn);
+      }
+
+      .grade-bad {
+        background: var(--bad);
+      }
+
+      .muted {
+        color: #666;
+      }
+
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+      }
+
+      .metric {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        background: #fff;
+        padding: 10px;
+      }
+
+      .metric strong {
+        display: block;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <h1>LLM Benchmark Run Viewer</h1>
+        <div class="muted">
+          Select your benchmark output folder. Default view compares runs (one CSV = one run).
+        </div>
+      </section>
+
+      <section class="controls">
+        <div class="controls-row">
+          <input id="folderInput" type="file" webkitdirectory directory hidden />
+          <button id="pickFolder">Select Output Folder</button>
+          <label>
+            Min grade:
+            <input id="minGrade" type="number" min="0" max="100" value="0" />
+          </label>
+          <label>
+            Sort:
+            <select id="sortBy">
+              <option value="file">File</option>
+              <option value="gradeAsc">Grade (asc)</option>
+              <option value="gradeDesc">Grade (desc)</option>
+            </select>
+          </label>
+          <button id="applyFilter">Apply</button>
+        </div>
+      </section>
+
+      <section class="summary" id="summary"></section>
+
+      <section class="results">
+        <div class="muted" id="status">Loading data...</div>
+        <div class="controls-row" style="margin-top: 8px; margin-bottom: 8px;">
+          <strong id="viewTitle">Run Comparison</strong>
+          <button id="backToRuns" style="display: none;">Back To Run Comparison</button>
+        </div>
+
+        <table id="runsTable">
+          <thead>
+            <tr>
+              <th>Run File</th>
+              <th>Rows</th>
+              <th>Average Grade</th>
+              <th>Best</th>
+              <th>Worst</th>
+            </tr>
+          </thead>
+          <tbody id="runRows"></tbody>
+        </table>
+
+        <table id="detailsTable" style="display: none;">
+          <thead>
+            <tr>
+              <th>Grade</th>
+              <th>Question</th>
+              <th>Ideal Response</th>
+              <th>LLM Answer</th>
+              <th>Judge Notes</th>
+            </tr>
+          </thead>
+          <tbody id="detailRows"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script>
+      const folderInput = document.getElementById("folderInput");
+      const pickFolderButton = document.getElementById("pickFolder");
+      const minGradeInput = document.getElementById("minGrade");
+      const sortByInput = document.getElementById("sortBy");
+      const applyFilterButton = document.getElementById("applyFilter");
+      const runRowsEl = document.getElementById("runRows");
+      const detailRowsEl = document.getElementById("detailRows");
+      const runsTableEl = document.getElementById("runsTable");
+      const detailsTableEl = document.getElementById("detailsTable");
+      const viewTitleEl = document.getElementById("viewTitle");
+      const backToRunsButton = document.getElementById("backToRuns");
+      const statusEl = document.getElementById("status");
+      const summaryEl = document.getElementById("summary");
+
+      let allRows = [];
+      let selectedFolder = "";
+      let currentView = "runs";
+      let selectedRun = null;
+
+      function parseCsv(text) {
+        const rows = [];
+        let row = [];
+        let current = "";
+        let inQuotes = false;
+
+        for (let i = 0; i < text.length; i++) {
+          const char = text[i];
+          const next = text[i + 1];
+
+          if (char === '"') {
+            if (inQuotes && next === '"') {
+              current += '"';
+              i++;
+            } else {
+              inQuotes = !inQuotes;
+            }
+          } else if (char === "," && !inQuotes) {
+            row.push(current);
+            current = "";
+          } else if ((char === "\n" || char === "\r") && !inQuotes) {
+            if (char === "\r" && next === "\n") i++;
+            row.push(current);
+            current = "";
+            if (row.some((cell) => cell.trim() !== "")) rows.push(row);
+            row = [];
+          } else {
+            current += char;
+          }
+        }
+
+        if (current.length > 0 || row.length > 0) {
+          row.push(current);
+          if (row.some((cell) => cell.trim() !== "")) rows.push(row);
+        }
+
+        if (!rows.length) return [];
+        const headers = rows[0].map((h) => h.trim());
+        return rows.slice(1).map((r) => {
+          const item = {};
+          headers.forEach((h, idx) => {
+            item[h] = (r[idx] || "").trim();
+          });
+          return item;
+        });
+      }
+
+      function gradeClass(value) {
+        if (value >= 80) return "grade-good";
+        if (value >= 50) return "grade-warn";
+        return "grade-bad";
+      }
+
+      function escapeHtml(value) {
+        return String(value || "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;");
+      }
+
+      function renderSummary(rows) {
+        if (!rows.length) {
+          summaryEl.innerHTML = '<div class="muted">No benchmark data loaded. Select an output folder first.</div>';
+          return;
+        }
+
+        const grades = rows.map((r) => Number(r["Judge Grade"] || 0));
+        const avg = grades.reduce((a, b) => a + b, 0) / grades.length;
+        const best = Math.max(...grades);
+        const worst = Math.min(...grades);
+        const files = new Set(rows.map((r) => r.__file)).size;
+
+        summaryEl.innerHTML = `
+          <div class="summary-grid">
+            <div class="metric"><span class="muted">Rows</span><strong>${rows.length}</strong></div>
+            <div class="metric"><span class="muted">Files</span><strong>${files}</strong></div>
+            <div class="metric"><span class="muted">Average Grade</span><strong>${avg.toFixed(2)}</strong></div>
+            <div class="metric"><span class="muted">Best</span><strong>${best.toFixed(2)}</strong></div>
+            <div class="metric"><span class="muted">Worst</span><strong>${worst.toFixed(2)}</strong></div>
+          </div>
+        `;
+      }
+
+      function runStatsFromRows(rows) {
+        const grouped = new Map();
+        for (const row of rows) {
+          const key = String(row.__file || "");
+          if (!grouped.has(key)) grouped.set(key, []);
+          grouped.get(key).push(row);
+        }
+
+        const stats = [];
+        for (const [file, fileRows] of grouped.entries()) {
+          const grades = fileRows.map((r) => Number(r["Judge Grade"] || 0));
+          const avg = grades.reduce((a, b) => a + b, 0) / grades.length;
+          stats.push({
+            file,
+            rows: fileRows.length,
+            avg,
+            best: Math.max(...grades),
+            worst: Math.min(...grades),
+          });
+        }
+        return stats;
+      }
+
+      function renderRunsView() {
+        currentView = "runs";
+        selectedRun = null;
+        viewTitleEl.textContent = "Run Comparison";
+        backToRunsButton.style.display = "none";
+        runsTableEl.style.display = "";
+        detailsTableEl.style.display = "none";
+
+        const minGrade = Number(minGradeInput.value || 0);
+        const sort = sortByInput.value;
+        let runStats = runStatsFromRows(allRows).filter((r) => r.avg >= minGrade);
+
+        if (sort === "gradeAsc") {
+          runStats.sort((a, b) => a.avg - b.avg);
+        } else if (sort === "gradeDesc") {
+          runStats.sort((a, b) => b.avg - a.avg);
+        } else {
+          runStats.sort((a, b) => a.file.localeCompare(b.file));
+        }
+
+        runRowsEl.innerHTML = "";
+        for (const r of runStats) {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td><a href="#" data-run-file="${escapeHtml(r.file)}">${escapeHtml(r.file)}</a></td>
+            <td>${r.rows}</td>
+            <td><span class="badge ${gradeClass(r.avg)}">${r.avg.toFixed(2)}</span></td>
+            <td>${r.best.toFixed(2)}</td>
+            <td>${r.worst.toFixed(2)}</td>
+          `;
+          runRowsEl.appendChild(tr);
+        }
+
+        for (const a of runRowsEl.querySelectorAll("a[data-run-file]")) {
+          a.addEventListener("click", (event) => {
+            event.preventDefault();
+            renderDetailsView(a.getAttribute("data-run-file"));
+          });
+        }
+
+        const folderText = selectedFolder ? ` Folder: ${selectedFolder}.` : "";
+        statusEl.textContent = `${runStats.length} run(s) shown.${folderText}`;
+        renderSummary(allRows);
+      }
+
+      function renderDetailsView(runFile) {
+        currentView = "details";
+        selectedRun = runFile;
+        viewTitleEl.textContent = `Run Details: ${runFile}`;
+        backToRunsButton.style.display = "";
+        runsTableEl.style.display = "none";
+        detailsTableEl.style.display = "";
+
+        const minGrade = Number(minGradeInput.value || 0);
+        const sort = sortByInput.value;
+        let rows = allRows
+          .filter((r) => String(r.__file || "") === runFile)
+          .filter((r) => Number(r["Judge Grade"] || 0) >= minGrade);
+
+        if (sort === "gradeAsc") {
+          rows.sort((a, b) => Number(a["Judge Grade"] || 0) - Number(b["Judge Grade"] || 0));
+        } else if (sort === "gradeDesc") {
+          rows.sort((a, b) => Number(b["Judge Grade"] || 0) - Number(a["Judge Grade"] || 0));
+        }
+
+        detailRowsEl.innerHTML = "";
+        for (const r of rows) {
+          const grade = Number(r["Judge Grade"] || 0);
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td><span class="badge ${gradeClass(grade)}">${grade.toFixed(2)}</span></td>
+            <td>${escapeHtml(r["Question"])}</td>
+            <td>${escapeHtml(r["Ideal Response"])}</td>
+            <td>${escapeHtml(r["LLM Answer"])}</td>
+            <td>${escapeHtml(r["Judge Notes"])}</td>
+          `;
+          detailRowsEl.appendChild(tr);
+        }
+
+        const folderText = selectedFolder ? ` Folder: ${selectedFolder}.` : "";
+        statusEl.textContent = `${rows.length} row(s) shown for ${runFile}.${folderText}`;
+        renderSummary(rows);
+      }
+
+      async function loadFolder(fileList) {
+        allRows = [];
+        selectedFolder = "";
+
+        const csvFiles = Array.from(fileList).filter((f) =>
+          f.name.toLowerCase().endsWith(".csv")
+        );
+
+        if (!csvFiles.length) {
+          statusEl.textContent = "No CSV files found in selected folder.";
+          renderRows();
+          return;
+        }
+
+        const firstPath = csvFiles[0].webkitRelativePath || "";
+        if (firstPath.includes("/")) {
+          selectedFolder = firstPath.split("/")[0];
+        }
+
+        for (const file of csvFiles) {
+          const text = await file.text();
+          const parsed = parseCsv(text);
+          for (const row of parsed) {
+            if (!("Question" in row && "Ideal Response" in row && "LLM Answer" in row)) {
+              continue;
+            }
+            row.__file = file.name;
+            allRows.push(row);
+          }
+        }
+
+        if (!allRows.length) {
+          statusEl.textContent = "No compatible benchmark rows found in selected folder.";
+        }
+        renderRunsView();
+      }
+
+      pickFolderButton.addEventListener("click", () => {
+        folderInput.click();
+      });
+
+      folderInput.addEventListener("change", () => {
+        if (!folderInput.files || !folderInput.files.length) return;
+        loadFolder(folderInput.files);
+      });
+
+      backToRunsButton.addEventListener("click", renderRunsView);
+
+      applyFilterButton.addEventListener("click", () => {
+        if (currentView === "details" && selectedRun) {
+          renderDetailsView(selectedRun);
+          return;
+        }
+        renderRunsView();
+      });
+
+      renderRunsView();
+    </script>
+  </body>
+</html>
