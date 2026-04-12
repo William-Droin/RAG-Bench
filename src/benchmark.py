@@ -48,7 +48,7 @@ class Config:
 
 
 class OpenAICompatibleClient:
-    def __init__(self, base_url: str, api_key: str, timeout_seconds: int = 60) -> None:
+    def __init__(self, base_url: str, api_key: str, timeout_seconds: int = 360) -> None:
         self.base_url = base_url.rstrip("/")
         self.api_key = api_key
         self.timeout_seconds = timeout_seconds
@@ -221,8 +221,9 @@ def judge_answer(
         "based on semantic key-point coverage, factual correctness, and contradictions. "
         "Do NOT use text similarity as a criterion. "
         "Do NOT penalize extra details unless they directly contradict the ideal answer or question context. "
+        "Count how many exact subjects/bullet points there are in the ideal answer then count how many of these are covered in the answer, calculate the grade from this"
         "Return strictly valid JSON with this exact schema: "
-        '{"grade": number 0-100, "notes": string, '
+        '{"grade": number of key points in llm answer / key points in ideal answer, "notes": string, '
         '"key_points_present": [string], "missing_key_points": [string], "contradictions": [string]}.'
     )
 
@@ -231,10 +232,7 @@ def judge_answer(
         f"Ideal Answer:\n{ideal_answer}\n\n"
         f"Candidate Answer:\n{llm_answer}\n\n"
         "Scoring guidance:\n"
-        "- 90-100: Covers all key points; no contradictions.\n"
-        "- 70-89: Mostly correct; minor omissions; no major contradictions.\n"
-        "- 40-69: Partial key-point coverage or notable inaccuracies.\n"
-        "- 0-39: Misses core points or contains major contradictions.\n"
+        "The score should be: key points in answer / key points in ideal answer"
         "Return only JSON."
     )
 

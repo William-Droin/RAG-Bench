@@ -1,0 +1,362 @@
+Question,Ideal Response,LLM Answer,Judge Grade,Judge Notes
+Quelles sont les différences entre la paie d’un salarié fiscalement français et celle d’un fiscalement étranger ?,"Trois différences entre fiscalement français et fiscalement étranger.
+Le fiscalement étranger : 
+ne cotise pas à la CSG ni à la CRDS
+n’est pas soumis au Prélèvement à la source mais est soumis, sauf exonération particulière, à une retenue à la source (si prestation en France)
+est redevable d’une assurance maladie supplémentaire (taux variable selon si artiste ou non-artiste).","**Principales différences entre la paie d’un salarié « fiscalement français » (résident fiscal en France) et celle d’un salarié « fiscalement étranger » (non‑résident fiscal français)**  
+
+| Aspect | Salarié fiscalement français (résident) | Salarié fiscalement étranger (non‑résident) |
+|--------|----------------------------------------|---------------------------------------------|
+| **Impôt sur le revenu (IR)** | - Prélèvement à la source (PAS) appliqué directement sur le salaire. <br>- Barème progressif français (tranches 0 % – 45 %). <br>- Possibilité de taux personnalisé (déclaration annuelle) ou taux non personnalisé (défaut). | - Pas de prélèvement à la source français, sauf si le salarié exerce une activité **effectivement exercée en France** (voir ci‑dessous). <br>- L’impôt est généralement prélevé dans le pays de résidence du salarié, selon la législation locale et les conventions de non‑double imposition (CDI). |
+| **Contributions sociales** | - Cotisations salariales et patronales obligatoires (sécurité sociale, chômage, retraite complémentaire, CSG/CRDS, etc.). <br>- Le salarié est affilié au régime général français. | - En principe **exonération de la plupart des cotisations françaises** si le salarié n’est pas affilié au régime français (ex. détachement, expatriation). <br>- Deux cas fréquents : <br> 1. **Détachement** (directive 96/71/CE) : le salarié reste affilié à la sécurité sociale de son pays d’origine, mais l’employeur doit verser une **cotisation de détachement** (≈ 5 % du salaire) et la CSG/CRDS sont généralement dues en France. <br> 2. **Expatriation** (contrat local) : le salarié est affilié au régime du pays d’accueil ; aucune cotisation française n’est due, sauf si le contrat prévoit une couverture volontaire. |
+| **Assiette de calcul** | - Salaire brut + avantages imposables (primes, tickets restaurant, etc.) – déductions sociales (ex. frais professionnels). | - Même principe, mais les **avantages imposables** peuvent être traités différemment selon la convention fiscale (ex. indemnités de logement, frais de déplacement). |
+| **Déclaration annuelle** | - Déclaration d’impôt française (formulaire 2042) ; le revenu déjà prélevé à la source est repris. | - Le salarié doit généralement déclarer ses revenus en France **seulement** s’il y a une source française (ex. travail effectué en France). Sinon, il déclare uniquement dans son pays de résidence. |
+| **Double imposition** | - Aucun risque de double imposition pour un résident français (les revenus mondiaux sont imposés en France). | - Risque de double imposition si le salarié perçoit des revenus imposables en France et dans son pays de résidence. La plupart des pays ont signé une **convention de non‑double imposition (CDI)** qui prévoit : <br>  • exonération avec méthode du crédit d’impôt, ou <br>  • exonération avec méthode de l’exemption. |
+| **Obligations de l’employeur** | - Déclaration et paiement des cotisations sociales (URSSAF, retraite, chômage, etc.). <br>- Déclaration du PAS (DSN). <br>- Remise d’un bulletin de paie conforme aux exigences françaises. | - Selon le statut (détachement ou expatriation) : <br>  • Déclaration du salarié détaché à l’URSSAF (cotisation de détachement). <br>  • Possibilité de ne pas déclarer de cotisations sociales françaises si le salarié est totalement affilié à l’étranger. <br>- Bulletin de paie doit mentionner le **statut de non‑résident** et, le cas échéant, la référence à la convention fiscale applicable. |
+| **Avantages en nature & frais professionnels** | - Déductibles ou imposables selon la législation française (ex. frais de déplacement, logement). | - Souvent traités comme **non imposables en France** (ex. prise en charge du logement à l’étranger) si la convention le prévoit, mais peuvent rester imposables dans le pays de résidence. |
+| **Retenue de la CSG/CRDS** | - Obligatoire sur 98,25 % du salaire brut (sauf cas d’exonération). | - En détachement, la CSG/CRDS reste due (sauf exonération spécifique). <br>- En expatriation, aucune CSG/CRDS française n’est prélevée. |
+| **Taux de cotisation** | - Variables selon le salaire et le régime (ex. 22 % ≈ salarial + 42 % ≈ patronal pour la sécurité sociale). | - Si cotisations françaises dues (détachement) : taux identiques à ceux du résident, mais appliqués uniquement sur la partie « déterminée » (souvent le salaire de base). <br>- Sinon, les taux du pays d’accueil s’appliquent. |
+
+---
+
+### 1. Quand le salarié étranger travaille **en France** (ex. mission courte, détachement)
+
+* **Impôt** : le revenu de source française est soumis au prélèvement à la source français, même si le salarié reste fiscalement résident à l’étranger. Le taux appliqué peut être le **taux non personnalisé** (20 % par défaut) ou le taux indiqué par l’administration du pays de résidence via le formulaire **“Déclaration de résidence fiscale”** (ex. formulaire 2047‑E).  
+* **Cotisations** : le salarié reste affilié à son régime d’origine, mais l’employeur doit payer la **cotisation de détachement** (≈ 5 % du salaire brut) et la CSG/CRDS sont dues en France.  
+* **Convention fiscale** : la plupart des CDI prévoient que le revenu est imposable uniquement dans le pays de résidence, avec un crédit d’impôt français.
+
+### 2. Quand le salarié étranger travaille **hors de France** pour une société française (ex. expatrié)
+
+* **Impôt** : pas de PAS français. Le salaire est imposé dans le pays d’accueil selon la législation locale. La France ne prélève rien, sauf si le salarié conserve un **statut de résident fiscal français** (ex. domicile principal en France).  
+* **Cotisations** : aucune cotisation française (sauf CSG/CRDS volontaire). Le salarié doit être affilié au régime de sécurité sociale du pays d’accueil.  
+* **Déclaration** : le salarié doit déclarer le revenu perçu à l’étranger dans sa déclaration française uniquement s’il reste résident fiscal français (cas rare). Sinon, il déclare uniquement dans son pays de résidence.
+
+### 3. Points pratiques pour l’employeur
+
+| Action | Salarié résident | Salarié non‑résident |
+|--------|------------------|----------------------|
+| **DSN** | Déclaration standard (salaires, cotisations, PAS). | Mention du statut « non‑résident » et, le cas échéant, de la cotisation de détachement. |
+| **Bulletin de paie** | Mention du taux de PAS, des cotisations sociales françaises. | Indiquer le pays de résidence fiscale, le taux de PAS (le cas échéant) et la référence à la convention fiscale. |
+| **Gestion des frais** | Remboursement selon les règles françaises (justificatifs, plafond). | Souvent traités comme **non imposables en France** ; le salarié doit fournir les justificatifs conformes au pays d’accueil. |
+| **Assurance chômage** | Cotisation obligatoire (Pôle emploi). | Pas de cotisation française ; le salarié peut être couvert par le régime d’assurance chômage de son pays d’origine (ex. UE – coordination des systèmes). |
+
+---
+
+## Résumé succinct
+
+- **Impôt sur le revenu** : prélevé à la source en France uniquement pour les résidents ou les salariés détachés ; sinon, il est payé dans le pays de résidence selon la convention fiscale.  
+- **Cotisations sociales** : le résident paie les cotisations françaises (sécurité sociale, CSG/CRDS, retraite, chômage). Le non‑résident ne paie que la **cotisation de détachement** (et la CSG/CRDS si détaché) ou aucune cotisation française s’il est totalement affilié à l’étranger.  
+- **Obligations de l’employeur** : déclarations (DSN, PAS) et bulletins de paie adaptés au statut du salarié ; prise en compte des conventions de non‑double imposition.  
+- **Double imposition** : évitée grâce aux conventions fiscales ; le salarié étranger bénéficie généralement d’un crédit d’impôt ou d’une exemption dans son pays de résidence.  
+
+Ces différences sont encadrées par le **Code général des impôts**, le **Code de la sécurité sociale**, la **directive européenne 96/71/CE** (détachement) et les **conventions de non‑double imposition** signées par la France. Pour chaque situation précise, il est recommandé de consulter le service paie ou un expert‑fiscal afin de valider le traitement applicable.",78.00,"Le candidat couvre correctement les deux premières différences (absence de CSG/CRDS et régime de prélèvement à la source vs retenue à la source) avec des explications détaillées. Cependant, il omet la mention de l’assurance maladie supplémentaire spécifique aux salariés fiscalement étrangers. Aucun point ne contredit l’idéal. | Key points present: ne cotise pas à la CSG/CRDS; n’est pas soumis au Prélèvement à la source mais est soumis, sauf exonération particulière, à une retenue à la source (si prestation en France) | Missing key points: est redevable d’une assurance maladie supplémentaire (taux variable selon si artiste ou non-artiste)"
+Quelles sont les différences entre la paie d’un salarié fiscalement français et celle d’un fiscalement étranger ? Et si ce salarié me fournit un formulaire A1 ?,"Trois différences entre fiscalement français et fiscalement étranger.
+Le fiscalement étranger : 
+ne cotise pas à la CSG ni à la CRDS
+n’est pas soumis au Prélèvement à la source mais est soumis, sauf exonération particulière, à une retenue à la source (si prestation en France)
+est redevable d’une assurance maladie supplémentaire (taux variable selon si artiste ou non-artiste).
+
+Si fiscalement étranger fournit formulaire A1 alors exonération :
+de cotisations de sécurité sociale, 
+de retraite complémentaire, 
+de chômage, 
+de taxe sur les salaires,
+de taxe d’apprentissage,
+de médecine du travail.
+
+Restent dues : 
+
+Financement du paritarisme,
+AGS,
+Congés spectacles (sauf si caisse identique dans le pays d’origine),
+Formation continue (part principale et conventionnelle),
+Retenues d’origine conventionnelle (si employeur assujetti),
+Retenue à la source (sauf si exonération par convention fiscale).","**Différences principales entre la paie d’un salarié « fiscalement français » et celle d’un salarié « fiscalement étranger »**
+
+| Aspect | Salarié fiscalement français (résident fiscal en France) | Salarié fiscalement étranger (non‑résident fiscal en France) |
+|--------|-----------------------------------------------------------|--------------------------------------------------------------|
+| **Impôt sur le revenu (IR)** | - Le prélèvement à la source (PAS) s’applique sur le salaire brut. <br>- Le taux de prélèvement est communiqué chaque mois par l’employeur (via la DSN). <br>- Le salarié déclare ses revenus en France et bénéficie du barème progressif français. | - Pas de prélèvement à la source français (sauf si le salarié travaille physiquement en France > 183 jours ou si le salaire est considéré comme de source française). <br>- Le salaire est imposable dans le pays de résidence du salarié, selon la convention fiscale applicable. <br>- L’employeur doit éventuellement retenir l’impôt dans le pays d’accueil si la convention le prévoit. |
+| **Cotisations sociales** | - Affiliation obligatoire aux régimes français (URSSAF, retraite, chômage, prévoyance, etc.). <br>- Contributions patronales et salariales calculées sur le salaire brut selon les taux français. | - En principe, le salarié est affilié au régime de sécurité sociale du pays de résidence. <br>- L’employeur ne verse pas les cotisations françaises (sauf cas particuliers : détachement, travail en France, etc.). <br>- Les cotisations sont prélevées selon les règles du pays d’accueil (ou du régime d’affiliation choisi). |
+| **Déclarations sociales** | - Déclaration mensuelle via la DSN (Déclaration Sociale Nominative). <br>- Transmission des bordereaux de cotisations à l’URSSAF, aux caisses de retraite, etc. | - Pas de DSN française (sauf si le salarié reste affilié au régime français). <br>- L’employeur doit se conformer aux obligations déclaratives du pays d’accueil (ex. : PAYE, PAYE‑RTI, etc.). |
+| **Assiette de calcul** | - Salaire brut + avantages en nature (primes, tickets restaurant, etc.) soumis aux cotisations et à l’IR. | - Salaire brut soumis aux règles du pays de résidence (certaines primes peuvent être exclues ou taxées différemment). |
+| **Charges patronales** | - Taux élevés (environ 40‑45 % du brut selon la taille de l’entreprise). | - Variable selon le pays (souvent moins élevées que les charges françaises, mais dépend du régime local). |
+| **Protection sociale** | - Couverture maladie, maternité, retraite, chômage, accidents du travail, etc., selon le droit français. | - Couverture selon le régime du pays de résidence (ou régime d’affiliation volontaire). |
+| **Convention de double imposition** | - Le salaire est imposé une seule fois en France ; les éventuels crédits d’impôt sont appliqués. | - La convention fiscale entre la France et le pays de résidence détermine le pays d’imposition principale. En général, le salaire est imposé dans le pays de résidence, la France ne le taxe pas (sauf présence effective en France). |
+
+---
+
+## Rôle du formulaire **A1** (anciennement « formulaire E »)
+
+| Situation | Effet du formulaire A1 sur la paie |
+|-----------|------------------------------------|
+| **Salarié détaché** (travail temporaire à l’étranger tout en restant affilié au régime français) | - Le formulaire A1 atteste que le salarié reste soumis à la législation française de sécurité sociale pendant la période de détachement. <br>- **Cotisations sociales** : l’employeur continue de verser les cotisations françaises (URSSAF, retraite, etc.) comme pour un salarié résident en France. <br>- **Impôt sur le revenu** : le prélèvement à la source français reste applicable (sauf disposition contraire de la convention fiscale). <br>- **Déclarations** : la DSN et les déclarations sociales françaises restent obligatoires. |
+| **Salarié en mobilité permanente** (transfert définitif, pas de détachement) | - Le formulaire A1 n’est **pas** requis ; le salarié doit s’affilier au régime du pays d’accueil. <br>- Les cotisations françaises cessent, l’employeur applique les règles locales. |
+| **Salarié travaillant simultanément en France et à l’étranger** (ex. : télétravail partiel) | - Le formulaire A1 peut être délivré pour la partie du temps où le salarié est détaché. <br>- Pendant les jours de détachement, les cotisations françaises s’appliquent ; pendant les jours de travail en France, les mêmes cotisations s’appliquent naturellement. <br>- L’employeur doit veiller à la proportionnalité des charges (ex. : calcul au prorata du temps passé dans chaque pays). |
+
+### Points pratiques à retenir lorsqu’un salarié fournit un **A1**
+
+1. **Vérifier la durée du détachement** : le formulaire A1 indique la période pendant laquelle le salarié reste affilié à la sécurité sociale française. Au-delà de cette période, il faut procéder à la désaffiliation et à l’affiliation locale.
+2. **Conserver le formulaire** : il doit être conservé pendant 5 ans (exigence de l’URSSAF) et présenté en cas de contrôle.
+3. **Informer les caisses** : transmettre le formulaire A1 à l’URSSAF et aux caisses de retraite afin d’éviter les doubles cotisations.
+4. **Maintenir le prélèvement à la source** : le taux de PAS reste celui communiqué par l’administration française, sauf modification du domicile fiscal du salarié.
+5. **Gestion des frais professionnels** : les frais liés à la mission à l’étranger (logement, transport, etc.) sont généralement remboursés selon les règles du pays d’accueil, mais restent déductibles du salaire brut français pour le calcul des cotisations.
+
+---
+
+### Résumé succinct
+
+- **Salarié fiscalement français** : paie soumise aux cotisations et au prélèvement à la source français, déclarations via DSN, protection sociale française.
+- **Salarié fiscalement étranger** : paie généralement soumise aux cotisations et à l’impôt du pays de résidence, pas de DSN française, protection sociale locale.
+- **Formulaire A1** : lorsqu’il est fourni, il maintient le salarié sous le régime français de sécurité sociale pendant le détachement, donc la paie reste traitée comme celle d’un salarié français (cotisations, PAS, DSN). Au terme du détachement, le régime passe au pays d’accueil.",15.00,"Le candidat ne couvre pas les trois différences précises indiquées dans la réponse idéale (absence de CSG/CRDS, retenue à la source vs prélèvement à la source, assurance maladie supplémentaire). Il fournit une description générale des différences fiscales et sociales, mais omet les points clés. De plus, l'explication du formulaire A1 est inversée : le candidat indique que l'A1 maintient les cotisations françaises, alors que la réponse idéale indique qu'il entraîne une exonération de la plupart des cotisations françaises. Cette contradiction majeure réduit fortement la note. | Key points present: Différences générales d'imposition et de cotisations entre salarié français et étranger; Mention du prélèvement à la source pour le salarié français; Mention de l'absence de prélèvement à la source pour le salarié étranger dans certains cas; Description du rôle du formulaire A1 pour les salariés détachés | Missing key points: Le salarié fiscalement étranger ne cotise pas à la CSG ni à la CRDS; Le salarié fiscalement étranger n’est pas soumis au prélèvement à la source mais à une retenue à la source (si prestation en France); Le salarié fiscalement étranger est redevable d’une assurance maladie supplémentaire (taux variable selon artiste ou non‑artiste); Exonérations liées à la présentation du formulaire A1 : cotisations de sécurité sociale, retraite complémentaire, chômage, taxe sur les salaires, taxe d’apprentissage, médecine du travail; Obligations restantes malgré l’A1 : financement du paritarisme, AGS, congés spectacles, formation continue, retenues d’origine conventionnelle, retenue à la source (sauf exemption conventionnelle) | Contradictions: Le candidat affirme que le formulaire A1 maintient le paiement des cotisations françaises, alors que la réponse idéale indique qu’il entraîne une exonération de la plupart des cotisations françaises"
+Peux-tu m’aider à paramétrer le contrat d’un apprenti ?,"Éventuelle mise en garde si le contrat est ancien (avant le 1er mars 2025) -> appel maintenance
+
+Si contrat apprenti débute après le 01/03/2025, suivre fiche solution « Contrat d’apprentissage – secteur privé » : 
+paragraphe 3 pour le paramétrage de :
+catégorie salariale
+retenues
+rubriques de paies
+paragraphe 4 pour 
+fiche contrat
+première paie","Bien sûr ! Voici les principales étapes et les éléments obligatoires à inclure pour paramétrer correctement un contrat d’apprentissage en France :
+
+---
+
+## 1. Vérifier l’éligibilité
+| Critère | Condition |
+|---|---|
+| **Âge du salarié** | 16 à 29 ans (dérogations possibles pour les personnes en situation de handicap ou les projets de création d’entreprise). |
+| **Formation** | Le contrat doit être conclu avec un centre de formation d’apprentis (CFA) ou un organisme de formation agréé. |
+| **Durée du contrat** | 6 mois à 3 ans, selon le diplôme visé (ex : CAP = 1 an, Bac = 2 ans, BTS = 2 ans, licence = 3 ans). |
+
+---
+
+## 2. Choisir le type de contrat
+- **Contrat d’apprentissage à durée déterminée (CDD)** : le plus fréquent.
+- **Contrat d’apprentissage à durée indéterminée (CDI)** : possible uniquement si le salarié a déjà effectué au moins 6 mois d’apprentissage dans l’entreprise.
+
+---
+
+## 3. Rédiger les mentions obligatoires
+Le contrat doit être écrit et comporter les informations suivantes :
+
+| Rubrique | Contenu obligatoire |
+|---|---|
+| **Identité des parties** | Nom, prénom, adresse, SIRET de l’employeur ; nom, prénom, adresse du salarié et de son représentant légal (si mineur). |
+| **Objet du contrat** | Intitulé du diplôme ou de la qualification visée, référence du programme de formation. |
+| **Durée du contrat** | Date de début et date de fin (ou durée en mois). |
+| **Temps de travail** | Durée hebdomadaire (généralement 35 h) ; répartition entre travail en entreprise et formation (ex : 2 jours de formation par semaine). |
+| **Rémunération** | Pourcentage du SMIC ou du salaire minimum conventionnel selon l’âge et l’ancienneté : <br>• 16‑17 ans : 27 % du SMIC la 1ᵉʳ année, 43 % la 2ᵉ, 53 % la 3ᵉ. <br>• 18‑20 ans : 43 % la 1ᵉʳ, 51 % la 2ᵉ, 67 % la 3ᵉ. <br>• 21‑25 ans : 53 % la 1ᵉʳ, 61 % la 2ᵉ, 78 % la 3ᵉ. |
+| **Avantages** | Tickets restaurant, mutuelle, frais de transport, etc. (facultatif mais souvent prévu). |
+| **Période d’essai** | Maximum 2 semaines pour un contrat ≤ 6 mois, 1 mois pour un contrat > 6 mois. |
+| **Formation** | Nom du CFA, adresse, durée de la formation, modalités d’évaluation. |
+| **Clause de mobilité** (si applicable) | Définir les éventuels déplacements ou affectations. |
+| **Signature** | Signatures de l’employeur, du salarié (ou de son représentant légal) et du représentant du CFA. |
+
+---
+
+## 4. Formalités administratives
+1. **Déclaration préalable à l’embauche (DPAE)** : à effectuer auprès de l’URSSAF au plus tard le jour de l’embauche.  
+2. **Enregistrement du contrat** :  
+   - **En ligne** via le site officiel du **Ministère du Travail** (service « Contrat d’apprentissage ») ou le **Portail de la DREETS**.  
+   - **Par courrier** : envoyer le contrat signé à la **DREETS** (Direction régionale de l’économie, de l’emploi, du travail et des solidarités) de votre région.  
+3. **Transmission au CFA** : le CFA doit recevoir le contrat pour valider l’inscription de l’apprenti.  
+4. **Affiliation à la sécurité sociale** : l’apprenti doit être déclaré comme salarié (affiliation à la CPAM, à la retraite, etc.).  
+
+---
+
+## 5. Suivi pendant l’apprentissage
+| Action | Fréquence | Responsable |
+|---|---|---|
+| **Entretien d’accueil** | Dès le premier jour | Employeur + tuteur |
+| **Visite médicale** | Avant l’embauche (ou dès que possible) | Médecin du travail |
+| **Entretien de suivi** | Tous les 3 mois | Tuteur + référent du CFA |
+| **Évaluation finale** | À la fin du contrat | CFA + employeur |
+| **Renouvellement ou passage en CDI** | Selon les besoins et la performance | Employeur |
+
+---
+
+## 6. Points de vigilance
+- **Respect du temps de formation** : le nombre d’heures de formation doit être conforme au référentiel du diplôme (ex : 400 h/an pour un CAP).  
+- **Rémunération minimale** : ne jamais descendre en dessous des pourcentages légaux, sous peine de sanctions.  
+- **Contrôle de la conformité** : la DREETS peut effectuer des contrôles inopinés ; assurez-vous que le contrat et les fiches de paie sont à jour.  
+- **Fin de contrat** : si l’apprenti ne valide pas le diplôme, le contrat peut être rompu à l’initiative de l’employeur ou de l’apprenti, sous conditions (préavis, justification).  
+
+---
+
+### Modèle de contrat (extrait)
+
+```text
+CONTRAT D'APPRENTISSAGE
+
+Entre les soussignés :
+
+1. L’entreprise ________________________, SIRET ___________, située ______________________,
+   représentée par ______________________ (nom, fonction),
+
+2. M. / Mme ________________________, né(e) le __/__/____, demeurant ______________________,
+   (ou représentant légal si mineur),
+
+3. Le Centre de Formation d’Apprentis (CFA) ________________________, situé ______________________.
+
+Objet : Apprentissage du diplôme de ______________________ (référence du programme).
+
+Durée : du __/__/____ au __/__/____ (X mois), à temps plein (35 h/semaine).
+
+Temps de travail : 3 jours en entreprise, 2 jours en formation chaque semaine.
+
+Rémunération : ___ % du SMIC (____ € brut mensuel) conformément à l’article L. 6222‑18 du Code du travail.
+
+Période d’essai : ___ semaines.
+
+Signature :
+
+____________________   ____________________   ____________________
+Employeur               Apprenti (ou représentant)   CFA
+Date : __/__/____
+```
+
+---
+
+## 7. Ressources utiles
+- **Ministère du Travail – Apprentissage** : https://travail-emploi.gouv.fr/apprentissage  
+- **Portail de la DREETS** (déclaration en ligne) : https://dreets.gouv.fr  
+- **Code du travail – Livre V, Chapitre 2** (articles L. 6222‑1 à L. 6222‑30)  
+- **Convention collective** applicable à votre secteur (vérifiez les dispositions spécifiques sur les apprentis).  
+
+---
+
+### En résumé
+1. Vérifiez l’éligibilité (âge, formation, durée).  
+2. Rédigez le contrat avec toutes les mentions obligatoires.  
+3. Effectuez la DPAE, déclarez le contrat à la DREETS et transmettez‑le au CFA.  
+4. Assurez le suivi (tutorat, entretiens, formation).  
+5. Respectez les obligations de rémunération et de temps de formation.
+
+N’hésitez pas à me préciser le secteur d’activité ou le diplôme visé si vous avez besoin d’exemples plus ciblés !",25.00,"Le candidat fournit une description très détaillée du contrat d’apprentissage, mais ne répond pas du tout aux consignes de l’answer idéal. Il ne mentionne pas la vérification de la date du contrat (avant le 1er mars 2025) ni l’appel à la maintenance, et il ne fait aucune référence à la fiche solution « Contrat d’apprentissage – secteur privé », ni aux paragraphes 3 et 4 indiqués dans l’answer idéal. Aucun élément fourni ne contredit l’answer idéal, mais les points clés requis sont absents. | Missing key points: Mise en garde si le contrat est antérieur au 1er mars 2025; Appel à la maintenance dans ce cas; Suivre la fiche solution « Contrat d’apprentissage – secteur privé » pour les contrats après le 01/03/2025; Paragraphes 3 : paramétrage de la catégorie salariale, retenues, rubriques de paie; Paragraphes 4 : fiche contrat, première paie"
+Mon formateur occasionnel va finalement travailler plus de 30 jours cette année. Comment puis-je régler cette situation ?,"Application des bases forfaitaires de cotisations possible uniquement pour formateurs occasionnels dont activité de formation ≤ 30 jours civils par année et par société.
+
+Si activité > 30 jours civils, obligation de procéder à une régularisation des cotisations sur l’ensemble des salaires de l’exercice.
+
+Procédure de régularisation expliquée au § 5 « Régularisation au-delà de 30 jours civils » de la fiche solution « Formateurs occasionnels ».
+
+Une seule façon de procéder : fonction d’annulation / paie rectificative du logiciel ( décrite dans le manuel de référence de sPAIEctacle).
+
+Conseil : faire sauvegarde du fichier avant cette manipulation.","En France, le statut de **formateur occasionnel** (ou « formateur non‑salarié ») est limité à **30 jours d’activité (ou 1 200 heures) par an**. Au‑delà de ce plafond, le formateur doit changer de cadre juridique : il ne peut plus être considéré comme « occasionnel » et doit donc être déclaré comme **formateur professionnel** (travailleur indépendant ou salarié selon le cas).  
+
+Voici les principales démarches à entreprendre pour régulariser la situation :
+
+---
+
+## 1. Vérifier le dépassement exact
+| Élément | Ce qu’il faut contrôler |
+|---------|------------------------|
+| Nombre de jours d’intervention | Comptabilisez chaque jour d’activité (présence sur site, déplacement, télé‑formation, etc.). |
+| Nombre d’heures facturées | Le seuil de 1 200 h/an est également pris en compte. |
+| Nature du contrat | Contrat de prestation, bon de commande, avenant, etc. |
+
+Si le total dépasse **30 jours** (ou 1 200 h), le statut d’« occasionnel » n’est plus valable.
+
+---
+
+## 2. Choisir le nouveau statut juridique
+
+| Option | Avantages | Inconvénients / obligations |
+|--------|-----------|-----------------------------|
+| **Micro‑entrepreneur (auto‑entrepreneur)** | Formalités simples, régime fiscal et social allégé, pas de TVA (sous seuil). | Plafond de chiffre d’affaires (72 k€ / 2024 pour les prestations de services). |
+| **Entreprise individuelle (EI) / EIRL** | Plus de souplesse (déduction des frais réels, possibilité de TVA). | Comptabilité plus lourde, cotisations sociales sur le bénéfice réel. |
+| **Société (EURL, SASU, etc.)** | Protection du patrimoine personnel, crédibilité auprès des grands clients. | Formalités de création, comptabilité complète, coûts de gestion. |
+| **Salarié (CDD, CDI, contrat de mission)** | Protection sociale complète, pas de gestion administrative de l’entreprise. | Nécessite que l’organisme le recrute comme salarié ; coût salarial plus élevé pour l’employeur. |
+
+Le choix dépendra de :
+
+* **Le volume prévisionnel d’activité** (si vous prévoyez de dépasser largement les 30 jours chaque année, un statut d’indépendant est généralement plus adapté).  
+* **Le niveau de frais professionnels** (déduction des frais réels vs abattement forfaitaire).  
+* **La relation avec l’organisme** (souhaite‑t‑il vous garder comme prestataire externe ou vous embaucher ?).  
+
+---
+
+## 3. Formalités à accomplir
+
+### a. Si vous optez pour le **statut d’indépendant** (micro‑entrepreneur ou EI)
+
+1. **Déclaration d’activité** auprès de l’URSSAF (site : [autoentrepreneur.urssaf.fr](https://autoentrepreneur.urssaf.fr) ou guichet‑entreprises.fr).  
+2. **Obtention d’un numéro SIREN** (automatique après inscription).  
+3. **Choix du régime fiscal** (micro‑BIC avec abattement 34 % ou régime réel).  
+4. **Affiliation à la sécurité sociale des indépendants** (ex‑RSI).  
+5. **Facturation** : mention obligatoire du numéro SIREN, du taux de TVA (si vous dépassez le seuil de franchise en base), du code NAF « 8559A – Formation continue d’adultes ».  
+6. **Déclarations sociales** : déclaration mensuelle ou trimestrielle du chiffre d’affaires (URSSAF).  
+7. **Déclaration de revenus** : formulaire 2042 C PRO (ou 2035 si régime réel).  
+
+### b. Si vous choisissez le **statut salarié**
+
+1. **Établir un contrat de travail** (CDD, CDI ou contrat de mission) conforme au Code du travail.  
+2. **Inscription à la mutuelle et à la prévoyance** de l’entreprise.  
+3. **Déclaration à l’URSSAF** par l’employeur (cotisations patronales et salariales).  
+4. **Gestion des congés, du temps de travail, du bulletin de paie**.  
+
+---
+
+## 4. Informer les parties prenantes
+
+| Qui doit être informé | Comment le faire |
+|-----------------------|------------------|
+| **Le formateur** | Envoyez‑lui un courrier ou un e‑mail expliquant le dépassement du seuil, les conséquences légales et les options de statut. Proposez‑lui de choisir le statut qui lui convient le mieux. |
+| **Le service juridique / RH de votre organisme** | Transmettez le même message, ajoutez les impacts sur la comptabilité (facturation, TVA, cotisations). |
+| **L’URSSAF / la caisse de retraite** | Si le formateur passe en statut d’indépendant, il devra s’inscrire lui‑même ; vous pouvez l’accompagner en lui fournissant les coordonnées du guichet‑entreprises. |
+| **Le comptable** | Vérifiez que les factures seront émises correctement (mention du SIREN, TVA le cas échéant, code NAF). |
+
+---
+
+## 5. Points de vigilance
+
+| Risque | Conséquence | Mesure préventive |
+|--------|-------------|-------------------|
+| **Non‑déclaration du dépassement** | Redressement URSSAF, pénalités (jusqu’à 50 % du montant des cotisations dues). | Faire le point dès que le 31ᵉ jour est atteint. |
+| **Facturation sans numéro SIREN** | Facture non conforme, refus de paiement, risque de requalification en travail dissimulé. | Vérifier que le formateur possède bien son SIREN avant d’émettre la facture. |
+| **Mauvais choix de régime fiscal** | Sur‑ou sous‑imposition, perte d’avantages (ex. TVA récupérable). | Simuler les deux régimes (micro‑BIC vs réel) avec un expert‑comptable. |
+| **Absence de contrat écrit** | Litiges sur les conditions de travail, les tarifs, la responsabilité. | Formaliser chaque mission par un contrat de prestation ou un avenant. |
+
+---
+
+## 6. Modèle de courrier à adresser au formateur
+
+> **Objet : Régularisation de votre statut de formateur occasionnel**  
+>  
+> Madame / Monsieur [Nom],  
+>  
+> Nous vous remercions pour votre collaboration au cours de l’année 2026. À ce jour, le nombre de jours d’intervention que vous avez réalisés dépasse le seuil de 30 jours autorisé au titre du statut de **formateur occasionnel**. Conformément à la législation en vigueur (article L. 6325‑1 du Code du travail), ce dépassement implique que vous devez désormais exercer sous un statut d’indépendant ou être recruté comme salarié.  
+>  
+> Nous vous proposons les options suivantes :  
+> 1. **Création d’un statut d’indépendant** (micro‑entrepreneur ou entreprise individuelle). Vous pourrez ainsi facturer vos prestations en toute conformité.  
+> 2. **Intégration en tant que salarié** (CDD ou CDI) au sein de notre organisme.  
+>  
+> Nous restons à votre disposition pour vous accompagner dans les démarches administratives (inscription à l’URSSAF, rédaction du contrat, etc.). Merci de nous faire part de votre choix d’ici le [date limite, ex. 15 mars 2026] afin que nous puissions mettre à jour nos documents contractuels.  
+>  
+> Cordialement,  
+>  
+> [Nom du responsable]  
+> [Fonction]  
+> [Coordonnées]  
+
+---
+
+## 7. Ressources utiles
+
+| Ressource | Lien |
+|-----------|------|
+| **URSSAF – Formateur occasionnel** | <https://www.urssaf.fr/portail/home/independant/activites-reglementees/formateur-occasionnel.html> |
+| **Guichet‑entreprises – Création d’une micro‑entreprise** | <https://www.guichet-entreprises.fr> |
+| **Service‑public.fr – Définition du statut de formateur** | <https://www.service-public.fr/particuliers/vosdroits/F32171> |
+| **Impots.gouv.fr – Régime micro‑BIC** | <https://www.impots.gouv.fr/portail/particulier/auto-entrepreneur> |
+| **Pôle Emploi – Aide à la création d’entreprise** | <https://www.pole-emploi.fr> |
+
+---
+
+### En résumé
+1. **Constater le dépassement** (30 jours / 1 200 h).  
+2. **Choisir le nouveau statut** (indépendant ou salarié) en fonction du volume d’activité et des préférences du formateur.  
+3. **Accomplir les formalités** (déclaration à l’URSSAF, création de micro‑entreprise, ou rédaction d’un contrat de travail).  
+4. **Informer toutes les parties** (formateur, service RH, comptable).  
+5. **Mettre à jour la facturation et la comptabilité** pour être en conformité avec la législation fiscale et sociale.
+
+En suivant ces étapes, vous régularisez la situation et évitez tout risque de redressement ou de litige. N’hésitez pas à consulter un expert‑comptable ou un avocat spécialisé en droit du travail si vous avez besoin d’un accompagnement personnalisé.",25.00,"The answer mentions the 30‑day threshold but completely misses the required regularisation of contributions, the reference to the §5 procedure, the specific corrective payroll function in sPAIEctacle, and the backup recommendation. Moreover, it contradicts the ideal answer by stating that the trainer must change legal status to a professional, which is not required for regularisation. | Key points present: Threshold of 30 days for occasional trainer status | Missing key points: Obligation to regularise contributions on all salaries when activity exceeds 30 days; Reference to §5 ""Régularisation au-delà de 30 jours civils"" of the solution sheet; Only method: use cancellation / corrective payroll function in the software; Advice to back up the file before manipulation | Contradictions: Claims the trainer must change to a professional status (independent or salaried) instead of simply regularising contributions; Introduces a 1 200‑hour threshold not mentioned in the ideal answer"
