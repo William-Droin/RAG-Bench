@@ -36,6 +36,7 @@ class JudgeResult:
 class Config:
     input_csv: str
     output_dir: str
+    embedding_model: str
     target_base_url: str
     target_api_key: str
     target_model: str
@@ -98,9 +99,20 @@ def _env_float(name: str, default: float) -> float:
         raise BenchmarkError(f"{name} must be a valid number, got: {value}") from exc
 
 
+def _model_name_suffix(model_name: str) -> str:
+    if not model_name:
+        return "unknown"
+    return model_name.split("/")[-1].strip() or "unknown"
+
+
+def _safe_filename_part(value: str) -> str:
+    return re.sub(r"[^A-Za-z0-9._-]+", "-", value).strip("-") or "unknown"
+
+
 def load_config() -> Config:
     input_csv = os.getenv("INPUT_CSV", "data/input/example_qa.csv")
     output_dir = os.getenv("OUTPUT_DIR", "data/output")
+    embedding_model = os.getenv("EMBEDDING_MODEL", "")
     target_base_url = os.getenv("TARGET_BASE_URL", "https://api.openai.com")
     target_api_key = os.getenv("TARGET_API_KEY", "")
     target_model = os.getenv("TARGET_MODEL", "")
@@ -111,6 +123,7 @@ def load_config() -> Config:
     cfg = Config(
         input_csv=input_csv,
         output_dir=output_dir,
+        embedding_model=embedding_model,
         target_base_url=target_base_url,
         target_api_key=target_api_key,
         target_model=target_model,
@@ -289,12 +302,14 @@ def judge_answer(
     return JudgeResult(grade=grade, notes=merged_notes or "No notes provided by judge.")
 
 
-def write_results_csv(rows: List[Dict[str, str]], output_dir: str) -> Path:
+def write_results_csv(rows: List[Dict[str, str]], output_dir: str, cfg: Config) -> Path:
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_path = out_dir / f"benchmark_run_{timestamp}.csv"
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    embedding_name = _safe_filename_part(_model_name_suffix(cfg.embedding_model))
+    llm_name = _safe_filename_part(_model_name_suffix(cfg.target_model))
+    output_path = out_dir / f"{timestamp}__embed-{embedding_name}__llm-{llm_name}.csv"
 
     with output_path.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=OUTPUT_COLUMNS)
@@ -381,7 +396,7 @@ def run() -> int:
             }
         )
 
-    result_path = write_results_csv(output_rows, cfg.output_dir)
+    result_path = write_results_csv(output_rows, cfg.output_dir, cfg)
 
     grades = [float(r["Judge Grade"]) for r in output_rows]
     avg_grade = sum(grades) / len(grades)

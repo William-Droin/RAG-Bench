@@ -38,6 +38,7 @@ cp .env.example .env
 
 Required env vars:
 - `INPUT_CSV`
+- `EMBEDDING_MODEL` (used in the output filename)
 - `TARGET_BASE_URL`
 - `TARGET_API_KEY`
 - `TARGET_MODEL`
@@ -77,7 +78,7 @@ python src/benchmark.py
 Each run writes a CSV file named like:
 
 ```text
-data/output/benchmark_run_YYYYMMDD_HHMMSS.csv
+data/output/YYYY-MM-DD_HH-MM-SS__embed-embedding-model__llm-llm-model.csv
 ```
 
 Columns in output:
