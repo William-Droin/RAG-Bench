@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import csv
 import json
 import os
@@ -37,6 +38,7 @@ class Config:
     input_csv: str
     output_dir: str
     embedding_model: str
+    max_workers: int
     target_base_url: str
     target_api_key: str
     target_model: str
@@ -99,6 +101,19 @@ def _env_float(name: str, default: float) -> float:
         raise BenchmarkError(f"{name} must be a valid number, got: {value}") from exc
 
 
+def _env_int(name: str, default: int) -> int:
+    value = os.getenv(name)
+    if value is None or value.strip() == "":
+        return default
+    try:
+        parsed = int(value)
+    except ValueError as exc:
+        raise BenchmarkError(f"{name} must be a valid integer, got: {value}") from exc
+    if parsed < 1:
+        raise BenchmarkError(f"{name} must be at least 1, got: {parsed}")
+    return parsed
+
+
 def _model_name_suffix(model_name: str) -> str:
     if not model_name:
         return "unknown"
@@ -124,6 +139,7 @@ def load_config() -> Config:
         input_csv=input_csv,
         output_dir=output_dir,
         embedding_model=embedding_model,
+        max_workers=_env_int("MAX_WORKERS", 5),
         target_base_url=target_base_url,
         target_api_key=target_api_key,
         target_model=target_model,
@@ -339,7 +355,7 @@ def _read_result_csv(path: Path) -> List[Dict[str, str]]:
 
 def write_viewer_data(output_dir: str, viewer_data_js: str) -> Path:
     out_dir = Path(output_dir)
-    files = sorted(out_dir.glob("benchmark_run_*.csv"))
+    files = sorted(out_dir.glob("*.csv"))
     all_rows: List[Dict[str, str]] = []
     for file_path in files:
         all_rows.extend(_read_result_csv(file_path))
@@ -353,6 +369,44 @@ def write_viewer_data(output_dir: str, viewer_data_js: str) -> Path:
     return target
 
 
+def process_question(
+    index: int,
+    qa: Dict[str, str],
+    cfg: Config,
+    target_client: OpenAICompatibleClient,
+    judge_client: OpenAICompatibleClient,
+) -> tuple[int, Dict[str, str]]:
+    question = qa["Question"]
+    ideal = qa["Answer"]
+
+    llm_answer = generate_answer(
+        client=target_client,
+        model=cfg.target_model,
+        question=question,
+        temperature=cfg.target_temperature,
+    )
+
+    judge = judge_answer(
+        client=judge_client,
+        model=cfg.judge_model,
+        question=question,
+        ideal_answer=ideal,
+        llm_answer=llm_answer,
+        temperature=cfg.judge_temperature,
+    )
+
+    return (
+        index,
+        {
+            "Question": question,
+            "Ideal Response": ideal,
+            "LLM Answer": llm_answer,
+            "Judge Grade": f"{judge.grade:.2f}",
+            "Judge Notes": judge.notes,
+        },
+    )
+
+
 def run() -> int:
     load_dotenv()
     cfg = load_config()
@@ -362,46 +416,30 @@ def run() -> int:
     target_client = OpenAICompatibleClient(cfg.target_base_url, cfg.target_api_key)
     judge_client = OpenAICompatibleClient(cfg.judge_base_url, cfg.judge_api_key)
 
-    output_rows: List[Dict[str, str]] = []
+    output_rows: List[Optional[Dict[str, str]]] = [None] * len(qa_rows)
 
-    for idx, qa in enumerate(qa_rows, start=1):
-        question = qa["Question"]
-        ideal = qa["Answer"]
+    with ThreadPoolExecutor(max_workers=cfg.max_workers) as executor:
+        futures = [
+            executor.submit(process_question, index, qa, cfg, target_client, judge_client)
+            for index, qa in enumerate(qa_rows)
+        ]
 
-        print(f"[{idx}/{len(qa_rows)}] Generating answer...")
-        llm_answer = generate_answer(
-            client=target_client,
-            model=cfg.target_model,
-            question=question,
-            temperature=cfg.target_temperature,
-        )
+        completed = 0
+        total = len(futures)
+        for future in as_completed(futures):
+            index, row = future.result()
+            output_rows[index] = row
+            completed += 1
+            print(f"[{completed}/{total}] Completed question {index + 1}")
 
-        print(f"[{idx}/{len(qa_rows)}] Judging answer...")
-        judge = judge_answer(
-            client=judge_client,
-            model=cfg.judge_model,
-            question=question,
-            ideal_answer=ideal,
-            llm_answer=llm_answer,
-            temperature=cfg.judge_temperature,
-        )
+    ordered_output_rows = [row for row in output_rows if row is not None]
 
-        output_rows.append(
-            {
-                "Question": question,
-                "Ideal Response": ideal,
-                "LLM Answer": llm_answer,
-                "Judge Grade": f"{judge.grade:.2f}",
-                "Judge Notes": judge.notes,
-            }
-        )
+    result_path = write_results_csv(ordered_output_rows, cfg.output_dir, cfg)
 
-    result_path = write_results_csv(output_rows, cfg.output_dir, cfg)
-
-    grades = [float(r["Judge Grade"]) for r in output_rows]
+    grades = [float(r["Judge Grade"]) for r in ordered_output_rows]
     avg_grade = sum(grades) / len(grades)
 
-    print(f"\nCompleted {len(output_rows)} rows")
+    print(f"\nCompleted {len(ordered_output_rows)} rows")
     print(f"Average Judge Grade: {avg_grade:.2f}")
     print(f"Results written to: {result_path}")
     viewer_data = write_viewer_data(cfg.output_dir, cfg.viewer_data_js)

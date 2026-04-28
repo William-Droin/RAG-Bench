@@ -1,0 +1,195 @@
+Question,Ideal Response,LLM Answer,Judge Grade,Judge Notes
+Quelles sont les différences entre la paie d’un salarié fiscalement français et celle d’un fiscalement étranger ?,"Trois différences entre fiscalement français et fiscalement étranger.
+Le fiscalement étranger : 
+ne cotise pas à la CSG ni à la CRDS
+n’est pas soumis au Prélèvement à la source mais est soumis, sauf exonération particulière, à une retenue à la source (si prestation en France)
+est redevable d’une assurance maladie supplémentaire (taux variable selon si artiste ou non-artiste).","**Principales différences entre la paie d’un salarié « fiscalement français » et celle d’un salarié « fiscalement étranger » :**
+
+| **Élément** | **Salarié fiscalement français** | **Salarié fiscalement étranger** |
+|-------------|----------------------------------|-----------------------------------|
+| **Cotisations de Sécurité sociale (maladie, retraite, chômage, retraite complémentaire, etc.)** | Toutes dues de façon classique. | Elles restent normalement dues : cotisations de sécurité sociale, chômage, retraite complémentaire, formation continue, médecine du travail, etc. |
+| **CSG / CRDS** | Cotisation obligatoire (CSG + CRDS). | **Pas de cotisation à la CSG et à la CRDS** (articles L131‑9 et D.242‑3 du Code de la Sécurité Sociale). |
+| **Prélèvement à la source (PAS)** | Soumis au prélèvement à la source (PAS) : impôt prélevé directement sur le salaire. | **Soumis, sauf exonération particulière, à une retenue à la source** si la prestation a lieu en France. Certaines conventions fiscales peuvent exonérer le salarié. |
+| **Assurance maladie supplémentaire** | Aucun supplément obligatoire lié à l’absence de CSG/CRDS. | **Obligation d’une assurance maladie supplémentaire** pour compenser l’absence de CSG/CRDS. <br>• Artistes : taux 3,85 % (code DUCS 286D). <br>• Non‑artistes : taux 5,50 % (code DUCS 206D). |
+| **Convention collective** | Appliquée selon le secteur et l’entreprise. | Identique : le salarié bénéficie des dispositions de la convention collective de l’employeur. |
+
+**En résumé**  
+Les salariés fiscalement étrangers ont très peu de différences de paie par rapport aux salariés fiscaux français : les cotisations sociales restent les mêmes, mais ils ne paient ni CSG ni CRDS, ils sont soumis (ou exemptés, selon les conventions) à la retenue à la source, et ils doivent souscrire à une assurance maladie supplémentaire (3,85 % ou 5,50 % selon le statut). Toutes les autres obligations (convention collective, cotisations normales, etc.) sont identiques.",1.00,"The candidate answer covers all three key differences listed in the ideal answer and does not contain any contradictions. Extra details are provided but do not conflict with the required points. | Key points present: Le salarié fiscalement étranger ne cotise pas à la CSG ni à la CRDS.; Il n’est pas soumis au prélèvement à la source mais, sauf exonération particulière, est soumis à une retenue à la source si la prestation est en France.; Il est redevable d’une assurance maladie supplémentaire, avec un taux variable selon qu’il soit artiste ou non‑artiste."
+Quelles sont les différences entre la paie d’un salarié fiscalement français et celle d’un fiscalement étranger ? Et si ce salarié me fournit un formulaire A1 ?,"Trois différences entre fiscalement français et fiscalement étranger.
+Le fiscalement étranger : 
+ne cotise pas à la CSG ni à la CRDS
+n’est pas soumis au Prélèvement à la source mais est soumis, sauf exonération particulière, à une retenue à la source (si prestation en France)
+est redevable d’une assurance maladie supplémentaire (taux variable selon si artiste ou non-artiste).
+
+Si fiscalement étranger fournit formulaire A1 alors exonération :
+de cotisations de sécurité sociale, 
+de retraite complémentaire, 
+de chômage, 
+de taxe sur les salaires,
+de taxe d’apprentissage,
+de médecine du travail.
+
+Restent dues : 
+
+Financement du paritarisme,
+AGS,
+Congés spectacles (sauf si caisse identique dans le pays d’origine),
+Formation continue (part principale et conventionnelle),
+Retenues d’origine conventionnelle (si employeur assujetti),
+Retenue à la source (sauf si exonération par convention fiscale).","**Différences entre la paie d’un salarié fiscalement français et celle d’un salarié fiscalement étranger**
+
+- **Cotisations sociales de base** – Les deux catégories paient les mêmes cotisations de sécurité sociale, de chômage, de retraite complémentaire, de congés spectacles, de formation continue, de médecine du travail, etc. (voir *« Peu de différences avec la paie d’un fiscalement français »*).
+
+- **CSG / CRDS** – Le salarié fiscalement étranger **ne cotise ni à la CSG ni à la CRDS** alors que le salarié fiscalement français y est soumis (doc la‑paie‑des‑salariés‑fiscalement‑étrangers, § 3.1).
+
+- **Retenue à la source** – Le salarié fiscalement étranger est **soumis à la retenue à la source** (sauf exemption prévue par une convention fiscale) alors que le salarié fiscalement français n’est pas concerné par cette retenue (cf. même section).
+
+- **Assurance maladie supplémentaire** – Parce qu’il n’est pas assujetti à la CSG/CRDS, le salarié étranger doit payer une **assurance maladie supplémentaire** :
+  - Artistes : 3,85 % (code DUCS 286D)  
+  - Non‑artistes : 5,50 % (code DUCS 206D) (doc la‑paie‑des‑salariés‑fiscalement‑étrangers, § 3.1).
+
+- **Fiscalité** – La différence principale se situe donc au niveau fiscal (CSG/CRDS, prélèvement à la source, assurance maladie supplémentaire) alors que les cotisations sociales restent globalement les mêmes.
+
+---
+
+**Situation lorsqu’un salarié fournit un formulaire A1**
+
+- Le formulaire A1 **exonère l’employeur français** du paiement des cotisations suivantes :
+  - Sécurité sociale  
+  - Retraite complémentaire  
+  - Chômage  
+  - Taxe sur les salaires  
+  - Taxe d’apprentissage  
+  - Médecine du travail (doc formulaire‑a1‑et‑assimiles, § 1).
+
+- **Cotisations restant dues** malgré l’A1 :
+  - Financement du paritarisme  
+  - AGS (Association pour la gestion du régime de garantie des créances des salariés)  
+  - Congés spectacles (sauf caisse identique dans le pays d’origine)  
+  - Formation continue (part principale et part conventionnelle)  
+  - Retenues d’origine conventionnelle si l’employeur y est assujetti (ex. FNAS/FCAP, CASC SVP…)  
+  - Retenue à la source (sauf convention fiscale spécifique) (doc formulaire‑a1‑et‑assimiles, § 1).
+
+- **Obligation de preuve** – En cas de contrôle URSSAF, l’employeur doit **produire le formulaire A1 couvrant la période d’emploi** comme preuve de l’exonération (ibid.).
+
+En résumé, la paie d’un salarié fiscalement étranger diffère surtout sur le plan de la CSG/CRDS, de la retenue à la source et de l’assurance maladie supplémentaire. Lorsqu’un salarié présente un formulaire A1, l’employeur est exonéré de la plupart des cotisations sociales habituelles, ne restant redevable que des cotisations listées ci‑dessus et doit conserver le formulaire comme justificatif.",1.00,"The candidate answer covers all 15 key points from the ideal answer without contradictions. Extra details are present but do not conflict with the required information. | Key points present: ne cotise pas à la CSG ni à la CRDS; n’est pas soumis au Prélèvement à la source mais est soumis, sauf exonération particulière, à une retenue à la source (si prestation en France); est redevable d’une assurance maladie supplémentaire (taux variable selon si artiste ou non-artiste); exonération de cotisations de sécurité sociale (via formulaire A1); exonération de retraite complémentaire (via formulaire A1)"
+Peux-tu m’aider à paramétrer le contrat d’un apprenti ?,"Éventuelle mise en garde si le contrat est ancien (avant le 1er mars 2025) -> appel maintenance
+
+Si contrat apprenti débute après le 01/03/2025, suivre fiche solution « Contrat d’apprentissage – secteur privé » : 
+paragraphe 3 pour le paramétrage de :
+catégorie salariale
+retenues
+rubriques de paies
+paragraphe 4 pour 
+fiche contrat
+première paie","Je ne dispose pas du texte complet des documents récupérés ; je ne peux donc pas vous fournir les instructions détaillées de paramétrage du contrat d’apprentissage à partir du contexte fourni. Si vous pouvez me transmettre les passages pertinents du document « 2. Paramétrage du contrat » ou d’un autre texte contenant les étapes à suivre, je pourrai alors vous aider de façon précise.",0.00,"The candidate answer does not address any of the key points from the ideal answer and instead claims lack of information, which contradicts the provided solution steps. | Missing key points: Warn if the contract is older than 1 March 2025 (maintenance call).; If the apprenticeship contract starts after 01/03/2025, follow the solution sheet ""Contrat d’apprentissage – secteur privé"".; Paragraph 3: configure salary category, deductions, and payroll items.; Paragraph 4: handle contract sheet and first payroll. | Contradictions: The candidate states they cannot provide instructions due to missing documents, whereas the ideal answer supplies the required configuration steps."
+Mon formateur occasionnel va finalement travailler plus de 30 jours cette année. Comment puis-je régler cette situation ?,"Application des bases forfaitaires de cotisations possible uniquement pour formateurs occasionnels dont activité de formation ≤ 30 jours civils par année et par société.
+
+Si activité > 30 jours civils, obligation de procéder à une régularisation des cotisations sur l’ensemble des salaires de l’exercice.
+
+Procédure de régularisation expliquée au § 5 « Régularisation au-delà de 30 jours civils » de la fiche solution « Formateurs occasionnels ».
+
+Une seule façon de procéder : fonction d’annulation / paie rectificative du logiciel ( décrite dans le manuel de référence de sPAIEctacle).
+
+Conseil : faire sauvegarde du fichier avant cette manipulation.","Le statut de **formateur occasionnel** ne permet de travailler que **30 jours civils maximum** par année et par organisme de formation (voir le rappel législatif : « le formateur occasionnel est attribué … à raison d’un maximum de 30 jours civils par année »).
+
+Si votre formateur dépasse ce plafond, il faut **modifier son statut contractual‑type** :
+
+1. **Cesser le contrat de formateur occasionnel** dès que le nombre de jours atteint 30 jours.  
+2. **Reclasser le formateur** sous un autre type de contrat conforme à la législation :  
+   - un **CDD d’usage** (ou un CDD classique) ;  
+   - un **contrat à durée indéterminée intermittent (CDII)** si l’activité est récurrente mais ponctuelle ;  
+   - ou tout autre contrat prévu par la convention collective applicable à votre structure.  
+
+En pratique, il faut :
+- mettre à jour la fiche Contrat du formateur (section 4.2 « La fiche Contrat ») en choisissant la nouvelle profession et le type de contrat adéquat ;  
+- procéder aux formalités d’embauche (déclaration DPAE, etc.) comme pour tout salarié ;  
+- appliquer la rémunération et les obligations (prime de précarité, congés, etc.) correspondant au nouveau contrat.
+
+En résumé, le dépassement du seuil de 30 jours implique la **rupture du statut de formateur occasionnel** et la **requalification du lien de travail** sous un contrat salarié (CDD d’usage, CDII, CDI, etc.) conforme aux règles légales et à la convention collective de votre organisme.",0.20,"The answer only mentions the 30‑day limit for occasional trainers, which matches the first key point of the ideal answer. It omits the required regularisation of contributions, the reference to the §5 procedure, the specific software cancellation/rectificative payroll method, and the backup advice. Moreover, it contradicts the ideal solution by recommending contract termination and re‑classification, which is not prescribed. | Key points present: Maximum 30 civil days per year for occasional trainers | Missing key points: Obligation to regularise contributions on all salaries if activity exceeds 30 days; Reference to §5 ""Régularisation au-delà de 30 jours civils"" of the solution sheet; Use of the cancellation function / corrective payroll in the software as the sole method; Advice to back up the file before performing the manipulation | Contradictions: Suggests terminating the occasional trainer contract and re‑classifying under a different contract type, which contradicts the ideal answer that recommends a payroll regularisation, not a contract change."
+A quoi sert la case « CDD d’usage par défaut » dans la profession ?,La coche de l’option « CDD d'usage par défaut » de la fiche profession permet de renseigner automatiquement le « Motif CDD » avec la valeur « CDD d'usage » à l’ajout d’une fiche contrat de type CDD utilisant cette profession.,"Dans la fiche **Profession**, la case **« CDD d’usage par défaut »** sert à définir le motif qui sera automatiquement attribué aux contrats de type CDD créés pour cette profession :
+
+- **Quand la case est cochée**, à chaque ajout d’une fiche **Contrat** (saisie manuelle ou import de paie sur un nouveau contrat), le champ **Motif CDD** est pré‑rempli avec la valeur **« CDD d’usage »**.  
+- Ainsi, l’utilisateur n’a plus à sélectionner manuellement ce motif ; il est appliqué par défaut pour tous les CDD liés à cette profession.  
+
+Cette option permet donc de gagner du temps et d’assurer la cohérence du motif de recours au CDD lorsqu’il s’agit d’un CDD d’usage.",1.00,"The answer includes all essential points from the ideal answer and adds useful clarification without contradictions. | Key points present: Option is a checkbox on the profession sheet; Automatically fills the ""Motif CDD"" field; Fills it with the value ""CDD d'usage""; Occurs when adding a CDD contract that uses this profession"
+Comment faire une attestation Assedic permanent (FCTU) depuis le logiciel ?,"possibilité de faire un export FCTU pour un seul ou plusieurs contrats
+les contrats doivent être terminés et toutes les paies réalisées
+sélection les contrats à déclarer depuis liste des contrats ou liste des paies
+click sur icone « imprimante » et choix « Attestation employeur pôle emploi »
+menu déroulant positionné sur « DSN Fin de contrat (FCTU) »
+remarque : 3 types de fichiers possibles : réel, test ou annule et remplace
+2 options dans zone « données fin de contrat » : récupération des infos renseignés dans la fiche contrat (affectation automatique) ou saisie des informations reportées alors dans tous les contrats sélectionnés
+Contrôle de cohérence automatique et éventuel affichage de la liste des anomalies à corriger avant l’export
+si plus d’erreurs, le fichier DSN se génère
+fichier généré dans fenêtre « gestion des exports »
+onglets reprenant les principales informations du fichier
+possibilité d’éditer une édition de contrôle
+click sur bouton « transmettre » pour un dépôt automatisé sur net-entreprises en machine to machine (MtoM)
+notification lorsque l’attestation rematérialisée par pôle emploi (=France travail) est disponible
+click sur « afficher les contrats » depuis notification renvoie vers la fiche contrat
+attestation PDF téléchargeable dans l’onglet « contrat » de la fiche contrat
+envoi possible de l’attestation vers transat via l’icône « imprimante » de la liste des contrats : « envoi des AE pôle emploi vers transat »
+signature intégrée dans le PDF en cas d’envoi sur transat
+nb : colonne AE de la liste des contrats permet de suivre l’état de l’attestation : 
+P = DSN générée
+x = AE rematérialisée (AER) reçue
+Tr. = AER transmise vers transat","**Attestation Assedic permanent (DSN FCTU) dans sPAIEctacle – procédure**
+
+1. **Vérifier que le contrat est clôturé**  
+   - La case **« Contrat terminé »** doit être cochée dans la fiche du contrat (ou la fiche de paie). Sans cette indication le fichier FCTU ne peut pas être généré.
+
+2. **Accéder à la fonction de génération**  
+   - Depuis la **liste des Contrats** ou la **liste des Paies**, cliquer sur l’icône **imprimante**.  
+   - Le menu qui s’ouvre propose **« Attestation Employeur France Travail »**.
+
+3. **Choisir le type de fichier**  
+   - Dans le premier menu déroulant sélectionner **« DSN Fin de contrat (FCTU) »** (au lieu de l’AED EDI qui est obsolète).  
+   - Vous pouvez ensuite choisir le type de génération :  
+     - **Fichier réel** (déclaration officielle)  
+     - **Fichier test** (pour vérification)  
+     - **Fichier « Annule et remplace »** (si vous devez remplacer une attestation précédente ; le numéro d’ordre à annuler est pré‑rempli mais modifiable).
+
+4. **Vérifier et compléter les données de fin de contrat**  
+   - Si les informations de fin de contrat ont déjà été saisies dans la fiche Contrat, elles sont automatiquement reprises.  
+   - Sinon, vous pouvez les saisir/modifier dans la fenêtre qui s’affiche; ces informations seront alors enregistrées dans la fiche Contrat.
+
+5. **Gestion des anomalies**  
+   - Un contrôle de cohérence s’exécute automatiquement.  
+   - Si une **« Liste des anomalies »** apparaît :  
+     - Double‑cliquer sur chaque anomalie pour corriger les fiches concernées.  
+     - Cliquer sur **« Valider les corrections »** pour prendre en compte les modifications.  
+   - Les anomalies bloquantes sont signalées par **!!** ; les non bloquantes par **~**.
+
+6. **Générer le fichier**  
+   - Une fois toutes les anomalies bloquantes corrigées, cliquer sur **OK**.  
+   - Le fichier DSN FCTU est alors créé et stocké dans **Gestion des exports** (menu *États > Gestion des exports*).
+
+7. **Suivi du dépôt (optionnel)**  
+   - Si vous avez configuré le **dépot automatisé “Machine‑to‑Machine”**, le fichier sera transmis à net‑entreprises et vous pourrez suivre les bilans (OK/KO/Anomalie) dans l’onglet **Retours** une fois le dépôt effectué.
+
+---
+
+**Rappel** : depuis le 1 janvier 2022, le signalement **DSN Fin de Contrat (FCTU)** remplace l’AED. L’attestation ainsi générée doit être remise au salarié (CDI ou CDD, hors intermittent) à la fin du contrat, afin qu’il puisse faire valoir ses droits aux allocations chômage.  
+
+Ces étapes sont exactement celles décrites dans la documentation *Attestation Employeur France Travail (DSN FCTU)* de sPAIEctacle.",0.53,"The answer covers many core steps (contract termination, selection from contract/pay list, printer icon, DSN FCTU selection, file type options, data completion, anomaly handling, file generation, storage in Gestion des exports, and optional M2M transmission). It omits several points such as the ability to export for multiple contracts, detailed file tabs, control edition editing, notification of rematerialized attestation, navigation from notification, PDF download location, sending to Transat, signature integration, and the AE column status tracking. | Key points present: Contracts must be terminated and all pays realized; Select contracts to declare from contract list or pay list; Click on printer icon and choose Attestation Employeur France Travail; Dropdown set to DSN Fin de contrat (FCTU); Three file types possible: real, test, cancel and replace | Missing key points: Possibility to export FCTU for a single or multiple contracts; Tabs showing the main information of the generated file; Option to edit a control edition; Notification when the rematerialized attestation is available; Click ""afficher les contrats"" from the notification to go to the contract sheet"
+Que signifient les puces de couleurs des pense-bêtes ?,"Des puces de couleurs permettent d'identifier facilement les fiches arrivées à échéance.
+Vert : date d'Échéance atteinte, pas de Rappel demandé
+Orange : date de Rappel atteinte
+Rouge : date d'Échéance atteinte, date de Rappel non atteinte
+Noir : option OK cochée","Les puces de couleur permettent d’identifier rapidement l’état d’une fiche pense‑bêtes :
+
+- **Vert** : la date d’*échéance* est atteinte et aucun *rappel* n’a été demandé.  
+- **Orange** : la date de *rappel* est atteinte.  
+- **Rouge** : la date d’*échéance* est atteinte, mais la date de *rappel* n’est pas encore atteinte.  
+- **Noir** : l’option *OK* a été cochée.",1.00,"The answer includes all key points from the ideal answer with accurate descriptions and no contradictions. | Key points present: General statement that colored bullets identify the status of notes; Vert: deadline reached, no reminder requested; Orange: reminder date reached; Rouge: deadline reached, reminder not reached; Noir: OK option checked"
+Que signifient le X vert de la colonne État civil ?,"X vert signifie que toutes les infos d’état civil attendues sont renseignées.
+Les données déclaratives obligatoires sont : 
+civilité
+adresse
+ville
+date et le lieu de naissance (pour les salariés né en France) ou le pays de naissance (si le département de naissance est égal à 99) ainsi que le département de naissance si le NIR est incomplet.","Dans la liste des salariés, la colonne **État civil (EC)** indique le statut de complétude des informations obligatoires :  
+
+- **X** (souvent affiché en vert) signifie que **toutes les informations attendues sont renseignées** ; le dossier d’état civil du salarié est complet.  
+
+(Le même tableau précise que : AR = demande en cours, KO = informations manquantes et aucune demande.)",0.17,"The answer correctly explains that a green X indicates all required civil status information is filled, but it omits the list of mandatory declarative data required for the status. | Key points present: X vert signifie que toutes les informations attendues sont renseignées | Missing key points: civilité; adresse; ville; date et le lieu de naissance (ou le pays de naissance si le département de naissance est 99); département de naissance si le NIR est incomplet"

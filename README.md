@@ -46,6 +46,7 @@ Required env vars:
 - `JUDGE_API_KEY` (optional; defaults to target)
 - `JUDGE_MODEL`
 - `OUTPUT_DIR` (optional)
+- `MAX_WORKERS` (optional; default `5`)
 - `VIEWER_DATA_JS` (optional; default `viewer/results_data.js`)
 - `TARGET_TEMPERATURE` (optional; default `0`)
 - `JUDGE_TEMPERATURE` (optional; default `0`)

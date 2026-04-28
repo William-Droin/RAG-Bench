@@ -1,0 +1,1041 @@
+Question,Ideal Response,LLM Answer,Judge Grade,Judge Notes
+Quelles sont les différences entre la paie d’un salarié fiscalement français et celle d’un fiscalement étranger ?,"Trois différences entre fiscalement français et fiscalement étranger.
+Le fiscalement étranger : 
+ne cotise pas à la CSG ni à la CRDS
+n’est pas soumis au Prélèvement à la source mais est soumis, sauf exonération particulière, à une retenue à la source (si prestation en France)
+est redevable d’une assurance maladie supplémentaire (taux variable selon si artiste ou non-artiste).","**Différences relevées dans le contexte fourni entre la paie d’un salarié « fiscalement français » et celle d’un salarié « fiscalement étranger »**
+
+| Aspect | Salarié fiscalement français | Salarié fiscalement étranger |
+|--------|------------------------------|------------------------------|
+| **Statut fiscal indiqué dans la fiche salarié** | Le menu déroulant *Fiscalité* indique « Métropole » (ou l’une des collectivités : RE, GP, MQ, GF, YT). | Le menu déroulant *Fiscalité* indique « Étranger ». Depuis la version 7 de sPAIEctacle (oct. 2018) le choix se fait dans ce menu. |
+| **Adresse et pays de résidence** | L’adresse est renseignée avec un code postal français à 5 chiffres. | Il faut saisir le **pays** (et le code pays officiel) et le **code postal** ne suit plus la forme française ; il n’est possible que si le pays étranger est indiqué. |
+| **Département de naissance** | Saisi normalement (01 à 95, 2 A, 2 B, etc.). | Le département doit être renseigné à **« 99 »** lorsque la naissance n’a pas eu lieu en France. |
+| **Numéro de sécurité sociale (NIR)** | Complété selon le format français complet (13 chiffres + clé). | • Si le salarié possède un NIR français, il est indiqué ; sinon, **aucun NIR ne doit être complété après le « 99 » du département**.<br>• Depuis la version 7.2 (oct. 2019), il n’est plus nécessaire de compléter la suite du NIR par « 999 999 99 » ni de saisir la clé calculée. |
+| **Titre de séjour** | Pas requis (ou laissé vide). | Doit être créé et renseigné dans la zone *Données perso* lorsqu’il existe. |
+| **Paramétrage dans le logiciel** | La case « Fiscalement étranger » n’est pas cochée ; le menu « Fiscalité » reste sur « Métropole » ou la collectivité concernée. | La case a été remplacée par le menu déroulant « Fiscalité » qui se positionne automatiquement sur « Étranger » dès que le pays étranger est saisi dans l’adresse. |
+| **Impact sur la paie** | Le salarié est soumis aux règles de prélèvement à la source et aux cotisations sociales françaises classiques. | Le statut « Fiscalement étranger » entraîne des **spécificités de paie** (ex. : traitement particulier du NIR, éventuelles variations du prélèvement à la source et des cotisations), comme indiqué dans la section « Spécificités de la paie des salariés fiscalement étrangers ». Le texte ne détaille pas les taux exacts, mais souligne que le statut fiscal influence le traitement de la paie. |
+
+### Synthèse
+
+- **Le critère déterminant** est la résidence fiscale : si le salarié paie ses impôts hors de France, il doit être déclaré « Fiscalement étranger » dans le logiciel de paie.
+- **Concrètement**, cela change :
+  1. Le menu *Fiscalité* (Métropole → Étranger).  
+  2. La saisie de l’adresse (pays étranger, code postal non français).  
+  3. Le département de naissance (99).  
+  4. Le NIR (absence ou troncature après 99, plus aucune clé à calculer).  
+  5. L’ajout éventuel du titre de séjour.  
+
+Ces différences de saisie et de paramétrage entraînent des **spécificités de traitement de la paie** (notamment pour le prélèvement à la source et les cotisations), même si le texte fourni ne précise pas les règles de calcul exactes. Si vous avez besoin d’informations détaillées sur les modalités de calcul du prélèvement à la source ou des cotisations sociales pour les salariés fiscalement étrangers, le contexte actuel ne les contient pas.",0.00,"The candidate answer does not mention any of the three specific fiscal differences listed in the ideal answer (CSG/CRDS, prélèvement à la source vs retenue à la source, additional health insurance). It focuses on software entry fields and generic payroll impacts, which do not satisfy the required key points. | Missing key points: Le salarié fiscalement étranger ne cotise pas à la CSG ni à la CRDS.; Il n’est pas soumis au prélèvement à la source mais, sauf exonération, à une retenue à la source (si prestation en France).; Il est redevable d’une assurance maladie supplémentaire (taux variable selon artiste ou non‑artiste)."
+Quelles sont les différences entre la paie d’un salarié fiscalement français et celle d’un fiscalement étranger ? Et si ce salarié me fournit un formulaire A1 ?,"Trois différences entre fiscalement français et fiscalement étranger.
+Le fiscalement étranger : 
+ne cotise pas à la CSG ni à la CRDS
+n’est pas soumis au Prélèvement à la source mais est soumis, sauf exonération particulière, à une retenue à la source (si prestation en France)
+est redevable d’une assurance maladie supplémentaire (taux variable selon si artiste ou non-artiste).
+
+Si fiscalement étranger fournit formulaire A1 alors exonération :
+de cotisations de sécurité sociale, 
+de retraite complémentaire, 
+de chômage, 
+de taxe sur les salaires,
+de taxe d’apprentissage,
+de médecine du travail.
+
+Restent dues : 
+
+Financement du paritarisme,
+AGS,
+Congés spectacles (sauf si caisse identique dans le pays d’origine),
+Formation continue (part principale et conventionnelle),
+Retenues d’origine conventionnelle (si employeur assujetti),
+Retenue à la source (sauf si exonération par convention fiscale).","**1. Différences principales entre la paie d’un salarié « fiscalement français » et celle d’un salarié « fiscalement étranger »**
+
+| Aspect de la paie | Salarié fiscalement français | Salarié fiscalement étranger |
+|-------------------|------------------------------|------------------------------|
+| **Cotisations sociales classiques** (sécurité sociale, chômage, retraite complémentaire, congés spectacles, formation continue, médecine du travail, etc.) | Dues normalement ; le salarié bénéficie des dispositions de la convention collective applicable. | Dues de façon identique : les cotisations de sécurité sociale, chômage, retraite complémentaire, etc. restent normalement à verser. |
+| **CSG / CRDS** | Soumis aux contributions CSG et CRDS. | **Non soumis** à la CSG ni à la CRDS. |
+| **Retenue à la source (impôt sur le revenu)** | Prélevée à la source sur le salaire (sauf cas d’exonération spécifique). | Soumis à une **retenue à la source** lorsque la prestation a lieu en France, **sauf** si une convention fiscale prévoit une exonération. |
+| **Assurance maladie supplémentaire** (compensation de l’absence de CSG/CRDS) | Aucun dispositif spécifique ; les cotisations CSG/CRDS couvrent le financement de la protection maladie. | Remboursement d’une **assurance maladie supplémentaire** : <br>‑ Artistes : 3,85 % (code DUCS 286D) <br>‑ Non‑artistes : 5,50 % (code DUCS 206D). |
+| **Autres particularités fiscales** | Aucun régime spécial. | Possibilité d’exonération totale ou partielle de la retenue à la source selon les conventions internationales (liste disponible sur le site du ministère des Finances). |
+
+> **Note** : Le reste des cotisations (sécurité sociale, chômage, retraite…) reste **identique** entre les deux catégories ; la différence se joue essentiellement au niveau fiscal (CSG/CRDS, retenue à la source) et de la contribution maladie supplémentaire.
+
+---
+
+**2. Impact du formulaire A1 fourni par le salarié**
+
+Le **formulaire A1** atteste que le salarié est **affilié à la sécurité sociale de son pays d’origine** et que, du fait d’un accord bilatéral (ou européen), il bénéficie d’une exonération des cotisations françaises.
+
+*Conséquences pour l’employeur français :*
+
+| Cotisations **exonérées** (pas de paiement en France) | Cotisations **qui restent dues** |
+|------------------------------------------------------|----------------------------------|
+| • Sécurité sociale (maladie, maternité, invalidité…)<br>• Retraite complémentaire<br>• Assurance chômage<br>• Taxe sur les salaires<br>• Taxe d’apprentissage<br>• Médecine du travail | • Financement du paritarisme<br>• AGS (Association pour la Gestion du régime de garantie des créances des salariés)<br>• Congés spectacles (sauf caisse identique dans le pays d’origine)<br>• Formation continue (part principale et part conventionnelle)<br>• Retenues d’origine conventionnelles, le cas échéant (ex. : FNAS/FCAP, CASC, SVP…)<br>• Retenue à la source (sauf exonération prévue par une convention fiscale) |
+
+*Obligations de l’employeur :*
+
+1. **Justification** : En cas de contrôle de l’URSSAF, l’employeur doit produire le formulaire A1 couvrant la période d’emploi pour prouver l’exonération.  
+2. **Paramétrage dans le logiciel de paie** : créer la catégorie salariale « A1 » (ou équivalent) afin que le système applique automatiquement les exonérations et maintienne les cotisations restant dues.  
+3. **Gestion de la retenue à la source** : appliquer la retenue à la source sauf si une convention fiscale (ou autre disposition) l’exempte.
+
+---
+
+### En résumé
+
+- **Salarié fiscalement français** : cotisations sociales complètes + CSG/CRDS + retenue à la source.
+- **Salarié fiscalement étranger** : cotisations sociales pratiquement identiques, **pas de CSG/CRDS**, retenue à la source éventuelle, **assurance maladie supplémentaire** (3,85 % ou 5,50 % selon le statut).
+- **Avec un formulaire A1** : l’employeur est **exonéré** de la plupart des cotisations françaises (sécurité sociale, retraite, chômage, taxes diverses), mais doit continuer à verser les cotisations listées ci‑dessus et à appliquer la retenue à la source le cas échéant, tout en conservant le formulaire comme preuve auprès de l’URSSAF.",1.00,"The candidate answer covers all the key points from the ideal answer, providing the three differences for a foreign‑taxed employee, the full list of exemptions when an A1 form is presented, and the list of contributions that remain payable. No key points are missing and there are no contradictions with the ideal answer. | Key points present: Ne cotise pas à la CSG ni à la CRDS; N’est pas soumis au prélèvement à la source mais est soumis, sauf exonération particulière, à une retenue à la source (si prestation en France); Est redevable d’une assurance maladie supplémentaire (taux variable selon si artiste ou non-artiste); Exonération de cotisations de sécurité sociale; Exonération de retraite complémentaire"
+Peux-tu m’aider à paramétrer le contrat d’un apprenti ?,"Éventuelle mise en garde si le contrat est ancien (avant le 1er mars 2025) -> appel maintenance
+
+Si contrat apprenti débute après le 01/03/2025, suivre fiche solution « Contrat d’apprentissage – secteur privé » : 
+paragraphe 3 pour le paramétrage de :
+catégorie salariale
+retenues
+rubriques de paies
+paragraphe 4 pour 
+fiche contrat
+première paie","Je suis désolé, mais le contexte dont je dispose ne contient que les titres des documents (par exemple : « Paramétrage dans sPAIEctacle ou La Paie », « Contrats d’apprentissage », etc.) et aucune indication précise sur les étapes ou les réglages à effectuer pour paramétrer le contrat d’un apprenti.  
+Je ne peux donc pas vous fournir de procédure détaillée à partir des informations disponibles. Si vous pouvez me fournir le texte exact du ou des documents concernés, je pourrai alors vous aider de manière précise.",0.00,"The candidate answer does not address any of the required instructions for configuring an apprentice contract. It only states a lack of information and does not provide the warnings, procedural steps, or specific paragraph references required. | Missing key points: Warning if the contract is older than 1 March 2025 (call maintenance); If the apprentice contract starts after 01/03/2025, follow the solution sheet ""Contrat d’apprentissage – secteur privé""; Paragraph 3: set salary category; Paragraph 3: set deductions; Paragraph 3: set payroll items (rubriques de paie)"
+Mon formateur occasionnel va finalement travailler plus de 30 jours cette année. Comment puis-je régler cette situation ?,"Application des bases forfaitaires de cotisations possible uniquement pour formateurs occasionnels dont activité de formation ≤ 30 jours civils par année et par société.
+
+Si activité > 30 jours civils, obligation de procéder à une régularisation des cotisations sur l’ensemble des salaires de l’exercice.
+
+Procédure de régularisation expliquée au § 5 « Régularisation au-delà de 30 jours civils » de la fiche solution « Formateurs occasionnels ».
+
+Une seule façon de procéder : fonction d’annulation / paie rectificative du logiciel ( décrite dans le manuel de référence de sPAIEctacle).
+
+Conseil : faire sauvegarde du fichier avant cette manipulation.","Le statut de **formateur occasionnel** est limité : il ne peut intervenir **plus de 30 jours civils par année et par organisme de formation ou d’enseignement** (voir la fiche « Rappel législatif sur les Formateurs occasionnels »).  
+
+Lorsque ce plafond est dépassé, le formateur ne peut plus rester « occasionnel ». Vous devez donc :
+
+1. **Cesser d’utiliser le statut d’occasionnel** pour les jours supplémentaires ; le dépassement du plafond de 30 jours constitue déjà une violation du cadre prévu par l’arrêté du 28 /12 1987.  
+
+2. **Reclasser le formateur dans un autre type de contrat** :  
+   * Un **CDD d’usage** (si la mission est ponctuelle mais récurrente) ;  
+   * Un **contrat à durée indéterminée intermittent (CDII)**, si la nature de l’activité le justifie ;  
+   * Un **CDI classique** ou tout autre contrat prévu par la convention collective applicable à votre organisme.  
+
+3. **Vérifier les dispositions de la convention collective** de votre structure (ex. : articles sur les forfaits en jours, la prime de précarité, le calcul du temps de travail). La fiche indique que ces points sont sujets à interprétation et peuvent dépendre de la convention collective appliquée.
+
+4. **Mettre à jour la paramétrisation** dans votre outil de gestion des contrats : choisissez le nouveau type de contrat, définissez la durée, les rémunérations (y compris éventuellement la prime de précarité : 6 % ou 10 % selon les règles applicables) et les modalités de suivi du temps de travail.
+
+5. **Formaliser la situation avec le formateur** : établir un nouveau contrat écrit, le faire signer, et communiquer clairement les changements de statut et de droits (précarité, congés, etc.).
+
+En résumé : dès que le formateur dépasse les 30 jours, vous devez cesser le régime d’« occasionnel » et le placer sous un contrat de travail régulier (CDD d’usage, CDII, CDI, etc.), en respectant les règles de la convention collective et les exigences légales. Si vous avez besoin d’un accompagnement plus précis, il vous faudra consulter le service RH ou un conseiller juridique, car la fiche elle‑même ne fournit pas de réponse définitive sur le type de contrat à choisir.",0.20,"The candidate answer only mentions the 30‑day limit for occasional trainers, which matches the first key point of the ideal answer. It omits all information about the mandatory contribution regularisation, the specific §5 procedure, the use of the cancellation/payroll‑correction function, and the backup recommendation. Moreover, it contradicts the ideal answer by advising a change of employment contract rather than the prescribed payroll correction. | Key points present: Limitation to 30 civil days per year per company for occasional trainers | Missing key points: Obligation to regularise contributions on all salaries when activity exceeds 30 days; Reference to §5 ""Régularisation au-delà de 30 jours civils"" of the solution sheet; Use of the cancellation function / corrective payroll in the software; Advice to back up the file before performing the correction | Contradictions: Suggests reclassifying the trainer under a new contract type (CDD, CDII, CDI) instead of performing the required payroll regularisation; Implies that exceeding 30 days requires a new contract rather than the prescribed contribution regularisation"
+A quoi sert la case « CDD d’usage par défaut » dans la profession ?,La coche de l’option « CDD d'usage par défaut » de la fiche profession permet de renseigner automatiquement le « Motif CDD » avec la valeur « CDD d'usage » à l’ajout d’une fiche contrat de type CDD utilisant cette profession.,"La case **« CDD d’usage par défaut »** se trouve dans la fiche Profession.  
+Lorsqu’elle est **cochée**, le système préremplit automatiquement le **motif CDD** à **« CDD d’usage »** chaque fois qu’un nouveau contrat de type CDD est créé (ou lorsqu’une paie est saisie ou importée). Ainsi, elle permet de définir ce motif comme valeur par défaut pour les CDD de la profession concernée.",1.00,"The answer fully covers all key points of the ideal answer without contradictions. | Key points present: Option checkbox on the profession sheet; Automatically fills Motif CDD with ""CDD d'usage""; Applied when adding a CDD contract using that profession"
+Comment faire une attestation Assedic permanent (FCTU) depuis le logiciel ?,"possibilité de faire un export FCTU pour un seul ou plusieurs contrats
+les contrats doivent être terminés et toutes les paies réalisées
+sélection les contrats à déclarer depuis liste des contrats ou liste des paies
+click sur icone « imprimante » et choix « Attestation employeur pôle emploi »
+menu déroulant positionné sur « DSN Fin de contrat (FCTU) »
+remarque : 3 types de fichiers possibles : réel, test ou annule et remplace
+2 options dans zone « données fin de contrat » : récupération des infos renseignés dans la fiche contrat (affectation automatique) ou saisie des informations reportées alors dans tous les contrats sélectionnés
+Contrôle de cohérence automatique et éventuel affichage de la liste des anomalies à corriger avant l’export
+si plus d’erreurs, le fichier DSN se génère
+fichier généré dans fenêtre « gestion des exports »
+onglets reprenant les principales informations du fichier
+possibilité d’éditer une édition de contrôle
+click sur bouton « transmettre » pour un dépôt automatisé sur net-entreprises en machine to machine (MtoM)
+notification lorsque l’attestation rematérialisée par pôle emploi (=France travail) est disponible
+click sur « afficher les contrats » depuis notification renvoie vers la fiche contrat
+attestation PDF téléchargeable dans l’onglet « contrat » de la fiche contrat
+envoi possible de l’attestation vers transat via l’icône « imprimante » de la liste des contrats : « envoi des AE pôle emploi vers transat »
+signature intégrée dans le PDF en cas d’envoi sur transat
+nb : colonne AE de la liste des contrats permet de suivre l’état de l’attestation : 
+P = DSN générée
+x = AE rematérialisée (AER) reçue
+Tr. = AER transmise vers transat","**Procédure : génération d’une Attestation Assedic permanent (FCTU) dans sPAIEctacle**
+
+1. **Ouvrez le module « Attestation »** de sPAIEctacle.  
+2. Sélectionnez l’option **« Attestation Assedic permanent »**.  
+3. Le logiciel utilise automatiquement la norme associée :  
+
+   * sPAIEctacle 5.2 → norme **4DS V01X07** (intégrée à la version 5.2) ;  
+   * sPAIEctacle 6.2 → norme **N4DS V01X11** (la même norme que la DADS‑U).  
+
+4. **Choisissez le type de génération** :  
+   - **« Standard »** → création du fichier d’attestation normal ;  
+   - **« Annule et remplace »** → un dialogue apparaît pour préciser le **n° d’ordre** de l’attestation à annuler. Ce numéro est pré‑rempli avec le n° d’ordre du dernier fichier généré pour le contrat, mais vous pouvez le modifier manuellement.  
+
+5. **Validez** la génération. sPAIEctacle crée le fichier au format requis (4DS V01X07 ou N4DS V01X11).  
+
+6. **Déposez le fichier** dans la plateforme Net‑entreprises (ou via le dépôt automatisé *Machine‑to‑Machine*) comme toute DSN Fin de contrat (FCTU). Le fichier sera alors exploité par France Travail pour la production de l’attestation d’emploi.
+
+> **Remarque** : la génération ne comporte aucune donnée supplémentaire ; seules les paies des deux derniers mois sont prises en compte, France Travail reconstitue l’historique salarial à partir des 36 dernières DSN mensuelles.  
+
+Ainsi, depuis sPAIEctacle, il suffit d’accéder au module Attestation, de choisir « Attestation Assedic permanent », de sélectionner la norme (4DS V01X07 ou N4DS V01X11 selon la version du logiciel) et, le cas échéant, d’utiliser la fonction « Annule et remplace » pour créer le fichier FCTU qui sera ensuite transmis à Net‑entreprises.",0.11,"The answer only mentions the existence of different file types (standard and cancel/replace) and the ability to deposit the generated file to Net‑entreprises (including M2M). It does not address the majority of the detailed steps and options described in the ideal answer. | Key points present: 3 types of files possible: real (standard) and cancel/replace; Deposit the generated file to Net‑entreprises (machine‑to‑machine) | Missing key points: Possibility to export FCTU for one or multiple contracts; Contracts must be terminated and all pays completed; Selection of contracts from contract list or payroll list; Click on printer icon and choose ""Attestation employeur pôle emploi""; Dropdown set to ""DSN Fin de contrat (FCTU)"""
+Que signifient les puces de couleurs des pense-bêtes ?,"Des puces de couleurs permettent d'identifier facilement les fiches arrivées à échéance.
+Vert : date d'Échéance atteinte, pas de Rappel demandé
+Orange : date de Rappel atteinte
+Rouge : date d'Échéance atteinte, date de Rappel non atteinte
+Noir : option OK cochée","Les puces de couleur servent à repérer rapidement l’état des fiches :
+
+- **Vert** : la date d’*échéance* est atteinte et aucun *rappel* n’a été demandé.  
+- **Orange** : la date du *rappel* est atteinte.  
+- **Rouge** : la date d’*échéance* est atteinte mais le *rappel* n’a pas été atteint.  
+- **Noir** : l’option *OK* a été cochée.",1.00,"The answer covers all the key points from the ideal answer with no contradictions. | Key points present: Des puces de couleurs permettent d'identifier facilement les fiches arrivées à échéance.; Vert : date d'Échéance atteinte, pas de Rappel demandé; Orange : date de Rappel atteinte; Rouge : date d'Échéance atteinte, date de Rappel non atteinte; Noir : option OK cochée"
+Que signifient le X vert de la colonne État civil ?,"X vert signifie que toutes les infos d’état civil attendues sont renseignées.
+Les données déclaratives obligatoires sont : 
+civilité
+adresse
+ville
+date et le lieu de naissance (pour les salariés né en France) ou le pays de naissance (si le département de naissance est égal à 99) ainsi que le département de naissance si le NIR est incomplet.","Dans la liste des salariés, la colonne **État civil (EC)** sert à indiquer si les informations obligatoires d’état civil du salarié sont complètes ou non.  
+
+- **Un X vert** signifie que **toutes les informations attendues sont renseignées** (c’est‑à‑dire que les données déclaratives obligatoires : civilité, adresse, ville, date et lieu de naissance ou pays de naissance, département de naissance le cas échéant, etc., sont présentes).  
+
+En d’autres termes, le X vert indique que le dossier d’état civil du salarié est complet.  (voir les fiches « Liste des salariés » et « Version 7.7.4 », qui précisent : « X si toutes les infos attendues sont renseignées ».).",1.00,"The answer covers all key points from the ideal answer and contains no contradictions. | Key points present: X vert signifie que toutes les infos d’état civil attendues sont renseignées.; Les données déclaratives obligatoires sont : civilité, adresse, ville, date et le lieu de naissance (ou le pays de naissance selon le cas) ainsi que le département de naissance si nécessaire."
+Qu’est-ce qu’une API ? sPAIEctacle propose-t-il ce genre de chose ?,"Les APIs permettent d’automatiser la communication entre sPAIEctacle et différents outils de travail
+Évite de passer par des échange de fichiers « plat »
+Permet d’utiliser des services tels que signature électronique, DPAE, demande d’état civil hors de spectacle
+Plusieurs APIs GHS dans sPAIEctacle, en option et via l'activation d’une fonctionnalité.
+API existants : Sociétés, Salariés, Contrats, Paies, Analytiques, DPAE, Signature, Demande d’état civil, Status
+Les connexions APIs déjà disponibles sont pour l'instant les suivantes :
+Orfeo
+Eventsoft
+TheGreenShot / Ooviz
+Heeds
+A venir :
+Dièse
+Badakan
+TIS (Théâtre Info Système)
+Pour plus de renseignements sur le fonctionnement de ces connexions, merci de contacter service commercial au 01 53 34 25 25 ou par mail à l'adresse commercial@ghs.fr.","Je ne dispose pas, dans le contexte fourni, d’une définition de ce qu’est une API ni d’une indication indiquant que sPAIEctacle propose ou non ce type de fonctionnalité.",0.00,"The candidate answer does not address any of the key points from the ideal answer; it merely states a lack of information. | Missing key points: Les APIs permettent d’automatiser la communication entre sPAIEctacle et différents outils de travail; Évite de passer par des échange de fichiers « plat »; Permet d’utiliser des services tels que signature électronique, DPAE, demande d’état civil hors de spectacle; Plusieurs APIs GHS dans sPAIEctacle, en option et via l'activation d’une fonctionnalité.; API existants : Sociétés, Salariés, Contrats, Paies, Analytiques, DPAE, Signature, Demande d’état civil, Status"
+"J’ai réalisé sur le mois de janvier 2025 une paie pour un artiste intermittent à qui j’ai payé 1 cachet à 400 euros. J’aurais en fait dû le payer 450 euros. Nous sommes le 20 mars 2025. L’échéance DSN de janvier est donc passée et je ne peux pas revenir sur ma DSN de janvier. D’autre part, j’ai déjà déposé l’AEM initiale correspondant à cette paie de janvier. Comment puis-je corriger mon erreur ? J’ai cru lire quelque part que l’AEM rectificative était possible mais je ne sais pas faire cela dans le logiciel.","reprise des éléments de la question qui permettent de dire que l’AEM rectificative est possible (pas de changement de date, de profession, hausse rémunération, stagnation du nombre de jours et de cachet) -> AEM rectificative positive
+Nécessité dans sPAIEctacle de faire une paie annulante et rectificative de janvier sur mars et description de la procédure (ou renvoi vers le manuel)
+Sortie de l’AEM rectificative qui doit être cochée « positive » et indiquer « 50 » dans la rémunération brute
+Explications comme quoi la rectification sera déclarée dans la DSN de mars et l’AEM rectificative sera déposée avec les AEM de mars.
+Mise en garde sur ajustement paiement net à payer au salarié, renvoi des documents de paie.","**Comment corriger l’erreur de 400 € → 450 € sur la paie de janvier 2025**  
+
+Vous avez déjà :
+
+* transmis l’AEM initiale (400 €) au salarié et à la caisse,  
+* envoyé la DSN de janvier 2025 ; celle‑ci ne peut plus être modifiée.
+
+La procédure à suivre dans **sPAIEctacle** consiste à **annuler la paie et à créer une paie rectificative** ; cette opération génère automatiquement une **AEM rectificative** que vous transmettez à la caisse (et qui sera prise en compte dans la prochaine DSN – généralement celle du mois de l’annulation).
+
+---
+
+### Étapes dans sPAIEctacle
+
+1. **Ouvrir la liste des paies**  
+   - Menu **Paies → Liste des paies**.  
+   - Filtrer éventuellement sur le mois de janvier 2025 ou sur le nom du salarié pour repérer la paie de 400 €.
+
+2. **Sélectionner la paie à corriger**  
+   - Cliquez sur la ligne correspondant à cette paie (elle apparaît en rouge *Ann* après correction).
+
+3. **Lancer l’annulation / création d’une paie rectificative**  
+   - Bouton **Mise à jour** → **Annulation de paie – Paie rectificative…**.  
+   - Un dialogue d’annulation s’ouvre :
+     * La date proposée est la date du jour ; vous pouvez la laisser (ex. 20 /03 /2025) ou la modifier si vous voulez la reporter à une autre date de règlement.
+     * **Cochez** la case **« Saisie d’une paie rectificative après annulation »**.
+   - Cliquez sur **OK**.
+
+4. **Valider la création de la paie annulante**  
+   - Un deuxième dialogue confirme la date de règlement de la paie annulante ; validez (ou « Annuler » si vous avez changé d’avis).
+
+5. **Saisir la paie rectificative**  
+   - L’écran d’ajout de paie rectificative apparaît ; les champs sont pré‑remplis :
+     * informations du contrat (catégorie, profession, période, date de règlement – **non modifiable**),
+     * rubriques de la paie annulée.
+   - **Modifiez uniquement le montant brut** (et, le cas échéant, les cotisations correspondantes) : saisissez **450 €** au lieu de 400 €.
+   - Vérifiez que le champ **Spécificité** indique **« Rect »** (paie rectificative).
+   - Cliquez sur **OK** pour valider.
+
+6. **Générer l’AEM rectificative**  
+   - Une fois la paie rectificative enregistrée, utilisez le menu **Paies → AEM** (ou le bouton « Éditer l’AEM ») pour imprimer/générer l’attestation.
+   - L’AEM affichera la mention **Rectificative** et le nouveau montant 450 €.
+
+7. **Transmission à la caisse**  
+   - Transmettez l’AEM rectificative (papier ou électronique) à la caisse concernée ; elle remplacera l’attestation initiale.
+   - La paie rectificative étant datée du **20 /03 /2025**, elle sera automatiquement incluse dans la **DSN de mars 2025**. Aucun autre passage dans la DSN de janvier n’est possible, mais la correction sera prise en compte dans la DSN d’envoi.
+
+---
+
+### Points d’attention
+
+| Point | Pourquoi c’est important |
+|-------|---------------------------|
+| **Date de règlement** de la paie annulante/rectificative | Elle doit être post‑janvier (ex. 20 /03 /2025) ; une fois la paie « taguée » à une DSN, sa date ne peut plus être modifiée. |
+| **AEM rectificative** | Elle annule l’AEM initiale (400 €) ; la caisse la considère comme la version définitive. |
+| **DSN de mars** | La paie rectificative sera exportée avec le mois de la DSN d’envoi (mars). Cela permet à l’Urssaf de ré‑calculer les cotisations correctement. |
+| **Contrôle d’anomalies** | Après la correction, relancez le **contrôle de cohérence** (bouton « Relancer l’analyse ») pour vous assurer qu’aucune nouvelle anomalie n’est apparue. |
+| **Historique** | Dans la **liste des paies**, les trois états apparaissent : la paie annulée (rouge *Ann*), la paie annulante (rouge *Ann*) et la paie rectificative (violet *Rect*). Conservez cet historique pour les audit et les archives. |
+
+---
+
+### Résumé de la procédure
+
+1. **Liste des paies → sélection → Mise à jour → Annulation de paie – Paie rectificative…**  
+2. **Cocher « Saisie d’une paie rectificative après annulation »** et valider la date.  
+3. **Saisir le montant correct (450 €)** dans la paie rectificative qui s’ouvre.  
+4. **Générer et transmettre l’AEM rectificative** à la caisse.  
+5. **La DSN de mars 2025** contiendra automatiquement la paie rectificative ; aucune modification de la DSN de janvier n’est possible.
+
+En suivant ces étapes, vous régularisez le paiement de l’artiste intermittent, vous respectez les obligations de l’Urssaf/Assedic et vous avez une trace claire de l’annulation‑rectification dans sPAIEctacle.  
+
+---  
+
+*Si vous rencontrez une difficulté à un des points (ou si la boîte de dialogue ne s’affiche pas), n’hésitez pas à contacter le support technique de GHS : ils pourront vérifier que votre version du logiciel (≥ 6.3.1) supporte bien le module d’« annulation de paie – paie rectificative ».*",0.60,"Le candidat décrit la procédure d’annulation et de paie rectificative dans sPAIEctacle ainsi que l’inclusion de la correction dans la DSN de mars, ce qui couvre les points 1, 2 et 4 de la réponse idéale. Cependant il ne mentionne pas explicitement que l’AEM rectificative doit être cochée « positive » ni qu’il faut indiquer la différence de 50 € dans la rémunération brute (point 3). Il ne signale pas non plus l’ajustement du paiement net à verser au salarié ni le renvoi des documents de paie (point 5). Aucun élément contradictoire n’est présent. | Key points present: reprise des éléments de la question montrant que seule la rémunération change (critères d’une AEM rectificative positive); procédure dans sPAIEctacle : paie annulante puis paie rectificative de janvier en mars; génération de l’AEM rectificative et inclusion de la correction dans la DSN de mars | Missing key points: cocher l’AEM rectificative comme « positive » et indiquer la différence de 50 € dans la rémunération brute; mise en garde sur l’ajustement du paiement net à verser au salarié et le renvoi des documents de paie"
+J’ai réalisé une paie pour un artiste intermittent à qui j’ai payé 1 cachet à 400 euros. J’aurais en fait dû le payer 450 euros. Comment corriger ?,"La réponse à cette question nécessite des éléments complémentaires.
+Si DSN et AEM non-déposées, paie et AEM non envoyées au salarié, règlement non effectué -> modification de la paie
+Si DSN et AEM non-déposées, paie et AEM envoyées au salarié et règlement déjà effectué  -> modification de la paie, renvoi des éléments de paie au salarié et règlement complémentaire
+Si DSN et AEM déjà déposées, date butoir dépassée -> réponse et liens de la Q/9 à savoir : 
+reprise des éléments de la question qui permettent de dire que l’AEM rectificative est possible (pas de changement de date, de profession, hausse rémunération, stagnation du nombre de jours et de cachet) -> AEM rectificative positive
+Nécessité dans sPAIEctacle de faire une paie annulante et rectificative du mois M sur mois M+1 ou M+2 ou etc. et description de la procédure (ou renvoi vers le manuel)
+Sortie de l’AEM rectificative qui doit être cochée « positive » et indiquer « 50 » dans la rémunération brute
+Explications comme quoi la rectification sera déclarée dans la DSN du mois M+1 ou M+2 ou etc. et l’AEM rectificative sera déposée avec les AEM de ce même mois.
+Mise en garde sur ajustement paiement net à payer au salarié, renvoi des documents de paie.","**Correction d’un cachet : 400 € → 450 €**
+
+1. **Vérifier que la période n’est pas clôturée**  
+   - Si la période est encore ouverte, vous pouvez simplement *modifier* la paie.  
+   - Si la période est déjà clôturée (ou si vous préférez garder une trace de la correction), il faut créer une *paie rectificative* après annulation.
+
+---
+
+## 1️⃣ Si la période n’est pas clôturée – Modification directe  
+
+1. **Menu : Paies → Liste des paies**  
+2. Sélectionnez la paie de l’artiste (celle à 400 €).  
+3. Cliquez sur **Modifier** (ou double‑clic → icône *Consulter* puis *Modifier*).  
+4. Corrigez le montant du cachet de **400 € à 450 €** (rubrique « Cachet »).  
+5. Validez en cliquant sur **OK**.  
+6. **Recalculez les paies** (Menu : Paies → Recalcul des paies) pour que la modification soit prise en compte dans toutes les paies ultérieures.
+
+> *Remarque :* Cette méthode ne fonctionne que tant que la période de paie n’est pas clôturée.
+
+---
+
+## 2️⃣ Si la période est clôturée ou si vous souhaitez tracer la régularisation – Paie rectificative  
+
+1. **Menu : Paies → Liste des paies**  
+2. Sélectionnez la paie à corriger (celle à 400 €).  
+3. Cliquez sur le bouton **Mise à jour** → choisissez **« Annulation de paie – Paie rectificative… »**.  
+
+   - Un dialogue d’annulation apparaît ; la date de règlement par défaut est la date du jour (modifiable).  
+   - Cochez **« Saisie d’une paie rectificative après annulation »**.  
+   - Validez **OK**.
+
+4. Confirmez la création de la **paie annulante** (dialogue de date de règlement) → **OK**.  
+
+5. L’écran d’ajout de la **paie rectificative** s’ouvre :  
+   - Les informations du contrat (catégorie, profession, période, etc.) sont pré‑remplies.  
+   - La date de règlement est figée (celle de la paie annulante).  
+   - Les rubriques de la paie annulée sont reprises.  
+
+6. **Saisissez le montant correct** : indiquez **450 €** dans la rubrique « Cachet ».  
+7. Validez **OK**.  
+
+8. Vous verrez alors, dans la liste :  
+   - La paie **annulante** (rouge, libellé *Ann*).  
+   - La paie **rectificative** (violet, libellé *Rect*).  
+
+9. **(Optionnel) Recalculez les paies** pour assurer la cohérence des cotisations et du cumul.
+
+---
+
+### En résumé  
+
+- **Période ouverte :** Modifier la paie existante → changer le cachet → OK + recalcul.  
+- **Période clôturée ou traçabilité souhaitée :** Annuler la paie erronée et créer une paie rectificative à 450 € via le bouton *Mise à jour → Annulation de paie – Paie rectificative…*.
+
+Ces deux procédures sont décrites dans les fiches d’aide : **« Modifier une paie »** et **« Annulation de paies – Paies rectificatives »**.",0.25,"The candidate answer provides practical steps to modify a payroll when the period is still open and to create an annulment and rectificative payroll when the period is closed. However, it does not address the required contextual conditions (DSN/AEM status), the different scenarios involving already‑paid amounts, the specific criteria for a positive AEM rectificative, the need to indicate the corrected gross amount (""50""), the DSN declaration timing, nor the warning about net payment adjustments and document resend. | Key points present: Modification of payroll when period is not closed (direct edit).; Procedure to create an annulment payroll and a rectificative payroll. | Missing key points: Need for complementary information before answering.; Scenario where DSN and AEM are not deposited, payroll sent and payment already made – requires payroll modification, resend of payroll elements, and complementary payment.; Scenario where DSN and AEM are already deposited and deadline passed – conditions for a positive AEM rectificative (no change of date, profession, salary increase, same days and cachet).; Requirement to mark the AEM rectificative as positive and indicate ""50"" in gross remuneration.; Explanation that the rectification will be declared in the DSN of the following month(s) and that the AEM rectificative will be filed with the AEM of that month."
+Je me suis trompé sur les dates d’un contrat et d’une paie pour un artiste intermittent. Je l’ai déclaré du 12 au 13 octobre alors que j’aurais dû le déclarer du 15 au 16 octobre. Comment corriger sachant que j’ai déjà déposé mon AEM et que la date butoir pour faire une DSN Annule et remplace d’octobre est dépassée ?,"Reprise des éléments de la question -> correction sur le mois M+1 ou M+2  ou etc. ,dans la limite de l’année civile (impossibilité pour sPAIEctacle d’annuler une paie sur un exercice suivant)
+Si possible donc, annulation de la paie d’octobre sur novembre ou décembre
+Impossibilité de faire AEM rectificative car changement de dates non acceptée par le cahier des charges de Pole emploi
+Suite annulation de la paie, refaire contrat + nouvelle paie du 15 au 16 octobre avec date de règlement sur novembre ou décembre afin que cette nouvelle paie partent dans DSN et AEM de novembre ou décembre.
+Vérification que cette nouvelle paie a le même net à payer que l’ancienne, sinon ajustement du règlement.
+Suppression en ligne de l’AEM déposée en octobre (pas certain que l’IA est la ressource pour dire cela)
+… ou, dans le doute, appeler la maintenance","**Ce que prévoit la documentation :**
+
+1. **Impossible de corriger une AEM lorsque les dates du contrat sont modifiées**  
+   > *« Dans certains cas, l'édition d'une AEM rectificative est impossible :… modification des dates de contrat (date de début, date de fin)… Dans ce cas, il convient d'annuler la paie initiale, d'annuler en ligne l'AEM déjà enregistrée par France travail (depuis votre compte employeur), puis de produire une nouvelle paie sur un nouveau contrat. »*  
+   (doc = editions)
+
+2. **La DSN « annule et remplace » ne peut plus être transmise après la veille du jour d’échéance**  
+   > *« Une DSN de type « annule et remplace » ne peut être déposée que jusqu’à la veille à minuit de la date d’échéance. »*  
+   (doc = declarations)
+
+**Ce que vous devez faire :**
+
+| Étape | Action à réaliser (conformément aux documents) |
+|------|-----------------------------------------------|
+| 1 | **Annuler la paie initiale** (celle qui comporte les dates 12‑13 oct.). |
+| 2 | **Annuler en ligne l’AEM déjà enregistrée** depuis votre espace employeur sur le site France travail. |
+| 3 | **Créer un nouveau contrat (ou une nouvelle paie) avec les bonnes dates** : 15‑16 oct. |
+| 4 | **Générer une nouvelle AEM** sur ce nouveau contrat. Cette AEM sera incluse dans la prochaine DSN que vous transmettrerez. |
+| 5 | **Ne pas tenter de transmettre une DSN « annule et remplace » d’octobre**, car le délai est dépassé (impossible de déposer une DSN annule et remplace après la veille de son échéance). La correction sera donc prise en compte à la prochaine DSN mensuelle. |
+
+En résumé : puisque la DSN annule‑et‑remplace d’octobre ne peut plus être envoyée et qu’une AEM rectificative n’est pas possible pour une modification de dates, la procédure à suivre est d’annuler la paie et l’AEM existantes, puis de recréer la paie avec les dates correctes et de la déclarer dans la prochaine DSN.",0.57,"The candidate answer covers several of the ideal key points (annulation de la paie, impossibilité d'AEM rectificative, suppression en ligne de l'AEM, création d'un nouveau contrat/paie avec les bonnes dates) but omits points about the correction month (M+1/M+2) and year‑civil limit, the specific timing of the cancellation on November/December, verification of net à payer, and the suggestion to call maintenance. No contradictions were found. | Key points present: Impossibilité de faire une AEM rectificative car changement de dates non accepté; Annulation de la paie d’octobre; Suppression en ligne de l’AEM déposée en octobre; Refaire le contrat et créer une nouvelle paie du 15‑16 octobre | Missing key points: Correction sur le mois M+1 ou M+2 dans la limite de l’année civile (impossibilité d’annuler une paie sur un exercice suivant); Annulation de la paie d’octobre à reporter sur novembre ou décembre; Vérification que la nouvelle paie a le même net à payer que l’ancienne, sinon ajustement; Suggestion d’appeler la maintenance en cas de doute"
+Je me suis trompé sur la profession d’un contrat et d’une paie intermittente. Je l’ai déclaré en tant qu’artiste musicien alors que j’aurais dû le déclarer en tant que technicien lumière. Comment corriger?,"La réponse à cette question nécessite des éléments complémentaires.
+Si DSN et AEM non-déposées, paie et AEM non envoyées au salarié, règlement non effectué -> modification de la paie
+Si DSN et AEM non-déposées, paie et AEM envoyé au salarié et règlement déjà effectué  -> modification de la paie, renvoi des éléments de paie au salarié et règlement complémentaire
+Si DSN et AEM déjà déposées, date butoir dépassée :
+correction sur le mois M+1 ou M+2  ou etc. ,dans la limite de l’année civile (impossibilité pour sPAIEctacle d’annuler une paie sur un exercice suivant)
+Si possible donc, annulation de la paie d’octobre sur novembre ou décembre
+Impossibilité de faire AEM rectificative car changement profession non acceptée par le cahier des charges de Pole emploi
+Suite annulation de la paie, refaire contrat + nouvelle paie de technicien lumière avec date de règlement sur M+1 ou M+2, etc. afin que cette nouvelle paie partent dans DSN et AEM de M+1 ou M+2 ou etc.
+Bonus : si paiement au cachet (= mode de rémunération seulement autorisé pour les artistes), ne pas oublier de remplacer « cachet » pour une rubriques d’heures (journées de X heures, heures, etc.)
+Ajustement du règlement forcément car en passant d’une paie d’artiste à une paie de technicien, le net à payer sera différent (pas les même charges).
+Suppression en ligne de l’AEM déposée en octobre (pas certain que l’IA est la ressource pour dire cela)
+… ou, dans le doute, appeler la maintenance","**Comment corriger la profession d’un contrat / d’une paie intermittente ?**  
+
+*(Les étapes ci‑dessous utilisent uniquement les informations présentes dans la documentation fournie.)*
+
+1. **Ouvrir la fiche contrat du salarié**  
+   - Accédez à la **liste des contrats** (icône *Liste des contrats* ou *Contrats > Liste des contrats*).  
+   - Sélectionnez le contrat concerné et ouvrez‑le en mode édition.
+
+2. **Modifier la profession**  
+   - Dans l’onglet **Fiche Profession** (voir la fiche *professions*), changez :  
+     - **Libellé profession** → « Technicien lumière » (ou la dénomination exacte que vous utilisez).  
+     - **Code profession** → le code correspondant au technicien lumière (il n’est pas obligatoire, mais recommandé, surtout pour les imports/exports).  
+   - Le champ **Catégorie professionnelle** est **non modifiable** ; il se mettra à jour automatiquement en fonction du nouveau libellé/code (ex. : “Technicien” donnera la catégorie « Intermittent » le cas échéant).  
+   - Enregistrez la modification du contrat.
+
+3. **Mettre à jour les rubriques du contrat** (obligatoire si le contrat comporte **plusieurs paies**)  
+   - Ouvrez le **menu Rubriques de paie**.  
+   - Choisissez **« Màj des rubriques du contrat à la validation »**.  
+   - La mise à jour recalculera les bases de cotisation (abattements, taux, etc.) en fonction de la nouvelle profession.
+
+4. **Vérifier ou re‑valider la paie**  
+   - Si le contrat ne contient **qu’une seule paie**, le *Total brut* est automatiquement reporté sur la fiche contrat lors de la validation de la paie.  
+   - Après la modification de la profession, validez de nouveau la paie (ou créez‑en une nouvelle) afin que les paramètres liés à la profession (retenues, taux d’abattement, etc.) soient correctement appliqués.  
+   - Pour une paie saisie depuis la **liste des salariés** (*paie sur liste – manuel*), assurez‑vous que le menu déroulant *Contrat* pointe bien vers le contrat que vous venez de corriger avant de valider.
+
+5. **Contrôle final**  
+   - Ouvrez le **bulletin de paie** ou le **livre de paie** et vérifiez que la profession affichée est bien « Technicien lumière » et que les retenues (ex. : Congés spectacles, chômage intermittent) correspondent à cette catégorie.  
+   - Si des erreurs persistent, répétez l’étape 2 en vous assurant d’utiliser le **code PCS** adéquat (voir la partie *Nomenclature PCS* de la fiche *Professions*).
+
+---
+
+### Résumé en 3 points clefs
+
+| Étape | Action | Où le faire |
+|------|--------|--------------|
+| 1 | Modifier le **Libellé / Code profession** du contrat | Fiche Contrat → Onglet Profession |
+| 2 | Mettre à jour les rubriques du contrat | Rubriques de paie → *Màj des rubriques du contrat à la validation* |
+| 3 | Re‑valider (ou recréer) la paie pour que les nouvelles données soient prises en compte | Validation de la paie (ou *Paie sur liste – manuel*) |
+
+En suivant ces trois étapes, la profession « artiste musicien » sera remplacée par « technicien lumière » tant au niveau du contrat que sur la paie intermittente associée.",0.00,"The candidate answer only describes how to edit the profession in the contract and re‑validate the payroll in the software. It does not address any of the procedural scenarios, DSN/AEM considerations, deadline constraints, cancellation/re‑creation of contracts, payment adjustments, cachet handling, deletion of AEM, or the recommendation to contact maintenance that are required by the ideal answer. | Missing key points: If DSN and AEM are not deposited and the payroll and AEM have not been sent to the employee and payment not made: modify the payroll.; If DSN and AEM are not deposited and the payroll and AEM have been sent to the employee and payment already made: modify the payroll, resend payroll elements to the employee, and make a complementary payment.; If DSN and AEM have already been deposited and the deadline has passed: correction can be made in month M+1 or M+2 within the calendar year; it is impossible to cancel a payroll in a subsequent fiscal year; if possible, cancel the October payroll in November or December; a rectificative AEM cannot be made because a profession change is not accepted by Pôle emploi specifications.; After cancelling the payroll, recreate the contract and issue a new payroll for the light‑technician with a payment date in M+1 or M+2 so that the new payroll is included in the DSN and AEM of that month.; Bonus: if the payment was made by ""cachet"" (mode only allowed for artists), replace the ""cachet"" label with an hours‑based rubric (days of X hours, hours, etc.)."
+"En 2025, quel est le montant horaire du versement santé dû à un salarié en CDD, dans une entreprise dont la participation employeur à la mutuelle est de 1% du plafond mensuel ?","montant du versement santé = calcul mensuel selon la formule « montant de référence » * « coefficient de majoration » (105% ou 125% selon les cas)
+définition montant de référence = contribution que l’employeur aurait versée à la mutuelle pour le salarié, sans être <  21,50 € en 2025 (ou 7,18 € en Alsace Moselle) proratisée en fonction du temps de présence du salarié sur le mois (avec max. 151,67 heures)
+Calcul du montant de référence dans notre cas : 1% PMSS (Plafond Mensuel Sécurité Sociale) qui est égale à 3925 € en 2025 donc 3925 * 1% = 39,25 € (qui est bien supérieur à 21,50 € ou 7,18 € en Alsace Moselle)
+Coefficient de majoration pour un CDD = 125%
+Montant horaire du versement santé = 39,25 * 125% / 151,67 heures = 0,3234 centimes par heure de travail","**Réponse :** En 2025, le versement santé à destination d’un salarié en CDD représente **environ 0,32 € par heure travaillée**.
+
+**Comment le calcul est‑il obtenu ?**
+
+1. **Plafond mensuel de la Sécurité sociale (PMSS) 2025** : 3 925 €  
+   (extrait du document *version‑7‑9‑8*).
+
+2. **Participation employeur à la mutuelle** : 1 % du PMSS.  
+   → 1 % × 3 925 € = **39,25 €** de contribution mensuelle.
+
+3. **Conversion en montant horaire** (temps plein = 151,67 h/mois) :  
+   39,25 € ÷ 151,67 h ≈ **0,259 € / h** (montant de référence).
+
+4. **Majoration prévue pour les CDD de moins de 3 mois** : coefficient = 125 %  
+   (voir les exemples du document *le‑versement‑sante*).  
+   → 0,259 € × 1,25 ≈ **0,324 € / h**.
+
+5. **Arrondi** : on rapporte le résultat à deux décimales, soit **0,32 € / h**.
+
+> Ainsi, dans une entreprise où l’employeur contribue à hauteur de 1 % du plafond mensuel de la Sécurité sociale, le versement santé dû à un salarié en CDD s’élève à environ **0,32 € par heure travaillée** (soit 39,25 € × 1,25 ≈ 49,06 € mensuels).",0.80,"The answer correctly follows the calculation formula, computes the reference amount (1% of PMSS), applies the 125% CDD coefficient, and arrives at the correct hourly amount (~0.32 €). It omits the explicit mention of the minimum reference floor (21.50 €) and the full definition of the reference amount, which is part of the ideal answer. | Key points present: Formula: montant de référence * coefficient de majoration; Calculation of reference amount: 1% PMSS = 39.25 €; Coefficient de majoration for CDD = 125%; Final hourly amount = 0.32 € per hour | Missing key points: Definition of montant de référence includes minimum floor (21.50 €) and prorating based on presence (max 151.67 h)"
+"Quel est le montant horaire du versement santé dû à un salarié en CDD, dans une entreprise dont la participation employeur à la mutuelle est de 5€ ?","montant du versement santé = calcul mensuel selon la formule « montant de référence » * « coefficient de majoration » (105% ou 125% selon les cas)
+définition montant de référence = contribution que l’employeur aurait versé à la mutuelle pour le salarié, sans être <  21,50 € en 2025 (ou 7,18 € en Alsace Moselle) proratisé en fonction du temps de présence du salarié sur le mois (avec max. 151,67 heures)
+Calcul du montant de référence dans notre cas : 5 € < 21,50 € (et < 7,18 € su Alsace Moselle) (
+Coefficient de majoration pour un CDD = 125%
+Montant horaire du versement santé = 21,50 € * 125% / 151,67 heures = 0,1771 centimes par heure de travail si hors Alsace Moselle et 7,18 € * 125% / 151,67 heures = 0,0591 en Alsace-Moselle","Le versement santé est calculé à partir de la participation de l’employeur, du coefficient de majoration (125 %) et du nombre d’heures de travail mensuel de référence : **151,67 h** (voir les exemples 1 et 3 où le montant de référence utilise la formule « … × heures ÷ 151,67 »).
+
+Pour un salarié en CDD à temps plein (151,67 h/mois) dont la participation employeur à la mutuelle est de **5 €** :
+
+1. **Montant de référence mensuel** = participation × 1 = 5 € (puisque le facteur heures/151,67 s’annule pour le temps plein).  
+2. **Montant mensuel après majoration** = 5 € × 1,25 = 6,25 €.  
+3. **Montant horaire** = 6,25 € ÷ 151,67 h ≈ **0,041 € / h**.
+
+**Donc, le versement santé dû à ce salarié s’élève à environ 0,04 € par heure travaillée.**",0.40,"The answer includes the general formula (reference * coefficient) and correctly states the 125% coefficient for a CDD, but it fails to mention the minimum reference amount (21.50 € or 7.18 € in Alsace‑Moselle) and incorrectly uses the 5 € employer contribution as the reference. Consequently, the computed hourly amount is wrong. | Key points present: Formula: montant = référence * coefficient (uses participation and coefficient); Coefficient de majoration pour un CDD = 125 % | Missing key points: Définition du montant de référence avec seuil minimum (21,50 € hors Alsace‑Moselle, 7,18 € en Alsace‑Moselle) et proratisation; Application du seuil minimum dans le cas présent (5 € < seuil, donc référence = seuil); Calcul du montant horaire basé sur le seuil minimum (0,177 €/h hors Alsace‑Moselle, 0,059 €/h en Alsace‑Moselle) | Contradictions: Affirme que le montant de référence mensuel est de 5 €, alors que la règle impose un minimum de 21,50 € (ou 7,18 € en Alsace‑Moselle)."
+"J’ai 2 rubriques différentes pour payer l’abonnement transport de mes 2 salariés permanents. Le montant de ces abonnements vient de changer au 1er juillet. Pour mon premier salarié, j’arrive à modifier le montant qui s’affiche directement dans sa paie. Par contre, pour le second salarié, je n’arrive pas à modifier ce montant qui reste bloqué sur l’ancien montant. J’aimerais comprendre pourquoi ?","abonnements transports en général payés par des « rubriques automatiques » (ce qui explique qu’un montant s’affiche automatiquement)
+rubrique modifiable sans doute paramétrée avec une « valeur par défaut »
+vérifiable en regardant les menu déroulant de la zone « Montant » de la rubrique qui doit être positionner sur « valeur par défaut »
+si c’est bien une « valeur par défaut », possibilité d’inscrire le nouveau montant directement dans la rubrique en écrasant l’ancien montant sans risque.
+ou de le modifier uniquement dans la paie ou la fiche contrat
+rubrique non modifiable sans doute paramétrée sur un « chiffres clés »
+vérifiable en regardant les menu déroulant de la zone « Montant » de ta rubrique qui doit être positionner sur « chiffres clés»
+si « chiffres clés », alors montant non modifiable dans paie ou contrat mais à modifier dans les chiffres clés (menu paramètres / chiffres clés soit dans onglet principal soit onglet Personnalisé) 
+inscription nouveau montant et date du changement (1er juillet selon question)","**Pourquoi le montant de l’abonnement transport ne se met‑pas à jour pour le second salarié ?**
+
+D’après la documentation disponible, deux points sont à vérifier :
+
+| Point à contrôler | Ce que la documentation indique |
+|-------------------|----------------------------------|
+| **1️⃣ Le montant est‑il renseigné dans le “Chiffre clé” ?** | La mise en place de l’abonnement se fait dans **Menu Paramètres ► Chiffres Clés** (voir *aide‑au‑transport*). On crée un libellé « Abonnement transport », on saisit le **montant** et la **date d’application** dans l’historique du chiffre clé. Les rubriques de paie (Trans1, Trans2, Trans3) utilisent ensuite ce chiffre clé. Si le second salarié utilise une rubrique qui ne dépend pas du chiffre clé (ou qui fait référence à un autre libellé), le montant restera celui qui était en vigueur avant le 01/07. |
+| **2️⃣ Le contrat du salarié contient‑il plusieurs paies ?** | La fiche *contrat‑sur‑net‑ou‑cout‑employeur* précise : *« Contrat contenant plusieurs paies sPAIEctacle ne met jamais à jour les rubriques de paie, si le contrat contient ou est susceptible de contenir plusieurs paies. C’est à l’utilisateur de demander la mise à jour des rubriques du contrat. »* Dans ce cas il faut : <br>1. Ouvrir le contrat du salarié ; <br>2. Cliquer sur **Rubriques de paie** ; <br>3. Choisir **« Màj des rubriques du contrat à la validation »**. Cela force le contrat à reprendre le nouveau montant du chiffre clé. |
+| **3️⃣ La période de la paie est‑elle clôturée ?** | Une paie déjà clôturée n’est plus modifiable (voir *modifier‑une‑paie*). Si la paie du second salarié a déjà été clôturée, le montant affiché ne peut être changé que par la procédure de mise à jour du contrat décrite au point 2, ou en créant une nouvelle paie (ou un avenant). |
+
+### Diagnostic le plus fréquent  
+Le **second salarié possède probablement un contrat qui a déjà généré une ou plusieurs paies**. Dans ce cas, le montant stocké dans le contrat ne se met pas automatiquement à jour quand le chiffre clé change. Le premier salarié, dont le contrat ne contenait (ou ne contient plus) de paie antérieure, voit le nouveau montant apparaître immédiatement.
+
+### Que faire ?  
+
+1. **Vérifier le chiffre clé**  
+   *Paramètres ► Chiffres Clés → Historique →* s’assurer que le **nouveau montant** (date d’application 01/07) est bien enregistré sous le libellé utilisé pour les rubriques « Abonnement transport ».
+
+2. **Vérifier la rubrique affectée au salarié**  
+   *Paramètres ► Rubriques de paie → Rubriques* : la rubrique (Trans1/Trans2/Trans3) doit être reliée au même chiffre clé.
+
+3. **Mettre à jour le contrat du second salarié**  
+   - Ouvrir la fiche **Contrat** du salarié.  
+   - Cliquer sur **Rubriques de paie** → **Màj des rubriques du contrat à la validation**.  
+   - Valider pour que le contrat récupère le nouveau montant du chiffre clé.
+
+4. **Re‑calculer la paie** (si une paie en cours doit être modifiée) ou créer une nouvelle paie avec le bon montant.
+
+En suivant ces étapes, le montant de l’abonnement transport du second salarié sera synchronisé avec le nouveau tarif appliqué depuis le 1er juillet.",0.44,"The answer addresses the part of the ideal solution concerning rubriques linked to ""chiffres clés"" (verification, modification in the key figures, and recording the new amount with the effective date). It does not mention automatic rubriques or the case of rubriques modifiable via ""valeur par défaut"", which are key points in the ideal answer. No contradictions are present, but extra unrelated details are added. | Key points present: rubrique non modifiable paramétrée sur un « chiffres clés »; vérifiable en s'assurant que la rubrique utilise le chiffre clé approprié; montant à modifier dans les chiffres clés (menu paramètres / chiffres clés); inscription du nouveau montant avec la date du changement (1er juillet) | Missing key points: abonnements transports payés par des « rubriques automatiques »; rubrique modifiable paramétrée avec une « valeur par défaut »; vérifier que le menu déroulant du champ Montant est positionné sur « valeur par défaut »; si valeur par défaut, possibilité d’inscrire le nouveau montant directement dans la rubrique; ou modifier le montant uniquement dans la paie ou la fiche contrat"
+Comment changer mon taux AT ?,"Accéder à fiche société / onglet Paramétrages
+Click sur icône « lunette » pour passer en modification
+renseigner le code risque de votre AT et son type
+renseigner nouveau taux AT sur une nouvelle ligne du tableau dédié et date d’application de ce taux
+Valider la fiche société
+Si paies postérieures à cette date d’application -> en théorie à recalculer si pas encore déclarées en DSN","Pour modifier votre taux d’accident du travail (AT), procédez comme suit :
+
+1. **Ouvrez la fiche Société** dans sPAIEctacle.  
+2. Accédez à l’onglet **Paramétrage**. C’est dans cet onglet que se trouvent la gestion des codes risques et les taux AT associés.  
+3. Modifiez le taux correspondant au **Type AT** souhaité (Cas général, Bureau, Autre 1, Autre 2 ou aucun) en saisissant le nouveau chiffre dans la colonne « taux ».  
+4. Validez la modification.  
+
+> **Remarque** : lorsque la mise à jour automatique n’est pas possible (ex. : société avec plusieurs taux non bureau qui change de code), vous recevez la notification :  
+> « Cotisation accident du travail : l’Urssaf vous a notifié un nouveau taux de cotisation d’accident du travail. Vous devez en prendre connaissance et mettre à jour votre paramétrage en fonction. »
+
+5. **Appliquez le nouveau taux aux paies déjà saisies** :  
+   - Sélectionnez les paies concernées.  
+   - Cliquez sur l’icône **Mise à jour des fiches sélectionnées** → **Mise à jour des paies**.  
+   - Cochez **A.T. applicable** puis validez les alertes.  
+   - Effectuez ensuite un **recalcul de paies** (préférez d’abord une simulation) pour vous assurer que seule la cotisation AT a été modifiée.
+
+Ainsi, le nouveau taux AT sera pris en compte dans les prochaines fiches de paie.",0.50,"The candidate answer covers accessing the company file, validating changes, and mentions recalculating pays, but omits the specific steps of clicking the edit icon, entering the risk code and type, and adding the new rate on a new line with its effective date. | Key points present: Accéder à fiche société / onglet Paramétrages; Valider la fiche société; Recalculer les paies si postérieures à la date d’application | Missing key points: Click sur icône « lunette » pour passer en modification; Renseigner le code risque de votre AT et son type; Renseigner nouveau taux AT sur une nouvelle ligne du tableau dédié et date d’application de ce taux"
+"Je suis adhérent du Syndicat des Producteurs indépendant et je dois, à ce titre, cotiser à la cotisation SPI à 0,50% qui est entrée en DSN depuis 2024 mais que je n’ai jamais paramétré dans sPAIEctacle. Peux-tu m’aider à paramétrer cette retenue ?","Dans ce cas il n’y pas assez de données dans la réponse le LLM doit demander:
+Êtes-vous en mono ou multi-société ?","**Comment paramétrer la cotisation SPI à 0,50 % dans sPAIEctacle ?**  
+
+Le paramétrage repose sur la **spécificité « AGEPRO – SPI »** qui a été mise à disposition pour les retenues de type **Audiens** (voir le document *version‑7‑8*).  
+
+---
+
+### Étapes à suivre dans sPAIEctacle  
+
+1. **Ouvrir la fiche de l’entreprise**  
+   - Menu : **Fiche Société → Onglet « Retenues »** (ou le module équivalent où l’on crée les cotisations ).
+
+2. **Ajouter une nouvelle retenue**  
+   - Bouton **« Nouvelle retenue »** → choisissez **Type : Audiens**.  
+
+3. **Sélectionner la spécificité AGEPRO – SPI**  
+   - Dans le champ **« Spécificité »** (ou « Code Spécificité »), choisissez **AGEPRO – SPI**.  
+   - Cette spécificité indique à sPAIEctacle qu’il s’agit de la cotisation du Syndicat des Producteurs Indépendants.  
+
+4. **Renseigner le taux employeur**  
+   - **Taux employeur : 0,50 %** (c’est le taux qui doit être déclaré en DSN à compter de 2024).  
+   - Le **taux salarié** n’est généralement pas applicable pour cette cotisation ; laissez‑le à 0 % ou vide selon les exigences de votre paramétrage.
+
+5. **Vérifier la référence contrat**  
+   - Dès que le taux 0,50 % est saisi, sPAIEctacle complète **automatiquement** le champ **« Référence contrat »** avec **SPI1** (voir le même document : *« si le taux employeur est à 0,50 %, alors sPAIEctacle renseigne la Référence contrat SPI1 »*).  
+
+6. **Enregistrer**  
+   - Validez la création de la retenue (bouton **Enregistrer / OK**).  
+
+7. **Contrôler le paramétrage**  
+   - Retournez sur la liste des retenues : vous devez voir la ligne :  
+     - **Libellé : Adhésion SPI**  
+     - **Type : Audiens**  
+     - **Taux Employeur : 0,50 %**  
+     - **Référence contrat : SPI1**  
+
+8. **Vérifier la génération DSN**  
+   - Lors du lancement de la **DSN mensuelle**, la retenue sera automatiquement prise en compte grâce à la spécificité AGEPRO‑SPI et à la référence SPI1.  
+
+---
+
+### Points de contrôle rapides  
+
+| Élément | Valeur attendue (d’apr. le contexte) |
+|---------|--------------------------------------|
+| Type de retenue | **Audiens** |
+| Spécificité | **AGEPRO – SPI** |
+| Taux employeur | **0,50 %** |
+| Référence contrat (générée) | **SPI1** |
+| Taux salarié | généralement **0 %** (ou non renseigné) |
+
+---
+
+### En cas de doute  
+
+- Si la spécificité **AGEPRO – SPI** n’apparaît pas dans la liste, assurez‑vous que votre logiciel sPAIEctacle est à jour (les listes sont actualisées en ligne ; une connexion Internet est requise, comme indiqué dans le texte d’aide DSN).  
+- Si le champ « Référence contrat » ne se remplit pas automatiquement, vérifiez que le taux employeur est exactement **0,50 %** (pas de virgule différente, pas de décimale supplémentaire).  
+
+---
+
+**En résumé** : créez une retenue de type **Audiens**, choisissez la spécificité **AGEPRO – SPI**, indiquez un taux employeur de **0,50 %** ; sPAIEctacle remplira alors la référence **SPI1**, ce qui assure la bonne prise en compte de la cotisation SPI dans la DSN depuis 2024.",0.00,"The ideal answer requires the LLM to request clarification by asking whether the user is in a mono- or multi-company setup. The candidate answer provides a detailed configuration guide and does not ask this clarification question, thus missing the sole key point. | Missing key points: Ask whether the user is in mono or multi-company (Êtes-vous en mono ou multi-société ?)"
+"Je suis adhérent du Syndicat des Producteurs indépendant et je dois, à ce titre, cotiser à la cotisation SPI à 0,50% qui est entrée en DSN depuis 2024 mais que je n’ai jamais paramétré dans sPAIEctacle. Peux-tu m’aider à paramétrer cette retenue sachant que je suis en multi-sociétés ?","savoir s’il existe déjà un niveau dédié aux retenues en rapport avec l’adhésion à un syndicat.
+Si « non », création du niveau préalable (avec groupe par défaut « non soumis »)
+Si « oui », vérification qu’il n’existe pas de groupe « SPI »
+Si « non », création du groupe « SPI » sur le niveau existant ou précédemment créé
+Affectation du groupe « SPI » dans la fiche société / onglet « paramétrage »
+Création de la retenue SPI : 
+type « Audiens »
+taux employeur à 0,50 »% 
+début d’application : date à laquelle vous voulez appliquer la retenue
+base « salaire abattu (abattement plafonné) » > « Brut »,
+spécificité « AGEPRO - SPI » (ça permettra d’affecter la bonne référence contrat SPI1 dans l’onglet « particularités)
+champs d’application : il convient a priori de tout cocher sur l’ensemble des 4 colonnes
+niveau : sélectionner le niveau existant ou celui créé et cocher le groupe « SPI » créé
+recalcul éventuel des paies déjà saisie sur le mois d’application (si la DSN n’est pas déposée)
+mise en relation avec Audiens pour voir comment gérer la non-déclaration du SPI depuis 2024
+au moment de la prochaine DSN, possibilité de visualiser les cotisations SPI en double-cliquant sur la ligne Audiens prévoyance.","**Paramétrage de la cotisation SPI 0,50 % dans sPAIEctacle (multi‑sociétés)**  
+
+1. **Ouvrir la fiche de chaque société**  
+   - Dans le menu *Paramètres → Fiche Société*, vérifiez que l’option **« Société en DSN »** est bien cochée sur l’onglet **Caisses** (voir la remarque de la version 6.2.1 : *« Lorsque l’option ""Société en DSN"" est cochée »*).
+
+2. **Ajouter une retenue de type Audiens**  
+   - Toujours sur la fiche de la société, cliquez sur **« Ajouter une retenue »**.  
+   - Choisissez le **type Audiens** (c’est le type utilisé pour les cotisations SPI, d’après la version 6.2.1 qui répertorie les types retenues « Audiens » parmi ceux pouvant être déclarés en DSN).
+
+3. **Sélectionner la spécificité AGEPRO‑SPI**  
+   - Dans les paramètres de la retenue, choisissez la **spécificité « AGEPRO‑SPI »** (voir la version 7.8 qui indique : *« Une nouvelle spécificité *AGEPRO‑SPI* est disponible sur les retenues de type Audiens »*).
+
+4. **Définir le taux employeur**  
+   - Indiquez le **taux employeur à 0,50 %**.  
+   - La version 7.8 précise que :  
+     *« si le taux employeur est à 0,50 %, alors sPAIEctacle renseigne la Référence contrat **SPI1** »*.  
+   - Le logiciel remplira donc automatiquement la référence de contrat **SPI1** pour cette retenue.
+
+5. **Valider et répéter pour chaque société**  
+   - Enregistrez la configuration.  
+   - Répétez les étapes 1 à 4 pour chaque société du groupe qui doit verser la cotisation SPI (c’est le principe du **multi‑sociétés** : chaque fiche Société possède son propre paramétrage des caisses et des retenues).
+
+6. **Vérification dans la fenêtre « Cotisations déclarées et règlements »**  
+   - Avant de générer la DSN, ouvrez le récapitulatif *« Cotisations déclarées et règlements »* (section de la version 6.2.1).  
+   - Vous devez voir apparaître la nouvelle ligne **Audiens – AGEPRO‑SPI – taux 0,50 % – Réf. contrat SPI1**.  
+   - Si tout est correct, la cotisation sera automatiquement incluse dans la DSN comme toute autre cotisation de prévoyance ou de santé.
+
+---
+
+### Points à retenir pour le multi‑sociétés
+
+| Action | Où la faire | Pourquoi |
+|--------|--------------|----------|
+| Activer **« Société en DSN »** | Onglet **Caisses** de chaque fiche Société | Nécessaire pour que les retenues soient envoyées en DSN (voir version 6.2.1). |
+| Ajouter retenue **Audiens** + spécificité **AGEPRO‑SPI** | Fiche Société → Retenues | Permet la déclaration DSN de la cotisation SPI (version 7.8). |
+| Saisir **taux 0,50 %** | Paramétrage de la retenue | Déclenche la référence **SPI1** automatiquement (version 7.8). |
+| Enregistrer dans chaque société | Même fiche | Chaque société doit disposer de sa propre ligne de cotisation SPI. |
+
+En suivant ces étapes, la cotisation SPI 0,50 % sera correctement paramétrée dans sPAIEctacle pour toutes les sociétés de votre groupe et sera prise en compte dans les DSN mensuelles.",0.27,"Le candidat ne couvre que quelques points essentiels (type Audiens, taux 0,50 %, spécificité AGEPRO‑SPI et visualisation à la DSN) mais omet la plupart des étapes de configuration du niveau, du groupe SPI, de la base de calcul, des champs d'application, du recalcul des paies et du contact avec Audiens. | Key points present: type « Audiens »; taux employeur à 0,50 %; spécificité « AGEPRO - SPI »; visualiser les cotisations SPI en double‑cliquant sur la ligne Audiens prévoyance lors de la prochaine DSN | Missing key points: vérifier l’existence d’un niveau dédié aux retenues liées à l’adhésion à un syndicat; création du niveau préalable si absent (avec groupe par défaut « non soumis »); vérifier l’absence du groupe « SPI » sur le niveau existant; création du groupe « SPI » sur le niveau existant ou créé; affectation du groupe « SPI » dans la fiche société / onglet paramétrage"
+Comment retrouver les sauvegardes automatiques de mon fichier de données ?,"en monoposte, le fichier de sauvegarde est un fichier dont le nom prend la forme suivante : ""Mespaies-date.spk""
+les fichiers de sauvegarde avec l’extension .spk se trouvent dans un dossier « sauvegarde » situé à côté du fichier de données .4DD
+en multipostes, Les fichiers de sauvegarde ont pour extension .4BK et sont numérotés entre crochets : ""Nom du fichier de paie [0001].4BK"".
+Les fichiers de sauvegarde paramétrés depuis le serveur sont stockés à l'emplacement défini lors de leur mise en place
+Les fichiers de sauvegarde paramétrés depuis les clients sont stockés dans un dossier Backup situé sur le poste serveur, au même emplacement que le fichier de données.","Les sauvegardes automatiques de votre fichier de données sont enregistrées dans le **dossier « Sauvegarde »** qui se trouve **à côté du fichier de paies (.4DD)** que vous utilisez.
+
+**Comment y accéder ?**
+
+1. **Via l’explorateur :**  
+   - Dans sPAIEctacle, cliquez sur le mot **« Données »** (en bas à gauche de la fenêtre).  
+   - Un volet de l’Explorateur Windows (ou du Finder sous macOS) s’ouvre directement sur le répertoire du fichier . Dans ce même répertoire vous verrez le sous‑dossier nommé **Sauvegarde** ; c’est là que se trouvent les archives *.spk* créées automatiquement à la fermeture.
+
+2. **Via la fonction de restauration :**  
+   - Menu **Fichier ► Restauration**.  
+   - La boîte de dialogue de restauration indique l’emplacement du dossier de sauvegarde ; par défaut il s’agit bien du dossier **Sauvegarde** situé à côté du fichier de paies en cours. Vous pouvez alors parcourir ce dossier et voir les archives (ex. « Mespaies.AAMMJJ.spk », « Mespaies.AAMMJJ.1.spk », etc.).
+
+En résumé, toutes les sauvegardes automatiques sont stockées dans le répertoire **Sauvegarde** placé à côté de votre fichier de données . Vous pouvez le retrouver soit en ouvrant le répertoire du fichier via le lien « Données », soit en lançant la fonction **Restauration** qui vous montre directement ce dossier.",0.40,"The answer correctly mentions that automatic backups are stored in a ""Sauvegarde"" folder next to the .4DD data file and gives an example of the .spk naming pattern, covering the monoposte points. It does not address multipostes backups, server‑configured backup locations, or client‑configured backup storage. | Key points present: Monoposte backup file naming format (e.g., Mespaies‑date.spk); Backup files (.spk) are located in a ""Sauvegarde"" folder next to the .4DD data file | Missing key points: Multipostes backup files have extension .4BK and are numbered in brackets (e.g., Nom du fichier de paie [0001].4BK); Backup files configured from the server are stored at the location defined during their setup; Backup files configured from clients are stored in a Backup folder on the server, at the same location as the data file"
+Je cherche le code de ma caisse de médecine du travail. Peux-tu m’aider dans cette recherche ?,Lien vers la liste des codes des caisses de médecine du travail est disponible sur cette page : https://docutheque.ghs.fr/manuel/etats/dsn-mensuelle/dns-mensuelle-nomenclatures/,"Le **code médecine du travail** est un identifiant à 3 chiffres fourni par la caisse à laquelle vous êtes rattaché.  
+
+- La liste complète des codes est consultable sur la page **Nomenclatures** ( https://docutheque.ghs.fr/manuel/etats/dsn-mensuelle/dns-mensuelle-nomenclatures/ ).  
+- **Si votre caisse de médecine du travail est interne à l’entreprise**, le code à renseigner est **999** (voir la section « Spécificités des caisses de type Médecine du travail permanent »).  
+
+Comme le texte fourni ne précise pas le code exact de votre caisse, vous devrez soit :
+1. Accéder à la page **Nomenclatures** et rechercher votre caisse dans la liste, ou  
+2. Vérifier dans la fiche *Caisse* de votre société (onglet *Caisse* → type « Médecine Perm. ») le champ « Code médecine du travail ».  
+
+Si vous ne trouvez pas ce champ ou la page Nomenclatures, le code interne par défaut est 999.",1.00,"The candidate answer includes the required link to the list of occupational health insurance codes, matching the sole key point of the ideal answer. Additional information does not contradict the ideal answer. | Key points present: Provides the link to the list of codes of the occupational health insurance boxes: https://docutheque.ghs.fr/manuel/etats/dsn-mensuelle/dns-mensuelle-nomenclatures/"
+Je souhaite payé mon apprenti 200 euros de plus que ce qui est prévu par sa convention (67% du smic). Quelle rubrique utiliser ?,"Utiliser une rubrique de gratification apprenti « manuelle »
+C’est-à-dire non indexé sur le smic (= rubrique non « interactive ») 
+menu déroulant de la zone montant doit être sur « (aucun) »(et non sur « chiffre clé »)","Je ne dispose pas, dans le texte qui m’a été fourni, de l’information précise indiquant quelle rubrique salariale (code rubrique) doit être utilisée pour ajouter une somme fixe – dans votre cas 200 € – à la rémunération minimale d’un apprenti (67 % du SMIC). Le contenu consulté décrit les pourcentages applicables, les bases de calcul et quelques notions liées aux régimes Urssaf Apprenti, mais il ne précise pas le code de rubrique à employer pour un supplément de rémunération.  
+
+En l’absence de cet élément dans le contexte fourni, je ne peux donc pas vous indiquer la rubrique exacte à utiliser. Vous devrez vous référer à la documentation interne de votre logiciel de paie ou à la convention collective applicable pour connaître le code de rubrique dédié aux compléments de salaire des apprentis.",0.00,"The candidate answer does not provide any of the required rubric details and claims the information is unavailable, which contradicts the ideal answer that specifies the exact rubric to use. | Missing key points: Utiliser une rubrique de gratification apprenti « manuelle »; Rubrique non indexée sur le SMIC (rubrique non « interactive »); Menu déroulant de la zone montant doit être sur « (aucun) » (et non sur « chiffre clé ») | Contradictions: Candidate states that the required rubric information is not available, whereas the ideal answer provides a specific rubric to use."
+Ça fait longtemps que je n’avais pas embauché des serveurs en CDD extra et je ne sais plus comment imprimer leur attestation Assedic depuis le logiciel. Peux-tu me guider ?,"l’édition papier Attestation Assedic CDD en extra est supprimée depuis 2021
+déclaration des fins de contrats en CDD d’usage doit être faite via l’AED ou via le circuit dérogatoire proposé par Pôle Emploi (=France Travail) en DSN mensuelle
+Le circuit dérogatoire permet : 
+D’éviter le signalement à chaque fin de contrat
+De déclarer les fins de contrats via la DSN mensuelle
+De regrouper sur une même attestation l’ensemble des contrats d’un même mois pour un même salarié.
+Cette procédure est automatique pour toutes les DSN générées avec sPAIEctacle - les fins de contrats des CDD d'usage dont toutes les paies sont réglées sur le mois, sont aiguillées vers le circuit dérogatoire.
+Veux-tu que je t’explique plus cette nouvelle fonctionnalité ?","**Guide pour imprimer une attestation Assedic « CDD en extra » dans sPAIEctacle**
+
+1. **Vérifier la version du logiciel**  
+   - L’attestation *Assedic CDD en extra* n’est plus disponible à partir de la version **7.3.10**.  
+   - Elle ne peut être éditée **uniquement avec sPAIEctacle 7.3.9** et **solement** pour les CDD dont le motif est **« CDD d’usage »**.  
+
+2. **Si vous êtes sur la version 7.3.9 (CDD d’usage)**  
+   - Ouvrez la **fiche du contrat** concerné.  
+   - Dans l’onglet **« Suivi contrat »**, utilisez le bouton **« AER »** (Attestation Employeur Rematérialisée).  
+   - Le PDF de l’attestation s’ouvre ; vous pouvez alors **l’imprimer** directement ou le sauvegarder.  
+
+3. **Si vous êtes sur la version 7.3.10 ou supérieure**  
+   - L’attestation *Assedic CDD en extra* a été **supprimée** (voir le document *version‑7‑3‑10*).  
+   - Vous devez donc **produire l’Attestation Assedic Permanent (AED)** ou passer par le **circuit dérogatoire DSN mensuelle** :  
+     - Générez la **DSN fin de contrat** (ou l’AED) depuis le menu **« Contrats > Liste des contrats »** → imprimante → *Attestation Employeur France Travail*.  
+     - Une fois la DSN transmise, une notification vous indiquera que l’attestation rematérialisée (AER) est disponible.  
+     - Dans la fiche du contrat, cliquez sur **« AER »** pour visualiser le PDF et l’imprimer.  
+
+4. **Points à retenir**  
+   - **Pas d’attestation CDD en extra** possible en dehors du CDD d’usage sous 7.3.9.  
+   - Pour tous les autres CDD, utilisez **l’AED** ou le **circuit DSN dérogatoire**.  
+   - La colonne **AE** dans la *Liste des contrats* indique l’état de l’attestation :  
+     - **D** : DSN fin de contrat générée.  
+     - **x** : attestation reçue.  
+     - **Tr.** : attestation transmise via Transat.  
+
+En résumé : si votre logiciel est en **7.3.9** et que le contrat est un **CDD d’usage**, ouvrez le contrat → onglet *Suivi contrat* → bouton **AER** → imprimez.  
+Dans toutes les autres configurations (7.3.10 ou plus, ou autre motif de CDD), passez à l’**AED** ou à la **DSN mensuelle** puis utilisez le même bouton **AER** pour récupérer et imprimer l’attestation.",0.40,"The candidate answer correctly mentions that the paper attestation has been removed and that end-of-contract declarations must be done via AED or the derogatory DSN circuit, matching two of the five key points. It does not mention the specific benefits of the derogatory circuit, the automatic routing of CDD d'usage contract ends in sPAIEctacle, nor the offer to explain the new functionality. | Key points present: Paper edition of Attestation Assedic CDD extra removed since 2021; End-of-contract declarations for CDD d'usage must be done via AED or the derogatory DSN circuit | Missing key points: The derogatory circuit allows avoiding reporting each contract end, declaring ends via monthly DSN, and grouping contracts of the same month for the same employee; The procedure is automatic for all DSN generated with sPAIEctacle, routing CDD d'usage contract ends to the derogatory circuit; Offer to explain more about this new functionality"
+La prime de précarité de ma dernière paie d’apprenti se calcule à 0. J’utiliser pourtant bien la rubrique « ppa » qui d’habitude se calcule automatiquement à 10% du brut du contrat. Je ne comprends pas pourquoi ?,"Légalement, la prime de précarité n’est pas due pour un apprenti : pas d’obligation de la verser.
+Techniquement : rubrique interactive « ppa » se calcule à 0 si «  base de salaire » « précarité » (sur laquelle se calcule la « ppa ») n’est pas cochée dans rubrique « gratification apprenti ».","La prime de précarité (« PPa ») n’est **pas due à la fin d’un contrat d’apprentissage**.  
+
+Dans la documentation sur le contrat d’apprentissage il est indiqué :
+
+> « La prime de précarité CDD n’est pas due à l’issue d’un contrat d’apprentissage. »  
+
+(paragraphe du document *le‑contrat‑d’apprentissage*).
+
+Même si vous saisissez la rubrique automatique PPa, le logiciel sait que, pour un apprenti, la prime de précarité ne s’applique pas et la met donc à 0 €. C’est la raison pour laquelle votre dernière paie d’apprenti affiche une prime de précarité nulle.",0.50,"The answer correctly states the legal fact that the prime de précarité is not due for an apprentice, matching the first key point. However, it does not mention the specific technical condition that the 'base de salaire précarité' must be unchecked in the 'gratification apprenti' rubric, which is the second key point. | Key points present: Legal: the prime de précarité is not due for an apprentice. | Missing key points: Technical: the interactive 'ppa' rubric calculates to 0 if the 'base de salaire' 'précarité' is not checked in the 'gratification apprenti' rubric."
+"Dans les prochains mois, je vais embaucher un groupe de musique composé de 4 musiciens, 1 technicien lumière et 1 technicien son. Je vais devoir leur faire des DPAE, des contrats et des paies à chaque date de leur tournée et je trouve compliqué de devoir sélectionner ces 6 personnes parmi tous mes salariés à chaque fois. Existe-t-il une fonctionnalité pour les regrouper afin de gagner du temps ? Plus largement, je cherche d’ailleurs à optimiser tout le processus d’embauche pour ces 6 salariés : DPAE > contrats > paies > remise de documents aux salariés. 
+Peux tu m’aider ?","listes personnalisées (description de l’icône et du fonctionnement) permettent de regrouper ses 6 salariés pour les retrouver facilement
+« contrat multiple » ou « saisie de contrat en tableau » permettent d’automatiser la création de contrat
+Export fichier DPAE et transmission Urssaf en MtoM permettent d’automatiser l’envoi des DPAE
+« signature électronique » permet l’automatisation des signatures de contrat (module payant)
+« paies sur liste automatique » permet l’automatisation de la création de paie
+« Envoi des documents de paie via transat » facilite et automatise remise documents aux salariés
+Éventuel intérêt pour : 
+« demande d’état civil »
+« demande d’abattement »
+Déclaration d’impôts
+Existence d’outils de suivi et de correction facilitant les vérification de ce qui est fait / reste à faire.","Oui, s PAIEctacle propose des fonctions qui vous permettent de traiter les 6 personnes (4 musiciens, 1 technicien lumière, 1 technicien son) en une seule opération, tant pour la DPAE, que pour les contrats et la paie.
+
+---
+
+## 1️⃣ DPAE : création groupée à partir de la liste des salariés  
+
+* **Menu → Salariés → Liste des salariés** – vous pouvez co‑cocher les 6 personnes dont vous avez besoin.  
+* En cliquant sur l’icône **DPAE** → **Export du fichier DPAE**, un panneau s’ouvre.  
+* Pour chaque salarié, sPAIEctacle reprend automatiquement les informations du **dernier contrat** (type de contrat, profession, catégorie salariale, etc.). Vous pouvez les modifier individuellement si besoin.  
+* Vous renseignez les dates du contrat (début / fin – indispensable pour un contrat intermittent).  
+* L’option **“ne pas créer les contrats correspondant”** existe mais il est généralement déconseillé de la sélectionner : en laissant la case décochée, sPAIEctacle **génère les DPAE** ET **crée les nouveaux contrats** avec les dates déjà pré‑remplies et la case “Fin du contrat” gérée automatiquement.  
+
+> Ainsi, en une seule sélection vous obtenez les 6 DPAE et les 6 contrats associés.
+
+---
+
+## 2️⃣ Contrats : création automatique à partir de la DPAE  
+
+* La procédure de DPAE décrite ci‑dessus crée automatiquement les contrats ; vous n’avez donc pas à les saisir séparément.  
+* Si besoin, vous pouvez revenir sur chaque contrat (ex. compléter les données de paie) après la génération.
+
+---
+
+## 3️⃣ Paie : traitement groupé  
+
+### a) **Paie multiples**  
+* Cette fonctionnalité permet de réaliser **une seule saisie** pour les salariés qui partagent les mêmes caractéristiques de paie (période, rubriques et montants, analytique).  
+* sPAIEctacle utilise automatiquement les spécificités propres à chaque salarié (catégorie salariale, mutuelle, profession, mode de règlement, etc.) à partir du **dernier contrat**.  
+* Vous pouvez donc saisir la paie une fois pour les 6 personnes ; sPAIEctacle appliquera les données individuelles (ex. profession différente) tout en conservant les éléments communs (période de travail, même base de rémunération).
+
+### b) **Paie sur liste – Automatique**  
+* Sélectionnez les **contrats** concernés (les 6 créés à l’étape DPAE).  
+* Définissez la **période de paie** souhaitée.  
+* sPAIEctacle génère alors **toutes les paies** correspondant à ces contrats pour la période indiquée, en reprenant individuellement chaque information contractuelle.  
+* Cette opération permet de réaliser en une seule action **toutes les paies d’un mois donné**, ce qui est idéal pour une tournée où les dates de travail sont communes.
+
+---
+
+## 4️⃣ Flux complet optimisé  
+
+| Étape | Action dans sPAIEctacle | Résultat |
+|------|--------------------------|----------|
+| 1️⃣ | **Liste des salariés → sélection → DPAE** | DPAE générées **et contrats créés** pour les 6 personnes |
+| 2️⃣ | (Facultatif) Ajustement du contrat si besoin | Contrats prêts pour la paie |
+| 3️⃣ | **Paie multiples** **ou** **Paie sur liste – Automatique** | Paies saisies en une fois, avec les spécificités de chaque salarié appliquées automatiquement |
+| 4️⃣ | Export / remise des bulletins | Documents prêts à être remis aux salariés |
+
+---
+
+### Points à retenir  
+
+* **Sélection multiple** : la même liste de salariés sert pour la DPAE, la création de contrats et la génération de paies.  
+* **Pas besoin de répéter la sélection** à chaque étape ; les fonctions “Paie multiples” et “Paie sur liste – Automatique” exploitent directement les contrats créés.  
+* L’option “ne pas créer les contrats” doit rester décochée pour que la liaison entre DPAE, contrat et paie soit assurée automatiquement.  
+
+En suivant ce processus, vous réduisez considérablement le temps consacré à l’embauche, à la contractualisation et à la paie de votre groupe de tournage.",0.40,"The answer covers custom employee lists for grouping, automatic contract creation, DPAE export, and automatic payroll generation via ""paie sur liste"". It omits signature electronic, document transmission via transat, civil status and tax related requests, and tracking/correction tools. | Key points present: listes personnalisées (groupement via sélection multiple); contrat multiple / saisie de contrat en tableau (création automatique de contrats); Export fichier DPAE (export DPAE depuis la liste); paies sur liste automatique (génération groupée des paies) | Missing key points: signature électronique (automatisation des signatures de contrat); Envoi des documents de paie via transat; demande d’état civil; demande d’abattement; Déclaration d’impôts"
+Qu’est ce qui peut expliquer que mes retenues de mutuelle (=santé) ne partent pas dans mon fichier de DSN du mois alors que les retenues de mutuelle sont bien calculées dans mes paies du mois ?,"2 possibilités : 
+
+1° option « hors dsn » cochée à tort dans la caisse
+Une option « Hors DSN » des caisses de type Santé permet d’exclure les cotisations liées de la DSN
+Vérification : aller dans Paramètres / paramétrage de la paie / caisse
+Ouvrir la caisse de mutuelle en question
+Regarder si la boite à cocher « Hors DSN » est cochée ou pas
+La décocher si on veut que cotisations partent en DSN
+2° type « santé » mal paramétré sur onglet « Caisses » de la « Fiche société »
+Pour que retenues de « santé » partent en DSN, le type santé doit être paramétré avec : 
+Une périodicité (mois, trimestre, …) et non en « pas de déclaration »
+La colonne « Paiement/options » doit être positionné sur l’un des choix « DSN (règlement par virement) » ou « DSN (prélèvement SEPA » (et non sur « (hors dsn) »)","**Pourquoi les retenues Santé (mutuelle) ne sont pas exportées dans la DSN ?**  
+
+Dans sPAIEctacle les cotisations « Santé » (mutuelle) ne sont envoyées que si :
+
+1. **La caisse de mutuelle est bien déclarée comme organisme « Santé »**  
+   * Sur l’onglet **Caisses** de la fiche *Société*, la caisse doit être renseignée avec le bon type (Santé) et son **identifiant** (code ou SIRET).  
+   * La périodicité du type retenue doit être réglée sur **Mois** (ou Trimestre) ; sinon la ligne n’est pas prise en compte dans le fichier DSN mensuel.
+
+2. **L’option « Hors DSN » n’est pas cochée**  
+   > *« Pour les types Prévoyance, Santé ou Retraite supplémentaire, la caisse associée ne doit pas avoir l’option ‘Hors DSN’ cochée. »*  (doc *version‑6‑2‑1*).  
+   Si cette case est activée, la cotisation est calculée dans la paie mais elle est exclue du récapitulatif envoyé à la DSN.
+
+3. **Le critère de catégorie salariale de type mutuelle est correctement appliqué**  
+   * La gestion des mutuelles (doc *gestion‑des‑mutuelles*) indique que la retenue se déclenche à partir de la **catégorie salariale de type mutuelle**.  
+   * Si l’employé possède à la fois une catégorie « générale » et une catégorie « mutuelle », c’est la catégorie *mutuelle* qui prévaut.  
+   * Une mauvaise affectation (par ex. catégorie mutuelle non renseignée, ou catégorie générale qui écrase la catégorie mutuelle) empêche la retenue d’être reconnue comme « Santé » par le moteur DSN.
+
+4. **Le montant est bien déclaré dans le tableau récapitulatif des cotisations**  
+   * Avant la génération, sPAIEctacle affiche le récapitulatif des cotisations déclarées (doc *version‑6‑2‑1*).  
+   * Vérifiez que la ligne **Santé** apparaît avec le bon **cotis. décl.** (somme des cotisations déclarées) ; si la ligne est absente, le problème vient de la configuration décrite ci‑dessus.
+
+---
+
+### Étapes de vérification / correction
+
+| Action | Où la réaliser | Pourquoi |
+|--------|----------------|----------|
+| Ouvrir l’onglet **Caisses** de la fiche *Société* | Fiche *Société* → onglet **Caisses** | S’assurer que la caisse santé est renseignée, que le type est « Santé » et que **Hors DSN** n’est pas coché. |
+| Vérifier la **périodicité** du type retenue | Onglet **Caisses** → colonne *Périodicité* | Doit être « Mois » (ou Trimestre) pour être intégrée à la DSN mensuelle. |
+| Contrôler la **catégorie salariale de type mutuelle** de chaque salarié | Fiche *Salarié* → onglet **Catégories** | La catégorie mutuelle doit être active ; sinon la retenue n’est pas déclenchée. |
+| Regénérer le **récapitulatif des cotisations déclarées** avant la DSN | Menu *DSN* → “Vue récapitulatif cotisations” | La ligne **Santé** doit être présente avec le montant attendu. |
+| Lancer le **contrôle de cohérence** et relancer l’analyse | DSN → “Contrôle de cohérence” → “Relancer l’analyse” | Permet d’identifier d’éventuelles anomalies restantes. |
+
+---
+
+### Résultat attendu
+
+*Après ces corrections* : la retenue de mutuelle apparaît dans le **récapitulatif des cotisations** (colonne *Cotis. décl.*) et, lors de la génération du fichier DSN, la ligne **Santé** (type retenue = Santé) est bien incluse avec le montant calculé sur les bulletins de paie.  
+
+Si, même après ces vérifications, la ligne demeure absente, il s’agit alors d’un **bug ou d’une limitation du logiciel** et il conviendra d’ouvrir un ticket auprès du support GHS en joignant le fichier de contrôle DSN.",0.67,Le candidat couvre les deux points principaux de l'idéal (vérifier que l'option 'Hors DSN' n'est pas cochée et que la périodicité du type santé est correctement paramétrée). Il ne mentionne pas le paramétrage de la colonne 'Paiement/options' qui doit être réglée sur un mode DSN (virement ou prélèvement SEPA). Aucun élément ne contredit la réponse idéale. | Key points present: Option « Hors DSN » n’est pas cochée; La caisse de mutuelle est déclarée comme type « Santé » avec une périodicité (mois ou trimestre) correcte | Missing key points: La colonne « Paiement/options » doit être positionnée sur « DSN (règlement par virement) » ou « DSN (prélèvement SEPA) » et non sur « hors DSN »
+"J’ai souscrit au service « Congés et Absences » mais quand je fait la mise à jour des congés de mes paies, mes absences remontent bien mais pas ma valorisation. Peux-tu m’expliquer pourquoi ?","Mise à jour des congés nécessite d’avoir effectué le typage des rubriques à importer
+Rubrique d’absence a l’air « typé » mais rubrique de valorisation ne doit pas l’être
+Cf. manuel de référence de congés et absences","Lorsque vous utilisez le service **« Congés et Absences »**, les absences sont bien enregistrées dans la paie parce que le module **sPAIEctacle** crée automatiquement les rubriques d’absence (par ex. ABCP, ABCA, AbMa, etc.).  
+
+En revanche, la **valorisation** de ces absences n’est pas calculée de façon automatique ; elle repose sur des rubriques interactives que vous devez ajouter vous‑même ou que vous devez laisser être recalculées par le moteur de paie.
+
+### Pourquoi la valorisation ne s’affiche pas ?
+
+1. **La valorisation est une rubrique à saisir**  
+   - Dans la fiche *« Arrets maladie des salariés intermittents du spectacle »* il est indiqué :  
+
+     > « l’absence pourra également être **valorisée** ».  
+     > Pour ce faire, deux rubriques sont généralement créées :  
+     > - **Rémunération Arrêt de travail Intermittent (MATIn +)** – soumise à Congés Spectacles à 100 % (positif)  
+     > - **Rémunération Arrêt de travail Intermittent Reprise (MalIn ‑)** – non soumise à Congés Spectacles (négatif)  
+
+   - Sans ces lignes, sPAIEctacle ne peut pas produire le montant de valorisation ; les absences restent visibles, mais la contrepartie « valorisation » ne l’est pas.
+
+2. **Le recalcul des congés seul ne prend pas en compte la valorisation**  
+   - Dans la procédure *« Recalcul des paies »* (doc *recalcul-des-paies*) il existe l’option **« Recalcul des congés seulement »** qui ne recalcule **que les compteurs de congés**.  
+   - Si vous choisissez cette option, les rubriques de valorisation restent inchangées, d’où l’absence de résultat.
+
+3. **Paramétrage de la rubrique de valorisation**  
+   - La fiche *« la‑paie‑d’absence‑maladie‑avec‑maintien‑de‑salaire‑net »* décrit la création d’une ligne **MSNet** (maintien du salaire net) qui doit être placée en première ligne du tableau des rubriques et dont le montant est calculé « à l’envers » par le moteur.  
+   - Si le **cadenas** du net à payer ou celui de la base de calcul reste fermé ou si la case **« Base mini smic »** est cochée, le calcul ne s’effectuera pas.
+
+### Que faire pour obtenir la valorisation ?
+
+1. **Ajouter les rubriques de valorisation** :  
+   - Créez la ligne **MATIn +** (ou la rubrique équivalente selon votre convention) avec la quantité correspondante à la durée de l’absence.  
+   - Créez la ligne **MalIn ‑** (ou la rubrique d’ajustement) pour annuler le montant sur la partie non soumise aux congés.  
+
+2. **Vérifier le paramétrage** :  
+   - Ouvrez le **cadenas** à côté du net à payer et de la base de calcul avant de valider.  
+   - Décochez la case **« Base mini smic »** si elle est activée.  
+
+3. **Lancer un **recalcul complet** des paies** (et non « Recalcul des congés seulement ») :  
+   - Menu **Salariés → Ajout de paie → Recalcul des paies → Recalcul complet**.  
+   - Cela recompute à la fois les compteurs de congés et les rubriques interactives de valorisation.
+
+En résumé, vos absences apparaissent parce qu’elles sont saisies via les rubriques d’absence, mais la valorisation ne se génère pas tant que les rubriques de valorisation ne sont pas créées, que le paramétrage n’est pas correct, ou que vous avez effectué uniquement un « recalcul des congés ». Ajoutez les lignes de valorisation décrites ci‑dessus et lancez un recalcul complet ; la valorisation devrait alors apparaître dans la paie.",0.33,"The candidate answer addresses the need to manually create valuation rubrics, which aligns with the second key point of the ideal answer. However, it does not mention the requirement to type the rubrics before updating leave, nor does it reference the reference manual. | Key points present: Rubrique de valorisation doit être créée manuellement (non typée) | Missing key points: Mise à jour des congés nécessite d’avoir effectué le typage des rubriques à importer; Référence au manuel de référence de congés et absences"
+"Quand je lance ma DSN, j’ai ce message d’erreur que je ne comprends pas : « !! Votre fiche paramétrage Audiens porte la référence contrat [FCAPEAC] alors que la retenue correspondante n'est pas paramétrée ». Que faire ?","FCAP : Fonds commun d’aide au paritarisme = cotisation paritarisme  obligatoire pour entreprises de la CCN EAC (Entreprises Artistiques et Culturelles - IDCC n° 1285)
+= 0,25% des salaires bruts de l’ensemble des salarié.
+Intégré à la DSN depuis le 01/04/2024 avec référence contrat « FCAPEAC », recouvré par Audiens 
+Message d’erreur signifie que caisse Audiens appelle cette cotisation FCAP EAC alors que cotisation non paramétrée dans les paies
+2 possibilités : 
+Entreprise relevant de la CCN EAC -> nécessité de paramétrer la retenue et recalcul paie du mois (éventuel appel maintenance pour plus de précisions)
+Entreprises ne relevant pas de la CCN EAC - > non concernée par cette retenue. Possibilité qu’Audiens ait ajouté référence FCAPEAC à fiche paramétrage si déclaration contrat IDCC 12852 au cours des 12 derniers mois -> point avec la caisse et « poursuivre malgré les erreurs » (pas certain que l’IA puisse trouver ce « poursuivre malgré les erreurs »)","**Que faire ?**  
+
+1. **Ouvrez la ligne d’anomalie**  
+   - Dans sPAIEctacle, faites un double‑clic sur le message : « !! Votre fiche paramétrage Audiens porte la référence contrat **[FCAPEAC]** alors que la retenue correspondante n’est pas paramétrée ».  
+   - La liste des fiches concernées (c’est‑à‑dire les retenues qui devraient être associées à la référence contrat **FCAPEAC**) s’affiche automatiquement.
+
+2. **Vérifiez la fiche de paramétrage Audiens**  
+   - Consultez la fiche de paramétrage fournie par Audiens (onglet *Particularités des retenues*).  
+   - La colonne **« Référence contrat »** doit contenir **FCAPEAC** pour la (ou les) retenues concernées.  
+   - Si la colonne **« Code option »** ou **« Code population »** est renseignée dans la fiche, ces champs doivent également être remplis dans votre fiche de paramétrage.
+
+3. **Corrigez ou créez la retenue manquante**  
+   - Si la retenue n’existe pas encore dans votre logiciel : ajoutez‑la dans l’onglet *Particularités des retenues* en renseignant :  
+     - **Référence contrat** : **FCAPEAC**  
+     - **Code organisme / Code délégataire** (le cas échéant)  
+     - **Montant / Taux** et **Libellé** (ces champs sont uniquement informatifs pour sPAIEctacle).  
+   - Si la retenue existe mais porte une mauvaise référence : modifiez simplement la valeur de la **Référence contrat** pour qu’elle corresponde à **FCAPEAC**.
+
+4. **Relancez le contrôle de cohérence**  
+   - Après avoir corrigé la/les retenue(s), cliquez sur **« Relancer l’analyse »** (ou « Relancer le contrôle de cohérence ») pour vérifier que l’erreur a disparu.  
+
+5. **Si le problème persiste**  
+   - Vérifiez que votre ordinateur est bien connecté à Internet : sPAIEctacle actualise régulièrement les listes de vérification depuis GHS.  
+   - Consultez la fiche d’apprentissage du Centre d’apprentissage :  
+     <https://docutheque.ghs.fr/tutoriel/verification-fpoc-audiens/>  
+     Cette documentation décrit en détail le téléchargement et la mise en place des fiches de paramétrage Audiens.
+
+En résumé, l’erreur indique que la référence contrat **FCAPEAC** apparaît dans votre fiche de paramétrage Audiens alors qu’aucune retenue correspondante n’est définie dans *Particularités des retenues*. Créez ou corrigez la retenue en renseignant correctement la référence contrat (et les éventuels codes option/population), puis relancez l’analyse.",0.20,"The answer only mentions that the error means the contract reference appears without a corresponding withholding, which matches one key point of the ideal answer. It does not explain what FCAP is, its rate, its integration date, nor the two possible scenarios for companies under or not under the CCN EAC. | Key points present: Error meaning: the contract reference FCAPEAC appears in the Audiens parameter file while the corresponding withholding is not defined. | Missing key points: Definition of FCAP (Fonds commun d’aide au paritarisme), its mandatory nature for CCN EAC companies, and its rate of 0.25% of gross salaries.; Integration of FCAP into DSN since 01/04/2024 with reference contract ""FCAPEAC"" and collection by Audiens.; If the company is under CCN EAC: need to parametrize the withholding and recalculate the payroll (possible maintenance call).; If the company is not under CCN EAC: not concerned; possible Audiens addition due to recent IDCC 12852 declaration, need to discuss with the caisse and possibly continue despite errors."
+Comment gérer un arrêt maladie pour un intermittent ?,"Depuis 01/04/25, si intermittent sous contrat au moment de l’arrêt maladie : 
+obligation de déclarer arrêt dans DSN mensuelle 
+obligation de cotiser à aux congés spectacles sur la base de 80% de rémunération initialement prévue au contrat
+pas d’obligation de maintien de salaire (sauf accord particulier)
+Mise en garde : que pour arrêts déclarés par le salarié, notamment à France Travail (=Pole emploi)
+Nécessite donc saisie d’un événement « arrêt de travail » (= déclenchement d’un bloc 60 dans DSN mensuelle)
+Mise en garde : Aucune DSN événementielle à produire
+Réalisation de la paie en suivant la fiche solution (avec utilisation rubriques Malin- et Malin-) (=cotiser à 80% des congés spectacles)","**Gestion d’un arrêt maladie d’un salarié intermittent du spectacle**
+
+1. **Saisie de l’événement d’arrêt de travail**  
+   - Dans le logiciel : *Menu > Contrats > Évènements* → cliquer sur l’icône **Ajouter**.  
+   - Renseigner les dates de l’arrêt ainsi que le motif, le salarié et le contrat concernés.  
+   - Si l’arrêt débute avant le début du contrat (ou avant le premier jour du contrat), le **« Dernier jour travaillé »** doit être fixé à la date de début du contrat.  
+   - L’événement crée le **bloc 60** (arrêt de travail) qui sera intégré automatiquement à la **DSN mensuelle** du(s) mois concerné(s).  
+   - **Pas de DSN événementielle** à produire pour les intermittents (la déclaration se fait uniquement dans la DSN mensuelle).
+
+2. **Déclaration à la caisse et cotisations**  
+   - L’employeur doit déclarer l’arrêt dans la DSN mensuelle et **cotiser à la Caisse des Congés Spectacles** sur la base de **80 % de la rémunération prévue au contrat** (pour les arrêts d’origine non professionnelle).  
+   - Pour les arrêts d’accident du travail, de maladie professionnelle ou de maternité, la cotisation se fait sur **100 %** de la rémunération prévue (selon la fiche DSN du 4 août 2025).
+
+3. **Droits du salarié aux indemnités journalières (IJ)**  
+   - Le salarié doit, comme d’habitude, **contacter son centre de Sécurité sociale** et fournir ses bulletins de salaire des **12 mois précédant l’arrêt**.  
+   - La Sécurité sociale calcule les IJSS et les verse directement au salarié ou, sur demande de l’employeur, au moyen de la **subrogation**.
+
+4. **Maintien complémentaire de la rémunération** *(le cas échéant)*  
+   - Si l’employeur souhaite maintenir tout ou partie du salaire au-delà des IJ, il doit se référer aux dispositions de la convention collective et, éventuellement, paramétrer la rubrique **IJS** (voir le paragraphe 3 de la même fiche).  
+   - Les rubriques « MalIn+ » (soumise à 80 % à la base Congés Spectacles) et « MalIn‑ » (non soumise) sont créées automatiquement en version 7.12 et peuvent être utilisées selon la politique de l’entreprise.
+
+5. **Prolongation de l’arrêt**  
+   - En cas de prolongation, **modifier uniquement la date de fin** de l’événement déjà saisi (pas de nouveau signalement).  
+   - La DSN mensuelle prendra en compte les nouvelles dates; aucune DSN événementielle supplémentaire n’est requise.
+
+**Résumé des points clés**  
+- Saisir un événement d’arrêt de travail via le module *Contrats > Évènements*.  
+- Le bloc 60 est automatiquement intégré à la DSN mensuelle ; aucune DSN événementielle n’est nécessaire pour les intermittents.  
+- Cotiser à la Caisse des Congés Spectacles à 80 % (arrêts non professionnels) ou 100 % (accident/maladie pro, maternité).  
+- Le salarié doit fournir à la Sécurité sociale ses 12 mois de paie pour obtenir les IJ.  
+- Pour toute prolongation, mettre à jour la date de fin de l’événement déjà créé.",0.83,"The candidate answer covers most of the key points from the ideal answer, including DSN declaration, 80% contribution to congés spectacles, lack of salary maintenance obligation, event entry with block 60, no event-driven DSN, and use of MalIn rubrics. It misses the specific warning about stops declared by the employee to France Travail (Pôle emploi). No contradictions were found. | Key points present: Obligation de déclarer l’arrêt dans la DSN mensuelle; Obligation de cotiser aux congés spectacles sur la base de 80 % de la rémunération prévue au contrat; Pas d’obligation de maintien de salaire (sauf accord particulier); Nécessité de saisir un événement « arrêt de travail » déclenchant le bloc 60 dans la DSN mensuelle; Aucune DSN événementielle à produire | Missing key points: Mise en garde : que pour arrêts déclarés par le salarié, notamment à France Travail (=Pôle emploi)"
+"Un intermittent n’honore pas son contrat car il est en arrêt maladie. Puis-je lui maintenir son salaire ? Si « oui », suffit-il de faire la paie comme s’il avait travaillé ?","pas d’obligation de maintien de salaire (sauf accord particulier)
+mais possibilité de faire maintien si employeur le souhaite
+paie particulière (différente de « comme s’il avait travaillé ») car maintien = autres rémunérations sur AEM
+NB : nécessité de connaitre le montant des IJ pour réaliser la paie
+cf. fiche solution « Arrêts maladie des salariés intermittents du spectacle »","En l’absence d’un **accord particulier**, la règle applicable aux salariés intermittents du spectacle est la suivante :
+
+* **Pas de maintien de salaire par l’employeur**.  
+  Lors d’un arrêt maladie qui couvre une période de contrat, l’intermittent est uniquement indemnisé par la Sécurité sociale (article L.1226‑1 du Code du travail).  
+
+* **Si l’employeur veut néanmoins maintenir la rémunération**, il doit :
+  1. **Déduire les indemnités journalières de sécurité sociale (IJSS)** versées au salarié ;
+  2. **Disposer du bordereau de versement des IJSS** pour pouvoir estimer le montant des indemnités et donc calculer le complément à verser.  
+  Sans ce bordereau, la paie ne peut pas être saisie correctement.
+
+Par conséquent, **il ne suffit pas de faire la paie comme si le salarié avait travaillé**.  
+Il faut :
+
+1. Attendre la transmission du bordereau d’IJSS ;
+2. Calculer le salaire net à maintenir en soustrayant les IJSS du montant habituel ;
+3. Saisir en paie le complément éventuel (le cas échéant, selon l’accord ou l’usage de l’entreprise).
+
+En résumé : le maintien du salaire n’est pas automatique pour un intermittent en arrêt maladie ; il ne peut être procédé qu’au titre d’un accord spécifique et nécessite la prise en compte des IJSS, pas une simple saisie « comme si le salarié avait travaillé ».",0.80,"The answer covers the main points about lack of obligation, optional employer maintenance, the need for a special payroll calculation and the necessity of knowing the IJ amount. It omits the reference to the specific solution sheet. | Key points present: No obligation to maintain salary except by specific agreement; Employer may maintain salary if they wish; Payroll is not the same as if the employee had worked; must account for IJSS; Need to know the amount of indemnités journalières (IJ) to compute payroll | Missing key points: Reference to the solution sheet ""Arrêts maladie des salariés intermittents du spectacle"""
+Je reçois une prolongation d’arrêt maladie d’un de mes salariés. Dois-je lui créer un nouvel arrêt ?,"Pas de nouveau signalement à faire (=rien à redéposer)
+Juste Décaler la date de fin de l’événement initial afin d’alimenter la dsn mensuelle","Non. En cas de prolongation d’un arrêt maladie, il ne faut pas créer de nouvel arrêt. Vous devez simplement mettre à jour la date de fin de l’événement déjà saisi (dans sPAIEctacle ou La Paie) afin que la DSN mensuelle reflète la nouvelle période. Aucun autre signalement ou nouveau document n’est requis.",1.00,The answer covers both key points from the ideal answer without contradictions. | Key points present: Pas de nouveau signalement à faire (pas de nouvel arrêt à créer); Décaler la date de fin de l'événement initial pour alimenter la DSN mensuelle
+"En exportant une DSN, j’ai cette anomalie « !! Diplôme préparé non renseigné pour un contrat d’apprentissage ».","pour apprentis, précision « diplôme préparé » est obligatoire pour DSN
+double click sur l’erreur du contrôle de cohérence -> contrat
+ouvrir contrat, passer en modification, renseigner « Diplôme » et valider
+« valider correction » sur contrôle de cohérence","**Solution rapide**  
+
+| Étape | Action à réaliser |
+|------|-------------------|
+| 1️⃣ | **Ouvrez le détail de l’anomalie** : dans l’écran de contrôle de la DSN, double‑cliquez sur la ligne qui indique **« !! Diplôme préparé non renseigné pour un contrat d’apprentissage »**. La liste des fiches (contrats) concernées apparaît immédiatement. |
+| 2️⃣ | **Sélectionnez le contrat d’apprentissage** concerné et ouvrez sa notice (onglet *Contrat* ou *Fiche salarié*). |
+| 3️⃣ | **Renseignez le champ « Diplôme préparé »** : choisissez, dans le référentiel proposé, le diplôme que l’apprenti prépare (code / libellé du diplôme). Ce champ se trouve généralement dans la partie *Apprentissage* du contrat, sous **« Diplôme préparé »** ou **« Formation / Diplôme »**. |
+| 4️⃣ | **Enregistrez la modification** du contrat. |
+| 5️⃣ | **Relancez le contrôle de cohérence** : cliquez sur le bouton **« Relancer l’analyse »** (ou « Re‑analyser ») pour que le système prenne en compte la donnée remplie. |
+| 6️⃣ | **Vérifiez que l’anomalie disparaît** dans le tableau de bord des contrôles. Si le statut passe de **ANO (orange/rouge)** à **OK**, vous pouvez procéder à l’export de la DSN. |
+
+---
+
+### Pourquoi cette correction ?  
+
+- L’anomalie indique que le **diplôme préparé** (champ obligatoire pour les contrats d’apprentissage) n’est pas renseigné.  
+- Sans cette information, le contrôle métier des destinataires (Pôle Emploi, OPCO, etc.) signale une erreur ; la DSN ne sera donc pas acceptée tant que le champ reste vide.  
+
+---
+
+### Astuce supplémentaire  
+
+- Si vous avez plusieurs contrats d’apprentissage concernés, vous pouvez **modifier plusieurs fiches à la fois** en sélectionnant toutes les lignes listées après le double‑clic, puis en remplissant le même diplôme préparé (ou le diplôme propre à chaque apprenti) via la fonction de modification groupée de sPAIEctacle.  
+- Après chaque modification groupée, **relancez l’analyse** pour vous assurer que toutes les anomalies ont bien été résolues avant de re‑soumettre la DSN.  
+
+---
+
+> **En résumé** : double‑cliquez sur l’anomalie, remplissez le champ *Diplôme préparé* du ou des contrats d’apprentissage, enregistrez, puis relancez l’analyse. Une fois le statut passé à **OK**, vous pouvez exporter à nouveau votre DSN sans rencontrer cette anomalie.",1.00,"The candidate answer addresses all four key points from the ideal answer, providing a clear step‑by‑step procedure that matches the required actions. No contradictions are present. | Key points present: Diplôme préparé is mandatory for apprentices in DSN; Double‑click on the error in the coherence control to open the contract; Open the contract in modification mode, fill the Diplôme field, and validate; Validate correction on the coherence control"
+J’ai oublié de faire une paie le mois dernier. Comment rattraper mon erreur ?,"Création paie avec dates réellement travaillées MAIS avec date de règlement sur le mois courant
+La date de règlement sur le mois courant permet à la paie de partir avec DSN du mois courant","**Rattraper une paie oubliée dans sPAIEctacle**
+
+1. **Créer la paie manquante**  
+   - Menu **Paies → Liste des paies**.  
+   - Cliquer sur **« Nouvelle paie »** (ou *Ajout de paie*).  
+   - Sélectionner le salarié concerné et la période du mois où la paie aurait dû être versée.  
+   - Saisir toutes les rubriques (brut, cotisations, net…) exactement comme si la paie avait été traitée à l’échéance.  
+   - Valider avec **OK**.
+
+2. **Faire le recalcul des paies (facultatif mais recommandé)**  
+   - Menu **Salariés → Liste des salariés**.  
+   - Sélectionner le ou les salariés pour lesquels vous venez de créer la paie.  
+   - Cliquer sur l’icône **« Ajout de paie – Recalcul des paies »**.  
+   - Cocher **« Paies à partir du »** et indiquer la date du 1ᵉʳ jour du mois concerné (ou la date de la paie que vous venez d’ajouter).  
+   - Valider le dialogue et confirmer la sauvegarde.  
+   - Le système recalculera les retenues, les congés et les cumuls à partir de cette date afin d’assurer la cohérence de la chronologie.
+
+3. **Si une paie a déjà été déclarée pour le même mois (ex. : DSN déjà transmise)**  
+   - Vous devez **annuler** la paie qui a été réellement payée (ou la paie erronée) puis créer une **paie rectificative liée** :  
+     - Dans la **Liste des paies**, sélectionner la paie à annuler.  
+     - Cliquer sur **Mise à jour → Annulation de paie – Paie rectificative…**.  
+     - Dans la boîte de dialogue, cocher **« Saisie d’une paie rectificative après annulation »** et valider.  
+     - Une paie « annulante » (négative) sera créée, suivie d’une **paie rectificative** où vous saisirez les bons montants (c’est la paie que vous venez de créer à l’étape 1).  
+
+4. **Vérifier les états récapitulatifs**  
+   - Dans la **Liste des paies**, les paies **annulées** et **annulantes** apparaissent en rouge (spécificité *Ann.*) et la paie **rectificative** en violet (*Rect.*).  
+   - Vous pouvez afficher les paies liées en cliquant sur **« Paie rectificative » → « Afficher les paies liées… »** pour vous assurer que la séquence (annulée → annulante → rectificative) est correcte.
+
+5. **Valider les déclarations**  
+   - Une fois la paie manquante correctement enregistrée et le recalcul effectué, relancez les déclarations (DSN, bordereaux de cotisations, etc.) afin que les organismes sociaux reçoivent les montants corrigés.
+
+**En résumé :**  
+- Créez simplement la paie oubliée ; puis lancez un recalcul des paies à partir de la date de cette paie.  
+- Si une paie a déjà été déclarée pour le même exercice, annulez‑la et saisissez une paie rectificative liée selon la procédure « Annulation de paie – Paie rectificative… ».  
+
+Ces actions permettent de rétablir les soldes du salarié et les cumuls de cotisations sans compromettre la cohérence de la chronologie des paies.",0.00,"The candidate answer does not mention setting the payment date to the current month, which is essential to both key points of the ideal answer. It also does not explain that this allows the payroll to be included in the current month's DSN. Therefore, none of the required key points are covered. | Missing key points: Créer la paie avec les dates réellement travaillées mais avec la date de règlement sur le mois courant.; La date de règlement sur le mois courant permet à la paie de partir avec la DSN du mois courant."
+"Mon salarié est en maladie depuis plus de 3 mois et je ne maintiens plus son salaire. Sur le mois de décembre, je vais faire une paie à zéro. Quelles rubriques dois-je utiliser ?","Rubrique pour déduction de l’absence sans maintien = AbMa
+Mise en garde : rubrique paramétrée en 30e -> quantité égale à 30 pour mettre le mois à 0, même si mois de décembre = 31 jours.
+Penser à forcer plafond à 0
+Mise en garde 2 : les paies de maladies étant complexes, lire fiche solution et/ou appeler maintenance.","Dans le cas où l’arrêt maladie a dépassé les trois mois et que l’employeur ne maintient plus le salaire, la paie du mois concerné doit être passée :
+
+* **Rubrique : AbMa** – code « Absence maladie sans maintien de salaire ».
+* **Quantité :** 30 jours (ou le nombre de jours du mois ; si le mois comporte 31 jours, saisir 30 AbMa et laisser le jour 31 hors période de paie, comme indiqué dans les fiches « la‑paie‑dabsence‑maladie‑avec‑maintien‑de‑salaire‑brut »).
+* Aucun code de maintien de salaire (MS90, MSNet, etc.) ne doit être utilisé, puisque le salaire n’est plus maintenu.
+* Aucune ligne d’indemnités journalières (IJS, IJNMal, etc.) n’est à prévoir, puisque la totalité du mois est considérée comme absence non rémunérée.
+
+En résumé, pour une paie à zéro sur le mois de décembre, il suffit de saisir la rubrique **AbMa** avec la quantité correspondant aux jours d’absence du mois (généralement 30 jours). Aucune autre rubrique de maintien ou d’indemnité n’est requise.",0.50,"The answer correctly identifies the AbMa rubric and the need to use a quantity of 30 days even for a 31‑day month, matching two of the four key points. It omits the instruction to force the ceiling to zero and the reminder to consult the solution sheet or maintenance for complex sick‑pay cases. No contradictions are present. | Key points present: Rubrique pour déduction de l’absence sans maintien = AbMa; Mise en garde : rubrique paramétrée en 30e -> quantité égale à 30 pour mettre le mois à 0, même si mois de décembre = 31 jours. | Missing key points: Penser à forcer plafond à 0; Mise en garde 2 : les paies de maladies étant complexes, lire fiche solution et/ou appeler maintenance."
